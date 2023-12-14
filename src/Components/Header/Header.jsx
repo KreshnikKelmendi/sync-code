@@ -5,6 +5,8 @@ import syncCodeLogo from "../Assets/logo.png";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeLink, setActiveLink] = useState('');
+  const [isScrolledDown, setIsScrolledDown] = useState(false);
+  const [prevScrollY, setPrevScrollY] = useState(0);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -14,11 +16,34 @@ const Header = () => {
     setActiveLink(link);
   };
 
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > prevScrollY && !isScrolledDown) {
+      setIsScrolledDown(true);
+    } else if (currentScrollY < prevScrollY && isScrolledDown) {
+      setIsScrolledDown(false);
+    }
+
+    setPrevScrollY(currentScrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [prevScrollY, isScrolledDown]);
+
   return (
-    <motion.div className="bg-black border-b border-gray-900 p-3 z-50">
+    <motion.div
+      className={`bg-black border-b border-gray-900 p-3 sticky top-0 z-50 transition-all ${
+        isScrolledDown ? '-translate-y-full' : 'translate-y-0'
+      }`}
+    >
       <div className="flex items-center justify-between">
-        <div className="w-full h-full">
-          <img src={syncCodeLogo} alt="Company Logo" className="object-cover ml-[-15px] lg:w-56 h-16" />
+        <div className="items-center">
+          <img src={syncCodeLogo} alt="Company Logo" className="object-cover ml-[-15px] lg:ml-0 lg:w-56 h-16" />
         </div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -67,11 +92,10 @@ const Header = () => {
           </ul>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.4 }} 
-          className="text-right mr-5 hidden lg:block"
-        >
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.4 }} 
+            className="text-right mr-5 hidden lg:block">
           <button className="outline text-white px-6 py-2 font-custom hover:bg-white hover:text-black hover:outline-none">
             Start the Project
           </button>
@@ -118,7 +142,7 @@ const Header = () => {
         {isMenuOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: '100vh' }}
+            animate={{ opacity: 1, height: '90vh' }}
             exit={{ opacity: 0, height: 0 }}
             className="lg:hidden mt-4 justify-around items-center flex flex-col"
           >
