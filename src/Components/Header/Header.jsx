@@ -17,8 +17,8 @@ const Header = () => {
   return (
     <motion.div className="bg-black border-b border-gray-900 p-3 z-50">
       <div className="flex items-center justify-between">
-        <div className="">
-          <img src={syncCodeLogo} alt="Company Logo" className="object-cover w-56 h-fit" />
+        <div className="w-full h-full">
+          <img src={syncCodeLogo} alt="Company Logo" className="object-cover ml-[-15px] lg:w-56 h-16" />
         </div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
