@@ -1,7 +1,7 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import solution from '../Assets/infrastructure.png';
-import developing from '../Assets/pngwing.com (2).png';
+import developing from '../Assets/update.png';
 import testing from '../Assets/computer.png';
 import maintenance from "../Assets/software-engineer.png";
 
@@ -22,12 +22,10 @@ const AnimatedText = ({ children }) => {
 
 const WhoWeAre = () => {
   return (
-    <div className='w-full text-white'>
+    <div className='w-full text-white py-4'>
       <div className='flex justify-between px-4 lg:px-16 mt-4 lg:mt-10 font-custom'>
         <p className='text-4xl font-semibold uppercase'>Who we are</p>
-        <button className='uppercase outline px-12 py-2 hover:bg-white hover:text-black duration-300'>
-          See more
-        </button>
+        <p to='/machine-learning' className='text-blue-500'>Learn more &rarr;</p>
       </div>
       <div className='w-full flex flex-col lg:flex-row lg:px-16 py-6 font-custom px-4'>
         <div className='w-full lg:w-1/2'>
@@ -52,25 +50,25 @@ const WhoWeAre = () => {
           <AnimatedText>
             <div className='flex flex-col items-center'>
               <img src={solution} alt='' className='object-cover w-20 h-auto' />
-              <p className='text-2xl text-gray-500 mt-2'>Solution</p>
+              <p className='mt-3 uppercase'>Solution</p>
             </div>
           </AnimatedText>
           <AnimatedText>
             <div className='flex flex-col items-center'>
               <img src={developing} alt='' className='object-cover w-20 h-auto' />
-              <p className='text-2xl text-gray-500 mt-2'>Developing</p>
+              <p className='mt-3 uppercase'>Developing</p>
             </div>
           </AnimatedText>
           <AnimatedText>
             <div className='flex flex-col items-center'>
               <img src={testing} alt='' className='object-cover w-20 h-auto' />
-              <p className='text-2xl text-gray-500 mt-2'>Testing</p>
+              <p className='mt-3 uppercase'>Testing</p>
             </div>
           </AnimatedText>
           <AnimatedText>
             <div className='flex flex-col items-center'>
               <img src={maintenance} alt='' className='object-cover w-20 h-auto' />
-              <p className='text-2xl text-gray-500 mt-2'>Maintenance</p>
+              <p className='mt-3 uppercase'>Maintenance</p>
             </div>
           </AnimatedText>
         </div>

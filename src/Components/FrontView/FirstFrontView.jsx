@@ -56,7 +56,7 @@ const FirstFrontView = () => {
         >
           Listening to you, answering with{' '}
           <motion.b
-            className='text-red-500 p-2 shadow shadow-gray-700'
+            className='text-blue-500 p-2 shadow shadow-gray-700'
             initial={{ opacity: 0 }}
             animate={controls}
           >
