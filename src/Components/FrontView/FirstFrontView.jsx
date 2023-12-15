@@ -72,7 +72,7 @@ const FirstFrontView = () => {
           We create solutions with lines of code, turning ideas into innovation.
         </motion.p>
         <button
-          className='outline text-white mt-8 px-14 uppercase py-4 relative overflow-hidden transition-all duration-500 ease-in-out hover:bg-white hover:text-black hover:outline-none'
+          className='outline text-white mt-8 px-14 uppercase py-2 relative overflow-hidden transition-all duration-500 ease-in-out hover:bg-white hover:text-black hover:outline-none'
           
         >
           More about us

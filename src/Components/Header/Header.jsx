@@ -26,7 +26,7 @@ const Header = () => {
           transition={{ duration: 0.5 }}
           className="lg:flex hidden items-center space-x-4 font-custom"
         >
-          <ul className="flex space-x-9 text-white uppercase">
+          <ul className="flex space-x-9 text-white">
             <motion.li
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
