@@ -17,13 +17,13 @@ const AnimatedText = ({ children }) => {
 const SecondFrontView = () => {
   return (
     <div className='text-white px-4 lg:px-16 mt-4 lg:mt-10 font-custom'>
-      <p className='text-3xl'>
+      <p className='text-3xl 2xl:text-4xl'>
         <AnimatedText>Benefit from our reliable development process</AnimatedText>{' '}
         <b className='text-green-400'>
            <AnimatedText>for a successful project.</AnimatedText>
         </b>
       </p>
-      <p className='mt-6'>
+      <p className='mt-6 2xl:text-lg'>
         <AnimatedText>
           We recognize that the most complex projects demand that our development team pay
           attention to every detail in the process of creating solutions. At Sync-Code, we know
@@ -34,17 +34,17 @@ const SecondFrontView = () => {
         {/* Idea Step */}
         <AnimatedText>
           <div className='text-center'>
-            <div className='text-5xl text-gray-500 opacity-40 mb-3'>01</div>
-            <p className='font-extrabold'>Consult your idea</p>
-            <p className='mt-3'>Setting the direction with our web development consultants</p>
+            <div className='text-5xl 2xl:text-6xl text-gray-500 opacity-40 mb-3'>01</div>
+            <p className='font-extrabold 2xl:text-lg'>Consult your idea</p>
+            <p className='mt-3 2xl:text-lg'>Setting the direction with our web development consultants</p>
           </div>
         </AnimatedText>
         {/* Choose a Technology Step */}
         <AnimatedText>
           <div className='text-center'>
-            <div className='text-5xl text-gray-500 opacity-40 mb-3'>02</div>
-            <p className='font-extrabold'>Choose a Technology</p>
-            <p className='mt-3'>
+            <div className='text-5xl 2xl:text-6xl text-gray-500 opacity-40 mb-3'>02</div>
+            <p className='font-extrabold 2xl:text-lg'>Choose a Technology</p>
+            <p className='mt-3 2xl:text-lg'>
               Explore and select the most suitable technologies that align with your project goals.
             </p>
           </div>
@@ -52,9 +52,9 @@ const SecondFrontView = () => {
         {/* Design Step */}
         <AnimatedText>
           <div className='text-center'>
-            <div className='text-5xl text-gray-500 opacity-40 mb-3'>03</div>
-            <p className='font-extrabold'>Design</p>
-            <p className='mt-3'>
+            <div className='text-5xl 2xl:text-6xl text-gray-500 opacity-40 mb-3'>03</div>
+            <p className='font-extrabold 2xl:text-lg'>Design</p>
+            <p className='mt-3 2xl:text-lg'>
               Craft a visually appealing and user-friendly design that enhances the user experience.
             </p>
           </div>
@@ -62,9 +62,9 @@ const SecondFrontView = () => {
         {/* Develop Step */}
         <AnimatedText>
           <div className='text-center'>
-            <div className='text-5xl text-gray-500 opacity-40 mb-3'>04</div>
-            <p className='font-extrabold'>Develop</p>
-            <p className='mt-3'>Developing your project with our skilled developers.</p>
+            <div className='text-5xl 2xl:text-6xl text-gray-500 opacity-40 mb-3'>04</div>
+            <p className='font-extrabold 2xl:text-lg'>Develop</p>
+            <p className='mt-3 2xl:text-lg'>Developing your project with our skilled developers.</p>
           </div>
         </AnimatedText>
       </div>

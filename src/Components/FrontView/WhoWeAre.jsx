@@ -24,13 +24,13 @@ const WhoWeAre = () => {
   return (
     <div className='w-full text-white py-4'>
       <div className='flex justify-between px-4 lg:px-16 mt-4 lg:mt-10 font-custom'>
-        <p className='text-4xl font-semibold uppercase'>Who we are</p>
-        <p to='/machine-learning' className='text-blue-500'>Read more &rarr;</p>
+        <p className='text-4xl font-semibold uppercase 2xl:text-5xl'>Who we are</p>
+        <p to='/machine-learning' className='text-blue-500 2xl:text-lg'>Read more &rarr;</p>
       </div>
       <div className='w-full flex flex-col lg:flex-row lg:px-16 py-6 font-custom px-4'>
         <div className='w-full lg:w-1/2'>
           <AnimatedText>
-            <p className='lg:mt-3'>
+            <p className='lg:mt-3 2xl:text-lg'>
               <b>Sync-Code</b> is a software company based in Pristina, Kosovo. We
               develop innovative products as well as custom software solutions. We
               develop wide enterprise solutions by covering the entire development
@@ -46,7 +46,7 @@ const WhoWeAre = () => {
           </AnimatedText>
         </div>
 
-        <div className='w-full lg:w-1/2 grid grid-cols-2 mt-16 lg:mt-0 gap-y-10 justify-center items-center font-custom'>
+        <div className='w-full lg:w-1/2 grid grid-cols-2 mt-16 lg:mt-0 gap-y-10 justify-center items-center font-custom 2xl:text-lg'>
           <AnimatedText>
             <div className='flex flex-col items-center'>
               <img src={solution} alt='' className='object-cover w-20 h-auto' />

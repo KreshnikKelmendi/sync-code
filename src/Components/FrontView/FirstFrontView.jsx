@@ -50,7 +50,7 @@ const FirstFrontView = () => {
     <div className='bg-techWallpaper w-full h-screen flex items-center justify-center font-custom'>
       <div className='text-white text-center'>
         <motion.h1
-          className='text-4xl lg:text-5xl font-semibold mb-4 p-3'
+          className='text-4xl lg:text-5xl 2xl:text-6xl font-semibold mb-4 p-3'
           initial={{ opacity: 0, y: -20 }}
           animate={controls}
         >
@@ -67,7 +67,7 @@ const FirstFrontView = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4 }}
-          className='px-2 lg:px-0'
+          className='px-2 lg:px-0 2xl:text-lg'
         >
           We create solutions with lines of code, turning ideas into innovation.
         </motion.p>
