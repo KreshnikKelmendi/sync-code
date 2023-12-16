@@ -19,7 +19,7 @@ const SecondFrontView = () => {
     <div className='text-white px-4 lg:px-16 mt-4 lg:mt-10 font-custom'>
       <p className='text-3xl 2xl:text-4xl'>
         <AnimatedText>Benefit from our reliable development process</AnimatedText>{' '}
-        <b className='text-green-400'>
+        <b className='text-blue-500'>
            <AnimatedText>for a successful project.</AnimatedText>
         </b>
       </p>
@@ -35,7 +35,7 @@ const SecondFrontView = () => {
         <AnimatedText>
           <div className='text-center'>
             <div className='text-5xl 2xl:text-6xl text-gray-500 opacity-40 mb-3'>01</div>
-            <p className='font-extrabold 2xl:text-lg'>Consult your idea</p>
+            <p className='font-extrabold 2xl:text-lg text-blue-500'>Consult your idea</p>
             <p className='mt-3 2xl:text-lg'>Setting the direction with our web development consultants</p>
           </div>
         </AnimatedText>
@@ -43,7 +43,7 @@ const SecondFrontView = () => {
         <AnimatedText>
           <div className='text-center'>
             <div className='text-5xl 2xl:text-6xl text-gray-500 opacity-40 mb-3'>02</div>
-            <p className='font-extrabold 2xl:text-lg'>Choose a Technology</p>
+            <p className='font-extrabold 2xl:text-lg text-blue-500'>Choose a Technology</p>
             <p className='mt-3 2xl:text-lg'>
               Explore and select the most suitable technologies that align with your project goals.
             </p>
@@ -53,7 +53,7 @@ const SecondFrontView = () => {
         <AnimatedText>
           <div className='text-center'>
             <div className='text-5xl 2xl:text-6xl text-gray-500 opacity-40 mb-3'>03</div>
-            <p className='font-extrabold 2xl:text-lg'>Design</p>
+            <p className='font-extrabold 2xl:text-lg text-blue-500'>Design</p>
             <p className='mt-3 2xl:text-lg'>
               Craft a visually appealing and user-friendly design that enhances the user experience.
             </p>
@@ -63,7 +63,7 @@ const SecondFrontView = () => {
         <AnimatedText>
           <div className='text-center'>
             <div className='text-5xl 2xl:text-6xl text-gray-500 opacity-40 mb-3'>04</div>
-            <p className='font-extrabold 2xl:text-lg'>Develop</p>
+            <p className='font-extrabold 2xl:text-lg text-blue-500'>Develop</p>
             <p className='mt-3 2xl:text-lg'>Developing your project with our skilled developers.</p>
           </div>
         </AnimatedText>
