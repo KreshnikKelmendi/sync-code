@@ -14,7 +14,7 @@ const OurServices = () => {
                 for your business. Our skilled team uses the latest tech to ensure your online presence 
                 is not just visually appealing but also easy to use and highly functional
               </p>
-              <p to='/web-development' className='text-blue-500'>Learn more &rarr;</p>
+              <p to='/web-development' className='text-blue-500'>Read more &rarr;</p>
             </div>
           </div>
           <hr className='my-4 border-t-2 border-white' />
@@ -26,7 +26,7 @@ const OurServices = () => {
                 cutting-edge technologies to derive meaningful insights and drive informed 
                 decision-making for your business.
               </p>
-              <p to='/machine-learning' className='text-blue-500'>Learn more &rarr;</p>
+              <p to='/machine-learning' className='text-blue-500'>Read more &rarr;</p>
             </div>
           </div>
           <hr className='my-4 border-t-2 border-white' />
@@ -38,7 +38,7 @@ const OurServices = () => {
                 and user-friendliness, using the latest technologies to turn your ideas into functional 
                 and appealing applications.
               </p>
-              <p to='/mobile-development' className='text-blue-500'>Learn more &rarr;</p>
+              <p to='/mobile-development' className='text-blue-500'>Read more &rarr;</p>
             </div>
           </div>
           <hr className='my-4 border-t-2 border-white' />

@@ -34,7 +34,7 @@ const SecondFrontView = () => {
         {/* Idea Step */}
         <AnimatedText>
           <div className='text-center'>
-            <div className='text-5xl text-gray-500 opacity-20 mb-3'>01</div>
+            <div className='text-5xl text-gray-500 opacity-40 mb-3'>01</div>
             <p className='font-extrabold'>Consult your idea</p>
             <p className='mt-3'>Setting the direction with our web development consultants</p>
           </div>
@@ -42,7 +42,7 @@ const SecondFrontView = () => {
         {/* Choose a Technology Step */}
         <AnimatedText>
           <div className='text-center'>
-            <div className='text-5xl text-gray-500 opacity-20 mb-3'>02</div>
+            <div className='text-5xl text-gray-500 opacity-40 mb-3'>02</div>
             <p className='font-extrabold'>Choose a Technology</p>
             <p className='mt-3'>
               Explore and select the most suitable technologies that align with your project goals.
@@ -52,7 +52,7 @@ const SecondFrontView = () => {
         {/* Design Step */}
         <AnimatedText>
           <div className='text-center'>
-            <div className='text-5xl text-gray-500 opacity-20 mb-3'>03</div>
+            <div className='text-5xl text-gray-500 opacity-40 mb-3'>03</div>
             <p className='font-extrabold'>Design</p>
             <p className='mt-3'>
               Craft a visually appealing and user-friendly design that enhances the user experience.
@@ -62,7 +62,7 @@ const SecondFrontView = () => {
         {/* Develop Step */}
         <AnimatedText>
           <div className='text-center'>
-            <div className='text-5xl text-gray-500 opacity-20 mb-3'>04</div>
+            <div className='text-5xl text-gray-500 opacity-40 mb-3'>04</div>
             <p className='font-extrabold'>Develop</p>
             <p className='mt-3'>Developing your project with our skilled developers.</p>
           </div>

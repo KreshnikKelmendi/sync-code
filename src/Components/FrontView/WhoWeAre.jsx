@@ -25,7 +25,7 @@ const WhoWeAre = () => {
     <div className='w-full text-white py-4'>
       <div className='flex justify-between px-4 lg:px-16 mt-4 lg:mt-10 font-custom'>
         <p className='text-4xl font-semibold uppercase'>Who we are</p>
-        <p to='/machine-learning' className='text-blue-500'>Learn more &rarr;</p>
+        <p to='/machine-learning' className='text-blue-500'>Read more &rarr;</p>
       </div>
       <div className='w-full flex flex-col lg:flex-row lg:px-16 py-6 font-custom px-4'>
         <div className='w-full lg:w-1/2'>

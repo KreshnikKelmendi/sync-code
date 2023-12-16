@@ -49,21 +49,29 @@ const Header = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.3 }}
-              className={`cursor-pointer ${activeLink === 'Contact' ? 'text-red-500' : ''}`}
-              onClick={() => handleLinkClick('Contact')}
-            >
-              Contact
-            </motion.li>
-            <motion.li
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.4 }}
               className={`cursor-pointer ${activeLink === 'Services' ? 'text-red-500' : ''}`}
               onClick={() => handleLinkClick('Services')}
             >
               Services
             </motion.li>
-            {/* Add more menu items as needed */}
+            <motion.li
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.4 }}
+              className={`cursor-pointer ${activeLink === 'Works' ? 'text-red-500' : ''}`}
+              onClick={() => handleLinkClick('Works')}
+            >
+              Works
+            </motion.li>
+            <motion.li
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.4 }}
+              className={`cursor-pointer ${activeLink === 'Contact' ? 'text-red-500' : ''}`}
+              onClick={() => handleLinkClick('Contact')}
+            >
+              Contact
+            </motion.li>
           </ul>
         </motion.div>
         <motion.div
