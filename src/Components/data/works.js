@@ -18,6 +18,12 @@ const works = [{
     description: "Our platform helps your company to easily become GDPR compliant. The solution can be integrated into all applications including those that were developed before GDPR became enforceable. The main modules are anonymization, report, and consent. With our platform implemented your customers can request and receive all the information you have about them, have their data deleted, and manage consent for processing their data.",
     // liveLink: "http://www.flip3grc.com/",
     tutorialLink: "https://www.youtube.com/watch?v=653svNH-0Vs&t=7s"
+},{
+    workName: "VERVE Decor",
+    image: work2,
+    description: "Experience the power of easy navigation, intuitive filters, and a smooth checkout process that makes shopping a joy. Our application is optimized for performance, ensuring a quick and secure transaction every time. Your data security is our priority, and our robust payment systems guarantee a safe and reliable shopping experience.",
+    liveLink: "https://vdecor.vercel.app/",
+    // tutorialLink: "https://www.youtube.com/watch?v=653svNH-0Vs&t=7s"
 }
 ]
 

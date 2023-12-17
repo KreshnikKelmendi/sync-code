@@ -1,5 +1,7 @@
 import React from 'react';
 import { works } from '../data/works';
+import worldWide from "../Assets/global-communication.png"
+import youtube from "../Assets/youtube.png"
 
 const OurWorks = () => {
   return (
@@ -21,14 +23,29 @@ const OurWorks = () => {
               </a>
               </div>
               <div className='mt-5 text-white'>
-                <p className='text-2xl font-semibold'>{work.workName}</p>
-                <p className='text-base mt-2'>{work.description}</p>
+                <p className='text-2xl font-semibold w-fit'>{work.workName}</p>
+                <p className='text-base mt-2 text-gray-300'>{work.description}</p>
+                <div className='flex gap-8 mt-2'>
                 {work.liveLink && (
-                  <a href={work.liveLink} target='_blank' rel='noopener noreferrer' className='text-blue-500 mt-2  hover:text-white hover:scale-110 inline-block'>Visit Live &rarr;</a>
+                  <div className='flex gap-x-1'>
+                    <img src={worldWide} alt="" className='w-5 h-5 mt-2' />
+                    <a
+                      href={work.liveLink}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='text-blue-500 mt-2 hover:text-white hover:scale-110 inline-block'
+                    >
+                      Visit Live &rarr;
+                    </a>
+                  </div>
                 )}
                 {work.tutorialLink && (
-                  <a href={work.tutorialLink} target='_blank' rel='noopener noreferrer' className='text-blue-500 mt-2 ml-16 hover:text-white hover:scale-110 inline-block' title='See the tutorial on YouTube'>Tutorial &rarr;</a>
+                  <div className='flex gap-x-1'>
+                    <img src={youtube} alt='' className='w-5 h-5 mt-2'/>
+                    <a href={work.tutorialLink} target='_blank' rel='noopener noreferrer' className='text-blue-500 mt-2 hover:text-white hover:scale-110 inline-block' title='See the tutorial on YouTube'>Tutorial &rarr;</a>
+                </div>
                 )}
+                </div>
               </div>
             </div>
           ))}

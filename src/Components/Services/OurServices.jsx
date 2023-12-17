@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const OurServices = () => {
   return (
@@ -14,7 +15,7 @@ const OurServices = () => {
                 for your business. Our skilled team uses the latest tech to ensure your online presence 
                 is not just visually appealing but also easy to use and highly functional
               </p>
-              <p to='/web-development' className='text-blue-500'>Read more &rarr;</p>
+              <Link to='/web-development' onClick={window.scrollTo({top:0, left:0})} className='text-blue-500'>Read more &rarr;</Link>
             </div>
           </div>
           <hr className='my-4 border-t-2 border-white' />
