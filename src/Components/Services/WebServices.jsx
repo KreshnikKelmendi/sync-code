@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 import icon1 from "../Assets/global-communication.png";
 import icon2 from "../Assets/shopping.png";
 import icon3 from "../Assets/application.png";
@@ -6,48 +8,97 @@ import icon4 from "../Assets/content-management-system.png";
 import icon5 from "../Assets/front-end.png";
 import icon6 from "../Assets/development.png";
 import icon7 from "../Assets/database-storage.png";
-import reactIcon from "../Assets/physics.png"; // Replace with the actual path to your React icon
+import reactIcon from "../Assets/physics.png"; 
+import angularIcon from "../Assets/angular.png"
+import nextIcon from "../Assets/next-js.png"
+import javascriptIcon from "../Assets/JavaScript-logo.png"
+import tailwindIcon from "../Assets/tailwindCSS.png"
+import bootstrapIcon from "../Assets/bootstrap.png"
+import netIcon from "../Assets/NET_Core_Logo.svg.png"
+import strapiIcon from "../Assets/strapi.png"
+import payloadIcon from "../Assets/payload-cms-icon-filled-256.png"
+import sqlIcon from "../Assets/MicrosoftTeams-image (1).png"
+import postgresIcon from "../Assets/postgresql-icon-1024x1014-dz7hnkqk.png"
 
 const frontendTechnologies = [
-  { icon: reactIcon, name: 'React' },
-  { icon: reactIcon, name: 'React' },
+  { icon: reactIcon, name: 'React JS' },
+  { icon: angularIcon, name: 'Angular JS' },
+  { icon: nextIcon, name: 'Next JS' },
+  { icon: javascriptIcon, name: 'JavaScript' },
+  { icon: tailwindIcon, name: 'Tailwind CSS' },
+  { icon: bootstrapIcon, name: 'Bootstrap' },
 ];
 
 const backendTechnologies = [
-  // Add backend technologies as needed
+  { icon: netIcon, name: 'C# .NET' },
+  { icon: strapiIcon, name: 'STRAPI CMS' },
+  { icon: payloadIcon, name: 'Payload CMS' },
 ];
 
 const databaseTechnologies = [
-  // Add database technologies as needed
+  { icon: sqlIcon, name: 'SQL Server' },
+  { icon: postgresIcon, name: 'PostgreSQL' },
 ];
 
-const WebServices = () => {
-  const [showDescription, setShowDescription] = useState({
-    frontend: false,
-    backend: false,
-    databases: false,
+const AnimatedIcon = ({ icon, name }) => {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
   });
 
-  const toggleDescription = (key) => {
-    setShowDescription((prevState) => ({
-      ...prevState,
-      [key]: !prevState[key],
-    }));
+  const controls = useAnimation();
+
+  const animationVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 1.5, delay: 0.8 } }, // Adjust duration and delay here
   };
 
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible');
+    }
+  }, [controls, inView]);
+
+  return (
+    <motion.button
+      className="flex items-center justify-center bg-gray-900 text-white px-4 py-2"
+      initial='hidden'
+      animate={controls}
+      variants={animationVariants}
+      ref={ref}
+    >
+      <img src={icon} alt="" className="w-8 h-8 object-cover mr-2" />
+      {name}
+    </motion.button>
+  );
+};
+
+const WebServices = () => {
   return (
     <div className='w-full text-white py-4'>
-      <div className='px-4 lg:px-16 mt-4 lg:mt-10 font-custom'>
-        <p className='text-4xl font-semibold 2xl:text-5xl'>What are <span className='text-blue-500'>web development services ?</span></p>
-        <p className='py-6'>Our web development services cover a spectrum of offerings, <span className='text-gray-500'>
-        from creating websites and web apps to keeping things secure with cybersecurity solutions. We make your online experience top-notch with cool designs (UX/UI), powerful eCommerce, and smart website structures. We test, maintain, and even offer advice. Additionally, we excel in creating custom CMS solutions 
-            tailored to your unique needs.</span> 
+      <motion.div
+        className='px-4 lg:px-16 mt-4 lg:mt-10 font-custom'
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+      >
+        <p className='text-2xl lg:text-4xl font-semibold 2xl:text-5xl'>What are <span className='text-blue-500'>web development services ?</span></p>
+        <p className='py-6 text-gray-500'>
+          Our web development services cover a spectrum of offerings,
+          from creating websites and web apps to keeping things secure
+          with cybersecurity solutions. We make your online experience
+          top-notch with cool designs (UX/UI), powerful eCommerce, and
+          smart website structures. We test, maintain, and even offer
+          advice. Additionally, we excel in creating custom CMS solutions
+          tailored to your unique needs.
         </p>
-      </div>
+      </motion.div>
 
       {/* Web Development Solutions Section */}
-      <div className='px-4 lg:px-16 mt-16 font-custom'>
-        <p className='text-4xl font-semibold 2xl:text-5xl text-center'>Reach your business goals with powerful <span className='text-blue-500'>web development solutions</span></p>
+      <motion.div
+        className='px-4 lg:px-16 mt-16 font-custom'
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+      >
+        <p className='text-2xl lg:text-4xl font-semibold 2xl:text-5xl text-center'>Reach your business goals with powerful <span className='text-blue-500'>web development solutions</span></p>
 
         <div className='grid grid-cols-1 md:grid-cols-4 gap-8 py-16'>
           <div className='text-center'>
@@ -75,77 +126,57 @@ const WebServices = () => {
           </div>
         </div>
         <hr />
-      </div>
+      </motion.div>
 
       {/* Technologies Section */}
-      <div className='px-4 lg:px-16 mt-16 font-custom'>
+      <motion.div
+        className='px-4 lg:px-16 mt-16 font-custom'
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+      >
         <p className='text-4xl font-semibold 2xl:text-5xl text-center'>Maximize Value with Cutting-Edge <span className='text-blue-500'>Technologies</span></p>
         <p className='lg:w-[70%] mt-6 text-center mx-auto'>Solve customer problems by choosing cutting-edge technologies for your tech stack. Take your business to the next level with the right solutions tailored to your own requirements.</p>
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-8 mt-16'>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-8 gap-y-16 mt-16'>
           <div className='text-center'>
             <img src={icon5} alt='Technology Icon' className='w-10 h-10 object-cover mx-auto mb-2' />
             <p className='text-xl font-semibold mt-2'>Frontend Development</p>
-            <button onClick={() => toggleDescription('frontend')}>
-              Click to see the description
+            <button className='text-gray-500 opacity-50'>
+              Technologies we use <span className='text-blue-500'>&#9660;</span>
             </button>
-            {showDescription.frontend && (
-              <div className="flex flex-col gap-y-4 mt-4 items-center justify-center">
-                {frontendTechnologies.map((technology, index) => (
-                  <button
-                    key={index}
-                    className="flex items-center outline text-white px-4 py-2"
-                  >
-                    <img src={technology.icon} alt="" className="w-8 h-8 object-cover mr-2" />
-                    {technology.name}
-                  </button>
-                ))}
-              </div>
-            )}
+            <div className="grid grid-cols-2 gap-4 mt-4 items-center justify-center">
+              {frontendTechnologies.map((technology, index) => (
+                <AnimatedIcon key={index} icon={technology.icon} name={technology.name} />
+              ))}
+            </div>
           </div>
 
           <div className='text-center'>
             <img src={icon6} alt='Technology Icon' className='w-10 h-10 object-cover mx-auto mb-2' />
             <p className='text-xl font-semibold mt-2'>Backend Development</p>
-            <button onClick={() => toggleDescription('backend')}>
-              Click to see the description
+            <button className='text-gray-500 opacity-50'>
+              Technologies we use <span className='text-blue-500'>&#9660;</span>
             </button>
-            {showDescription.backend && (
-              <div className="flex items-center justify-center">
-                {backendTechnologies.map((technology, index) => (
-                  <button
-                    key={index}
-                    className="flex items-center outline text-white px-4 py-2 mr-4"
-                  >
-                    <img src={technology.icon} alt="" className="w-8 h-8 object-cover mr-2" />
-                    {technology.name}
-                  </button>
-                ))}
-              </div>
-            )}
+            <div className="grid grid-cols-2 gap-4 mt-4 items-center justify-center">
+              {backendTechnologies.map((technology, index) => (
+                <AnimatedIcon key={index} icon={technology.icon} name={technology.name} />
+              ))}
+            </div>
           </div>
 
           <div className='text-center'>
             <img src={icon7} alt='Technology Icon' className='w-10 h-10 object-cover mx-auto mb-2' />
             <p className='text-xl font-semibold mt-2'>Databases</p>
-            <button onClick={() => toggleDescription('databases')}>
-              Click to see the description
+            <button className='text-gray-500 opacity-50'>
+              Technologies we use <span className='text-blue-500'>&#9660;</span>
             </button>
-            {showDescription.databases && (
-              <div className="flex items-center justify-center">
-                {databaseTechnologies.map((technology, index) => (
-                  <button
-                    key={index}
-                    className="flex items-center outline text-white px-4 py-2 mr-4"
-                  >
-                    <img src={technology.icon} alt="" className="w-8 h-8 object-cover mr-2" />
-                    {technology.name}
-                  </button>
-                ))}
-              </div>
-            )}
+            <div className="grid grid-cols-2 gap-4 mt-4 items-center justify-center">
+              {databaseTechnologies.map((technology, index) => (
+                <AnimatedIcon key={index} icon={technology.icon} name={technology.name} />
+              ))}
+            </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -1,13 +1,19 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import syncCodeLogo from "../Assets/logo.png";
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeLink, setActiveLink] = useState('');
+  const [isServicesMenuOpen, setIsServicesMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const toggleServicesMenu = () => {
+    setIsServicesMenuOpen(!isServicesMenuOpen);
   };
 
   const handleLinkClick = (link) => {
@@ -34,7 +40,7 @@ const Header = () => {
               className={`cursor-pointer ${activeLink === 'Home' ? 'text-red-500' : ''}`}
               onClick={() => handleLinkClick('Home')}
             >
-              Home
+              <Link to="/">Home</Link>
             </motion.li>
             <motion.li
               initial={{ opacity: 0, y: 20 }}
@@ -46,14 +52,46 @@ const Header = () => {
               About
             </motion.li>
             <motion.li
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.3 }}
-              className={`cursor-pointer ${activeLink === 'Services' ? 'text-red-500' : ''}`}
-              onClick={() => handleLinkClick('Services')}
-            >
-              Services
-            </motion.li>
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.3 }}
+            className={`cursor-pointer ${activeLink === 'Services' ? 'text-red-500' : ''}`}
+            onMouseEnter={toggleServicesMenu}
+            onMouseLeave={toggleServicesMenu}
+          >
+            Services
+            <AnimatePresence>
+              {isServicesMenuOpen && (
+                <motion.div
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  className="absolute mt-2 bg-gray-800 p-4 rounded-lg"
+                >
+                  <ul className="space-y-2">
+                    <li
+                      className="cursor-pointer text-white hover:text-red-500"
+                      onClick={() => handleLinkClick('Web Development')}
+                    >
+                      <Link to="/web-development">Web Development</Link>
+                    </li>
+                    <li
+                      className="cursor-pointer text-white hover:text-red-500"
+                      onClick={() => handleLinkClick('Machine Learning & Analytics')}
+                    >
+                      Machine Learning & Analytics
+                    </li>
+                    <li
+                      className="cursor-pointer text-white hover:text-red-500"
+                      onClick={() => handleLinkClick('Mobile Development')}
+                    >
+                      Mobile Development
+                    </li>
+                  </ul>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </motion.li>
             <motion.li
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -145,11 +183,47 @@ const Header = () => {
           Contact
         </motion.li>
         <motion.li
-          className={`cursor-pointer ${activeLink === 'Services' ? 'text-blue-500' : ''}`}
-          onClick={() => handleLinkClick('Services')}
-        >
-          Services
-        </motion.li>
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.3 }}
+            className={`cursor-pointer ${activeLink === 'Services' ? 'text-red-500' : ''}`}
+            onMouseEnter={toggleServicesMenu}
+            onMouseLeave={toggleServicesMenu}
+          >
+            Services
+            <AnimatePresence>
+              {isServicesMenuOpen && (
+                <motion.div
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  className="absolute mt-2 bg-gray-800 p-4 rounded-lg"
+                >
+                  <ul className="space-y-2">
+                    <li
+                      className="cursor-pointer text-white hover:text-red-500"
+                      onClick={() => handleLinkClick('Web Development')}
+                    >
+                      <Link to="/web-development">Web Development</Link>
+                    </li>
+                    <li
+                      className="cursor-pointer text-white hover:text-red-500"
+                      onClick={() => handleLinkClick('Machine Learning & Analytics')}
+                    >
+                      Machine Learning & Analytics
+                    </li>
+                    <li
+                      className="cursor-pointer text-white hover:text-red-500"
+                      onClick={() => handleLinkClick('Mobile Development')}
+                    >
+                      Mobile Development
+                    </li>
+                    {/* Add more menu items as needed */}
+                  </ul>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </motion.li>
         {/* Add more menu items as needed */}
       </motion.ul>
       <div className="text-center">
