@@ -48,8 +48,8 @@ const AnimatedIcon = ({ icon, name }) => {
   const controls = useAnimation();
 
   const animationVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 1.5, delay: 0.8 } }, // Adjust duration and delay here
+    hidden: { opacity: 0, y: 60 },
+    visible: { opacity: 1, y: 0, transition: { duration: 1.5, delay: 0.5 } },
   };
 
   useEffect(() => {
