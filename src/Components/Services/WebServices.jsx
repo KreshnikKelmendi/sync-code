@@ -98,7 +98,7 @@ const WebServices = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <p className='text-2xl lg:text-4xl font-semibold 2xl:text-5xl text-center'>Reach your business goals with powerful <span className='text-blue-500'>web development solutions</span></p>
+        <p className='text-2xl lg:text-4xl font-semibold 2xl:text-5xl lg:text-center'>Reach your business goals with powerful <span className='text-blue-500'>web development solutions</span></p>
 
         <div className='grid grid-cols-1 md:grid-cols-4 gap-8 py-16'>
           <div className='text-center'>
