@@ -98,7 +98,7 @@ const WebServices = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <p className='text-2xl lg:text-4xl font-semibold 2xl:text-5xl lg:text-center'>Reach your business goals with powerful <span className='text-blue-500'>web development solutions</span></p>
+        <p className='text-2xl lg:text-4xl font-semibold 2xl:text-5xl text-center'>Reach your business goals with powerful <span className='text-blue-500'>web development solutions</span></p>
 
         <div className='grid grid-cols-1 md:grid-cols-4 gap-8 py-16'>
           <div className='text-center'>
@@ -134,7 +134,7 @@ const WebServices = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <p className='text-4xl font-semibold 2xl:text-5xl text-center'>Maximize Value with Cutting-Edge <span className='text-blue-500'>Technologies</span></p>
+        <p className='text-4xl font-semibold 2xl:text-5xl text-center'>Maximize value through Advanced <span className='text-blue-500'>Technologies</span></p>
         <p className='lg:w-[70%] mt-6 text-center mx-auto'>Solve customer problems by choosing cutting-edge technologies for your tech stack. Take your business to the next level with the right solutions tailored to your own requirements.</p>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-8 gap-y-16 mt-16'>
           <div className='text-center'>
