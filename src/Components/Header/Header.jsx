@@ -203,7 +203,7 @@ const Header = () => {
       </motion.ul>
       <div className="text-center">
         <motion.button
-          className="bg-white text-black mb-10 px-16 py-2 font-custom"
+          className="bg-white text-black mb-20 px-16 py-2 font-custom"
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
