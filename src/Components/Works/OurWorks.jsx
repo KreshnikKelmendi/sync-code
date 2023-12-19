@@ -7,7 +7,7 @@ const OurWorks = () => {
     <div className='text-white py-4'>
       <div className='px-4 lg:px-16 lg:mt-20 mt-16 font-custom'>
         <div className='flex justify-between'>
-          <p className='text-3xl lg:text-4xl 2xl:text-5xl font-semibold uppercase'>Our Works</p>
+          <p className='text-4xl 2xl:text-5xl font-semibold uppercase'>Our Works</p>
           <Link to='/works' 
                 onClick={() => window.scrollTo({ top: 0, left: 0 })} 
                 className='text-blue-500 2xl:text-lg mt-1 hover:scale-110 hover:text-white'>See all &rarr;
