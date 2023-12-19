@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Card from '../Components/Works/Card'
 
 const WorkPage = () => {
+  useEffect(() => {
+    document.title = 'Sync-Code - Our Works';
+  }, []);
+
   return (
     <div className='w-full text-white py-4'>
         <div

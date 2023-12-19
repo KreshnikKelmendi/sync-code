@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom';
 import { works } from '../Components/data/works';
 
 const SinglePageOfWork = () => {
+
+  useEffect(() => {
+    document.title = 'Sync-Code - Work';
+  }, []);
+  
     const { workID } = useParams();
     const work = works?.find((ad) => ad.id == workID);
 
