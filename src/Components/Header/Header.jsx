@@ -9,6 +9,10 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesMenuOpen, setIsServicesMenuOpen] = useState(false);
 
+  const handleGetInTouch = () => {
+    window.location.href = 'mailto:info@sync-code.com';
+  };
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -22,7 +26,7 @@ const Header = () => {
   };
 
   return (
-    <motion.div className="bg-black border-b border-gray-900 p-3">
+    <motion.div className="bg-black sticky top-0 z-50 border-b border-gray-900 p-3">
       <div className="flex items-center justify-between 2xl:text-lg">
         <div className="items-center">
           <Link to="/">
@@ -104,15 +108,18 @@ const Header = () => {
           </ul>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.4 }}
-          className="text-right mr-5 hidden lg:block"
-        >
-          <button className="outline text-white px-6 py-2 font-custom hover:bg-white hover:text-black hover:outline-none">
-            Start the Project
-          </button>
-        </motion.div>
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, delay: 0.4 }}
+      className="text-right mr-5 hidden lg:block"
+    >
+      <button
+        className="outline text-white px-8 py-2 font-custom hover:bg-white hover:text-black hover:outline-none"
+        onClick={handleGetInTouch}
+      >
+        Get in Touch
+      </button>
+    </motion.div>
         <div className="lg:hidden">
           <button onClick={toggleMenu} className="text-white focus:outline-none mr-3 focus:text-white">
             {isMenuOpen ? (
@@ -189,16 +196,22 @@ const Header = () => {
         >
           <Link to="/works" onClick={() => { window.scrollTo({ top: 0, left: 0 }); closeMobileMenu(); }}>Works</Link>
         </motion.li>
+        <motion.li
+        >
+           <Link onClick={() => { window.scrollTo({ top: 0, left: 0 }); closeMobileMenu(); }}>Contact</Link>
+        </motion.li>
       </motion.ul>
       <div className="text-center">
         <motion.button
-          className="bg-blue-500 text-white px-16 py-2 font-custom"
+          className="bg-white text-black px-16 py-2 font-custom"
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
+          onClick={handleGetInTouch}
         >
-          Start the Project
+          Get in Touch
         </motion.button>
+        
       </div>
     </motion.div>
   )}

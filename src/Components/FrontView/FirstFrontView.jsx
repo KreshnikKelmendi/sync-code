@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const ANIMATION_DURATION = 0.5;
 const ANIMATION_DELAY = 0.4;
@@ -72,11 +73,13 @@ const FirstFrontView = () => {
         >
           We create solutions with lines of code, turning ideas into innovation.
         </motion.p>
+        <Link to="/about" onClick={() => window.scrollTo({ top: 0, left: 0 })}>
         <button
           className='outline text-white mt-8 px-14 uppercase py-2 relative overflow-hidden transition-all duration-500 ease-in-out hover:bg-white hover:text-black hover:outline-none'
         >
           More about us
         </button>
+        </Link>
       </div>
     </div>
   );

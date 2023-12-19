@@ -5,7 +5,10 @@ import phone from "../Assets/phone.png";
 import placeholder from "../Assets/location.png";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
+    <>
     <div className='bg-black border-t mt-16 mx-4 lg:mx-16 text-white p-6 lg:p-12 flex flex-col lg:flex-row justify-between items-center font-custom font-normal'>
       {/* Logo */}
       <div className='flex items-center space-x-4 mb-4 lg:mb-0'>
@@ -42,7 +45,12 @@ const Footer = () => {
           <p>Pristina, Kosovo</p>
         </div>
       </div>
+
     </div>
+    <div>
+      <p className="py-1 font-custom text-white text-center">&copy; {currentYear} Sync Code. All rights reserved.</p>
+    </div>
+    </>
   );
 }
 
