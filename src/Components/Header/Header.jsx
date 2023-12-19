@@ -29,7 +29,7 @@ const Header = () => {
     <motion.div className="bg-black sticky top-0 z-50 border-b border-gray-900 p-3">
       <div className="flex items-center justify-between 2xl:text-lg">
         <div className="items-center">
-          <Link to="/">
+          <Link to="/" onClick={() => window.scrollTo({ top: 0, left: 0 })}>
             <img src={syncCodeLogo} alt="Company Logo" className="object-cover ml-[-15px] lg:ml-0 lg:w-56 h-16" />
           </Link>
         </div>
