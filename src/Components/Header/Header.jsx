@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import syncCodeLogo from "../Assets/logo.png";
 import { Link } from 'react-router-dom';
+import menu from "../Assets/menu.png"
+import arrow from "../Assets/arrow.png"
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState('');
   const [isServicesMenuOpen, setIsServicesMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -16,15 +17,17 @@ const Header = () => {
     setIsServicesMenuOpen(!isServicesMenuOpen);
   };
 
-  const handleLinkClick = (link) => {
-    setActiveLink(link);
+  const closeMobileMenu = () => {
+    setIsMenuOpen(false);
   };
 
   return (
     <motion.div className="bg-black border-b border-gray-900 p-3">
       <div className="flex items-center justify-between 2xl:text-lg">
         <div className="items-center">
-          <img src={syncCodeLogo} alt="Company Logo" className="object-cover ml-[-15px] lg:ml-0 lg:w-56 h-16" />
+          <Link to="/">
+            <img src={syncCodeLogo} alt="Company Logo" className="object-cover ml-[-15px] lg:ml-0 lg:w-56 h-16" />
+          </Link>
         </div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -37,25 +40,20 @@ const Header = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.1 }}
-              className={`cursor-pointer ${activeLink === 'Home' ? 'text-red-500' : ''}`}
-              onClick={() => handleLinkClick('Home')}
             >
-              <Link to="/">Home</Link>
+              <Link to="/" onClick={() => window.scrollTo({ top: 0, left: 0 })}>Home</Link>
             </motion.li>
             <motion.li
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.2 }}
-              className={`cursor-pointer ${activeLink === 'About' ? 'text-red-500' : ''}`}
-              onClick={() => handleLinkClick('About')}
             >
-              About
+               <Link to="/about" onClick={() => window.scrollTo({ top: 0, left: 0 })}>About</Link>
             </motion.li>
             <motion.li
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.3 }}
-            className={`cursor-pointer ${activeLink === 'Services' ? 'text-red-500' : ''}`}
             onMouseEnter={toggleServicesMenu}
             onMouseLeave={toggleServicesMenu}
           >
@@ -71,19 +69,16 @@ const Header = () => {
                   <ul className="space-y-2">
                     <li
                       className="cursor-pointer text-white hover:text-red-500"
-                      onClick={() => handleLinkClick('Web Development')}
                     >
-                      <Link to="/web-development">Web Development</Link>
+                      <Link to="/web-development" onClick={() => window.scrollTo({ top: 0, left: 0 })}>Web Development</Link>
                     </li>
                     <li
                       className="cursor-pointer text-white hover:text-red-500"
-                      onClick={() => handleLinkClick('Machine Learning & Analytics')}
                     >
                       Machine Learning & Analytics
                     </li>
                     <li
                       className="cursor-pointer text-white hover:text-red-500"
-                      onClick={() => handleLinkClick('Mobile Development')}
                     >
                       Mobile Development
                     </li>
@@ -96,17 +91,13 @@ const Header = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.4 }}
-              className={`cursor-pointer ${activeLink === 'Works' ? 'text-red-500' : ''}`}
-              onClick={() => handleLinkClick('Works')}
             >
-              Works
+              <Link to="/works" onClick={() => window.scrollTo({ top: 0, left: 0 })}>Works</Link>
             </motion.li>
             <motion.li
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.4 }}
-              className={`cursor-pointer ${activeLink === 'Contact' ? 'text-red-500' : ''}`}
-              onClick={() => handleLinkClick('Contact')}
             >
               Contact
             </motion.li>
@@ -125,25 +116,9 @@ const Header = () => {
         <div className="lg:hidden">
           <button onClick={toggleMenu} className="text-white focus:outline-none mr-3 focus:text-white">
             {isMenuOpen ? (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                className="h-6 w-6"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
+              <img src={arrow} alt='' className='w-8 h-8 object-cover' />
             ) : (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                className="h-6 w-6"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
-              </svg>
+              <img src={menu} alt="" className='w-6 h-6 object-cover'/>
             )}
           </button>
         </div>
@@ -165,28 +140,18 @@ const Header = () => {
         className="flex flex-col space-y-10 text-center text-white font-custom"
       >
         <motion.li
-          className={`cursor-pointer ${activeLink === 'Home' ? 'text-blue-500' : ''}`}
-          onClick={() => handleLinkClick('Home')}
         >
-          Home
+          <Link to="/" onClick={() => { window.scrollTo({ top: 0, left: 0 }); closeMobileMenu(); }}>Home</Link>
         </motion.li>
         <motion.li
-          className={`cursor-pointer ${activeLink === 'About' ? 'text-blue-500' : ''}`}
-          onClick={() => handleLinkClick('About')}
         >
-          About
+           <Link to="/about" onClick={() => { window.scrollTo({ top: 0, left: 0 }); closeMobileMenu(); }}>About</Link>
         </motion.li>
-        <motion.li
-          className={`cursor-pointer ${activeLink === 'Contact' ? 'text-blue-500' : ''}`}
-          onClick={() => handleLinkClick('Contact')}
-        >
-          Contact
-        </motion.li>
+        
         <motion.li
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.3 }}
-            className={`cursor-pointer ${activeLink === 'Services' ? 'text-red-500' : ''}`}
             onMouseEnter={toggleServicesMenu}
             onMouseLeave={toggleServicesMenu}
           >
@@ -200,21 +165,17 @@ const Header = () => {
                   className="absolute mt-2 bg-gray-800 p-4 rounded-lg"
                 >
                   <ul className="space-y-2">
-                    <li
-                      className="cursor-pointer text-white hover:text-red-500"
-                      onClick={() => handleLinkClick('Web Development')}
+                    <li className="cursor-pointer text-white hover:text-red-500"
                     >
-                      <Link to="/web-development">Web Development</Link>
+                      <Link to="/web-development" onClick={() => { window.scrollTo({ top: 0, left: 0 }); closeMobileMenu(); }}>Web Development</Link>
                     </li>
                     <li
                       className="cursor-pointer text-white hover:text-red-500"
-                      onClick={() => handleLinkClick('Machine Learning & Analytics')}
                     >
                       Machine Learning & Analytics
                     </li>
                     <li
                       className="cursor-pointer text-white hover:text-red-500"
-                      onClick={() => handleLinkClick('Mobile Development')}
                     >
                       Mobile Development
                     </li>
@@ -224,7 +185,10 @@ const Header = () => {
               )}
             </AnimatePresence>
           </motion.li>
-        {/* Add more menu items as needed */}
+          <motion.li
+        >
+          <Link to="/works" onClick={() => { window.scrollTo({ top: 0, left: 0 }); closeMobileMenu(); }}>Works</Link>
+        </motion.li>
       </motion.ul>
       <div className="text-center">
         <motion.button
