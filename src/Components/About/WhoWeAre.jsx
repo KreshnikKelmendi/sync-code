@@ -1,9 +1,9 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
-import solution from '../Assets/infrastructure.png';
-import developing from '../Assets/update.png';
-import testing from '../Assets/computer.png';
-import maintenance from "../Assets/software-engineer.png";
+import solution from '../Assets/solutionCoding.png';
+import developing from '../Assets/code.png';
+import testing from '../Assets/test.png';
+import maintenance from "../Assets/optimization.png";
 import { Link } from 'react-router-dom';
 
 const AnimatedText = ({ children }) => {
@@ -52,25 +52,25 @@ const WhoWeAre = () => {
         <div className='w-full lg:w-1/2 grid grid-cols-2 mt-16 lg:mt-0 gap-y-10 justify-center items-center font-custom 2xl:text-lg'>
           <AnimatedText>
             <div className='flex flex-col items-center'>
-              <img src={solution} alt='' className='object-cover w-20 h-auto' />
+              <img src={solution} alt='' className='object-cover w-10 h-auto' />
               <p className='mt-3 uppercase'>Solution</p>
             </div>
           </AnimatedText>
           <AnimatedText>
             <div className='flex flex-col items-center'>
-              <img src={developing} alt='' className='object-cover w-20 h-auto' />
+              <img src={developing} alt='' className='object-cover w-10 h-auto' />
               <p className='mt-3 uppercase'>Developing</p>
             </div>
           </AnimatedText>
           <AnimatedText>
             <div className='flex flex-col items-center'>
-              <img src={testing} alt='' className='object-cover w-20 h-auto' />
+              <img src={testing} alt='' className='object-cover w-10 h-auto' />
               <p className='mt-3 uppercase'>Testing</p>
             </div>
           </AnimatedText>
           <AnimatedText>
             <div className='flex flex-col items-center'>
-              <img src={maintenance} alt='' className='object-cover w-20 h-auto' />
+              <img src={maintenance} alt='' className='object-cover w-10 h-auto' />
               <p className='mt-3 uppercase'>Maintenance</p>
             </div>
           </AnimatedText>

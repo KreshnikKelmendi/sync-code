@@ -36,7 +36,7 @@ const SecondFrontView = () => {
           <div className='text-center'>
             <div className='text-5xl 2xl:text-6xl text-gray-500 opacity-40 mb-3'>01</div>
             <p className='font-extrabold 2xl:text-lg text-blue-500'>Consult your idea</p>
-            <p className='mt-3 2xl:text-lg'>Setting the direction with our web development consultants</p>
+            <p className='mt-3 2xl:text-lg text-gray-500'>Setting the direction with our web development consultants</p>
           </div>
         </AnimatedText>
         {/* Choose a Technology Step */}
@@ -44,7 +44,7 @@ const SecondFrontView = () => {
           <div className='text-center'>
             <div className='text-5xl 2xl:text-6xl text-gray-500 opacity-40 mb-3'>02</div>
             <p className='font-extrabold 2xl:text-lg text-blue-500'>Choose a Technology</p>
-            <p className='mt-3 2xl:text-lg'>
+            <p className='mt-3 2xl:text-lg text-gray-500'>
               Explore and select the most suitable technologies that align with your project goals.
             </p>
           </div>
@@ -54,7 +54,7 @@ const SecondFrontView = () => {
           <div className='text-center'>
             <div className='text-5xl 2xl:text-6xl text-gray-500 opacity-40 mb-3'>03</div>
             <p className='font-extrabold 2xl:text-lg text-blue-500'>Design</p>
-            <p className='mt-3 2xl:text-lg'>
+            <p className='mt-3 2xl:text-lg text-gray-500'>
               Craft a visually appealing and user-friendly design that enhances the user experience.
             </p>
           </div>
@@ -64,7 +64,7 @@ const SecondFrontView = () => {
           <div className='text-center'>
             <div className='text-5xl 2xl:text-6xl text-gray-500 opacity-40 mb-3'>04</div>
             <p className='font-extrabold 2xl:text-lg text-blue-500'>Develop</p>
-            <p className='mt-3 2xl:text-lg'>Developing your project with our skilled developers.</p>
+            <p className='mt-3 2xl:text-lg text-gray-500'>Developing your project with our skilled developers.</p>
           </div>
         </AnimatedText>
       </div>

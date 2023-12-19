@@ -6,7 +6,8 @@ import orientimiNeKarriere2 from "../Assets/mobileOrientimi.png"
 import flipgrc from "../Assets/flipGrc.png"
 import verve from "../Assets/verde.png"
 import verve2 from "../Assets/verveDecor.png"
-import gdpr from "../Assets/gdpr.png"
+import gdpr from "../Assets/gdpr.jpg"
+import gdpr2 from "../Assets/smartmockups_lqcuv410.jpg"
 
 const works = [{
     id:1,
@@ -41,7 +42,7 @@ const works = [{
     technologies:"Angular JS / Bootstrap / C# .NET / Sql Server",
     image: gdpr,
     jobImage1: gdpr,
-    jobImage2: "",
+    jobImage2: gdpr2,
     shortTitle: "General Data Protection Regulation (GDPR)",
     category: "Web Design & Web Development",
     clientExpectations: "A data controller determines the purposes and means of processing personal data. In other words, the data controller decides the how and why of a data processing operation.",
