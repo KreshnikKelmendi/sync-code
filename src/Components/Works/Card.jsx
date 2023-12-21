@@ -1,6 +1,6 @@
 import React from 'react'
 import { works } from '../data/works'
-import worldWide from "../Assets/global-communication.png"
+import worldWide from "../Assets/external-link.png"
 import youtube from "../Assets/youtube.png"
 import { Link } from 'react-router-dom'
 
@@ -21,26 +21,26 @@ const Card = () => {
               </div>
               <div className='mt-5 text-white'>
                 <p className='text-2xl font-semibold w-fit'>{work.workName}</p>
-                <p className='text-gray-600 mt-1'><span className='underline text-[11px]'>Technologies:</span> {work.technologies}</p>
-                <p className='text-base mt-2 text-gray-300'>{work.description}</p>
+                <p className='text-[#207ead] mt-1'><span className='text-[11px]'>Technologies:</span> {work.technologies}</p>
+                <p className='text-base mt-2 text-gray-500'>{work.description}</p>
                 <div className='flex gap-8 mt-2'>
                 {work.liveLink && (
-                  <div className='flex gap-x-1'>
-                    <img src={worldWide} alt="" className='w-5 h-5 mt-2' />
+                  <div className='flex gap-x-1 hover:text-white hover:scale-110'>
+                    <img src={worldWide} alt="" className='w-4 h-4 mt-3' />
                     <a
                       href={work.liveLink}
                       target='_blank'
                       rel='noopener noreferrer'
-                      className='text-blue-500 mt-2 hover:text-white hover:scale-110 inline-block'
+                      className='text-[#207ead] mt-2 inline-block hover:text-white'
                     >
                       Visit Live &rarr;
                     </a>
                   </div>
                 )}
                 {work.tutorialLink && (
-                  <div className='flex gap-x-1'>
+                  <div className='flex gap-x-1 hover:text-white hover:scale-110'>
                     <img src={youtube} alt='' className='w-5 h-5 mt-2'/>
-                    <a href={work.tutorialLink} target='_blank' rel='noopener noreferrer' className='text-blue-500 mt-2 hover:text-white hover:scale-110 inline-block' title='See the tutorial on YouTube'>Tutorial &rarr;</a>
+                    <a href={work.tutorialLink} target='_blank' rel='noopener noreferrer' className='text-[#207ead] mt-2 hover:text-white hover:scale-110 inline-block' title='See the tutorial on YouTube'>Tutorial &rarr;</a>
                 </div>
                 )}
                 </div>

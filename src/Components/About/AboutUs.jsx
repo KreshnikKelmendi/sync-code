@@ -2,10 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { InView } from 'react-intersection-observer';
 import phone from "../Assets/detailed-map-of-world-on-black-background-vector-4225773.jpg";
-import solution from '../Assets/optimization.png';
-import developing from '../Assets/code.png';
-import testing from '../Assets/test.png';
-import maintenance from "../Assets/solutionCoding.png";
+import solution from '../Assets/icon-planning.svg';
+import developing from '../Assets/icon-branding.svg';
+import testing from '../Assets/icon-implementation.svg';
+import maintenance from "../Assets/icon-documentation.svg";
 
 const AboutUs = () => {
   return (
@@ -35,7 +35,7 @@ const AboutUs = () => {
                 animate={inView ? { opacity: 1, y: 0 } : {}}
               >
                 <img src={solution} alt='' className='object-cover w-12 h-auto' />
-                <p className='mt-3 uppercase'>Solution</p>
+                <p className='mt-3 uppercase text-gray-500'>Solution</p>
               </motion.div>
             )}
           </InView>
@@ -48,7 +48,7 @@ const AboutUs = () => {
                 animate={inView ? { opacity: 1, y: 0 } : {}}
               >
                 <img src={developing} alt='' className='object-cover w-12 h-auto' />
-                <p className='mt-3 uppercase'>Developing</p>
+                <p className='mt-3 uppercase text-gray-500'>Developing</p>
               </motion.div>
             )}
           </InView>
@@ -61,7 +61,7 @@ const AboutUs = () => {
                 animate={inView ? { opacity: 1, y: 0 } : {}}
               >
                 <img src={testing} alt='' className='object-cover w-12 h-auto' />
-                <p className='mt-3 uppercase'>Testing</p>
+                <p className='mt-3 uppercase text-gray-500'>Testing</p>
               </motion.div>
             )}
           </InView>
@@ -74,7 +74,7 @@ const AboutUs = () => {
                 animate={inView ? { opacity: 1, y: 0 } : {}}
               >
                 <img src={maintenance} alt='' className='object-cover w-12 h-auto' />
-                <p className='mt-3 uppercase'>Maintenance</p>
+                <p className='mt-3 uppercase text-gray-500'>Maintenance</p>
               </motion.div>
             )}
           </InView>

@@ -58,7 +58,7 @@ const FirstFrontView = () => {
         >
           Listening to you, answering with{' '}
           <motion.b
-            className='text-blue-500 p-2 shadow shadow-gray-700'
+            className='text-[#207ead] p-2 shadow shadow-gray-700'
             initial={{ opacity: 0 }}
             animate={controls}
           >
@@ -75,7 +75,7 @@ const FirstFrontView = () => {
         </motion.p>
         <Link to="/about" onClick={() => window.scrollTo({ top: 0, left: 0 })}>
         <button
-          className='outline text-white mt-8 px-14 uppercase py-2 relative overflow-hidden transition-all duration-500 ease-in-out hover:bg-white hover:text-black hover:outline-none'
+          className='outline text-white mt-8 px-14 uppercase py-3 relative overflow-hidden transition-all duration-500 ease-in-out hover:bg-white hover:text-black hover:outline-none'
         >
           More about us
         </button>

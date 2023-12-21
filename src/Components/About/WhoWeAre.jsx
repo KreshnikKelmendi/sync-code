@@ -1,9 +1,9 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
-import solution from '../Assets/solutionCoding.png';
-import developing from '../Assets/code.png';
-import testing from '../Assets/test.png';
-import maintenance from "../Assets/optimization.png";
+import solution from '../Assets/icon-planning.svg';
+import developing from '../Assets/icon-branding.svg';
+import testing from '../Assets/icon-implementation.svg';
+import maintenance from "../Assets/icon-documentation.svg";
 import { Link } from 'react-router-dom';
 
 const AnimatedText = ({ children }) => {
@@ -27,13 +27,13 @@ const WhoWeAre = () => {
       <div className='flex justify-between px-4 lg:px-16 mt-4 lg:mt-10 font-custom'>
         <p className='text-4xl font-semibold uppercase 2xl:text-5xl'>Who we are</p>
         <Link to="/about" onClick={() => window.scrollTo({ top: 0, left: 0 })}>
-          <p to='/machine-learning' className='text-blue-500 2xl:text-lg hover:scale-110 hover:text-white'>Read more &rarr;</p>
+          <p className='text-[#207ead] 2xl:text-lg hover:scale-110 hover:text-white'>Read more &rarr;</p>
         </Link>
       </div>
       <div className='w-full flex flex-col lg:flex-row lg:px-16 py-6 font-custom px-4'>
         <div className='w-full lg:w-1/2'>
           <AnimatedText>
-            <p className='lg:mt-3 2xl:text-lg'>
+            <p className='lg:mt-3 2xl:text-lg text-gray-500'>
               <b>Sync-Code</b> is a software company based in Pristina, Kosovo. We
               develop innovative products as well as custom software solutions. We
               develop wide enterprise solutions by covering the entire development
@@ -49,7 +49,7 @@ const WhoWeAre = () => {
           </AnimatedText>
         </div>
 
-        <div className='w-full lg:w-1/2 grid grid-cols-2 mt-16 lg:mt-0 gap-y-10 justify-center items-center font-custom 2xl:text-lg'>
+        <div className='w-full text-gray-500 lg:w-1/2 grid grid-cols-2 mt-16 lg:mt-0 gap-y-10 justify-center items-center font-custom 2xl:text-lg'>
           <AnimatedText>
             <div className='flex flex-col items-center'>
               <img src={solution} alt='' className='object-cover w-10 h-auto' />
