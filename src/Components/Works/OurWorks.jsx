@@ -13,7 +13,7 @@ const OurWorks = () => {
                 className='text-[#207ead] 2xl:text-lg mt-1 hover:scale-110 hover:text-white'>See all &rarr;
           </Link>
         </div>
-           <p className='mt-6 text-gray-500'>Here are some of the public projects we have done lately. Feel free to check them out.</p>
+           <p className='mt-6 text-white'>Here are some of the public projects we have done lately. Feel free to check them out.</p>
         <Card />
       </div>
     </div>

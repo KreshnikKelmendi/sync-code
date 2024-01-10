@@ -12,7 +12,7 @@ const AboutUs = () => {
     <div className='w-full text-white py-4'>
       <div className='px-4 lg:px-16 lg:mt-10 font-custom'>
         <p className='text-4xl font-semibold uppercase 2xl:text-5xl'>About us</p>
-        <p className='mt-6 lg:mt-3 lg:py-6 2xl:text-lg text-gray-500'>
+        <p className='mt-6 lg:mt-3 lg:py-6 2xl:text-lg text-white'>
           <b>Sync-Code</b> is a software company based in Pristina, Kosovo. We
           develop innovative products as well as custom software solutions. We
           develop wide enterprise solutions by covering the entire development
@@ -35,7 +35,7 @@ const AboutUs = () => {
                 animate={inView ? { opacity: 1, y: 0 } : {}}
               >
                 <img src={solution} alt='' className='object-cover w-12 h-auto' />
-                <p className='mt-3 uppercase text-gray-500'>Solution</p>
+                <p className='mt-3 uppercase text-white'>Solution</p>
               </motion.div>
             )}
           </InView>
@@ -48,7 +48,7 @@ const AboutUs = () => {
                 animate={inView ? { opacity: 1, y: 0 } : {}}
               >
                 <img src={developing} alt='' className='object-cover w-12 h-auto' />
-                <p className='mt-3 uppercase text-gray-500'>Developing</p>
+                <p className='mt-3 uppercase text-white'>Developing</p>
               </motion.div>
             )}
           </InView>
@@ -61,7 +61,7 @@ const AboutUs = () => {
                 animate={inView ? { opacity: 1, y: 0 } : {}}
               >
                 <img src={testing} alt='' className='object-cover w-12 h-auto' />
-                <p className='mt-3 uppercase text-gray-500'>Testing</p>
+                <p className='mt-3 uppercase text-white'>Testing</p>
               </motion.div>
             )}
           </InView>
@@ -74,7 +74,7 @@ const AboutUs = () => {
                 animate={inView ? { opacity: 1, y: 0 } : {}}
               >
                 <img src={maintenance} alt='' className='object-cover w-12 h-auto' />
-                <p className='mt-3 uppercase text-gray-500'>Maintenance</p>
+                <p className='mt-3 uppercase text-white'>Maintenance</p>
               </motion.div>
             )}
           </InView>
@@ -98,7 +98,7 @@ const AboutUs = () => {
           <InView triggerOnce>
             {({ inView, ref }) => (
               <motion.p
-                className={`mt-6 lg:mt-9 2xl:text-lg text-gray-500 ${inView ? 'animate' : ''}`}
+                className={`mt-6 lg:mt-9 2xl:text-lg text-white ${inView ? 'animate' : ''}`}
                 ref={ref}
                 initial={{ opacity: 0, y: 20 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}

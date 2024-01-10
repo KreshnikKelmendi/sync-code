@@ -81,7 +81,7 @@ const WebServices = () => {
         animate={{ opacity: 1, y: 0 }}
       >
         <p className='text-2xl lg:text-4xl font-semibold text-[#207ead] uppercase 2xl:text-5xl'>Web development services</p>
-        <p className='py-6 text-gray-500'>
+        <p className='py-6 text-white'>
           Our web development services cover a spectrum of offerings,
           from creating websites and web apps to keeping things secure
           with cybersecurity solutions. We make your online experience
@@ -104,25 +104,25 @@ const WebServices = () => {
           <div className='text-center'>
             <img src={icon1} alt='Global Communication' className='w-8 h-8 object-cover mx-auto mb-2' />
             <p className='text-xl font-semibold mt-2 text-[#207ead]'>Websites</p>
-            <p className='mt-2 text-gray-500'>Elevate your brand presence and digital impact with the creation of a beautiful and powerful website. </p>
+            <p className='mt-2 text-white'>Elevate your brand presence and digital impact with the creation of a beautiful and powerful website. </p>
           </div>
 
           <div className='text-center'>
             <img src={icon2} alt='eCommerce' className='w-8 h-8 object-cover mx-auto mb-2' />
             <p className='text-xl font-semibold mt-2 text-[#207ead]'>eCommerce</p>
-            <p className='mt-2 text-gray-500'>With eCommerce, businesses thrive 24/7, reaching customers across time zones effortlessly.</p>
+            <p className='mt-2 text-white'>With eCommerce, businesses thrive 24/7, reaching customers across time zones effortlessly.</p>
           </div>
 
           <div className='text-center'>
             <img src={icon3} alt='Web Applications' className='w-8 h-8 object-cover mx-auto mb-2' />
             <p className='text-xl font-semibold mt-2 text-[#207ead]'>Web Applications</p>
-            <p className='mt-2 text-gray-500'>Web apps captivate a global audience, offering interactive experiences that effortlessly engage and retain user attention.</p>
+            <p className='mt-2 text-white'>Web apps captivate a global audience, offering interactive experiences that effortlessly engage and retain user attention.</p>
           </div>
 
           <div className='text-center'>
             <img src={icon4} alt='Content Management System' className='w-8 h-8 object-cover mx-auto mb-2' />
             <p className='text-xl font-semibold mt-2 text-[#207ead]'>Content Management System</p>
-            <p className='mt-2 text-gray-500'>CMS solutions, designed exclusively for your business, saving you valuable time and resources.</p>
+            <p className='mt-2 text-white'>CMS solutions, designed exclusively for your business, saving you valuable time and resources.</p>
           </div>
         </div>
         <hr />
@@ -135,11 +135,11 @@ const WebServices = () => {
         animate={{ opacity: 1, y: 0 }}
       >
         <p className='text-4xl font-semibold 2xl:text-5xl lg:text-center'>Maximize value through advanced <span className='text-[#207ead]'>Technologies</span></p>
-        <p className='lg:w-[70%] mt-6 text-center mx-auto text-gray-500'>Solve customer problems by choosing cutting-edge technologies for your tech stack. Take your business to the next level with the right solutions tailored to your own requirements.</p>
+        <p className='lg:w-[70%] mt-6 text-center mx-auto text-white'>Solve customer problems by choosing cutting-edge technologies for your tech stack. Take your business to the next level with the right solutions tailored to your own requirements.</p>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-8 gap-y-16 mt-16'>
           <div className='text-center'>
-            <img src={icon5} alt='Technology Icon' className='w-10 h-10 object-cover mx-auto mb-2' />
-            <p className='text-xl font-semibold mt-2'>Frontend Development</p>
+            {/* <img src={icon5} alt='Technology Icon' className='w-10 h-10 object-cover mx-auto mb-2' /> */}
+            <p className='text-xl font-semibold uppercase mt-2'>Frontend Development</p>
             <button className='text-gray-500 opacity-50'>
               Technologies we use <span className='text-[#207ead]'>&#9660;</span>
             </button>
@@ -151,9 +151,9 @@ const WebServices = () => {
           </div>
 
           <div className='text-center'>
-            <img src={icon6} alt='Technology Icon' className='w-10 h-10 object-cover mx-auto mb-2' />
-            <p className='text-xl font-semibold mt-2'>Backend Development</p>
-            <button className='text-gray-500 opacity-50'>
+            {/* <img src={icon6} alt='Technology Icon' className='w-10 h-10 object-cover mx-auto mb-2' /> */}
+            <p className='text-xl font-semibold mt-2 uppercase'>Backend Development</p>
+            <button className='text-white opacity-50'>
               Technologies we use <span className='text-[#207ead]'>&#9660;</span>
             </button>
             <div className="grid grid-cols-2 gap-4 mt-4 items-center justify-center">
@@ -164,9 +164,9 @@ const WebServices = () => {
           </div>
 
           <div className='text-center'>
-            <img src={icon7} alt='Technology Icon' className='w-10 h-10 object-cover mx-auto mb-2' />
-            <p className='text-xl font-semibold mt-2'>Databases</p>
-            <button className='text-gray-500 opacity-50'>
+            {/* <img src={icon7} alt='Technology Icon' className='w-10 h-10 object-cover mx-auto mb-2' /> */}
+            <p className='text-xl font-semibold mt-2 uppercase'>Databases</p>
+            <button className='text-white opacity-50'>
               Technologies we use <span className='text-[#207ead]'>&#9660;</span>
             </button>
             <div className="grid grid-cols-2 gap-4 mt-4 items-center justify-center">

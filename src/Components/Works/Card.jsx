@@ -22,7 +22,7 @@ const Card = () => {
               <div className='mt-5 text-white'>
                 <p className='text-2xl font-semibold w-fit'>{work.workName}</p>
                 <p className='text-[#207ead] mt-1'><span className='text-[11px]'>Technologies:</span> {work.technologies}</p>
-                <p className='text-base mt-2 text-gray-500'>{work.description}</p>
+                <p className='text-base mt-2 text-white'>{work.description}</p>
                 <div className='flex gap-8 mt-2'>
                 {work.liveLink && (
                   <div className='flex gap-x-1 hover:text-white hover:scale-110'>
