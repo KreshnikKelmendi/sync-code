@@ -34,7 +34,7 @@ const ServiceCard = ({ title, description, link, number }) => {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
       transition={{ duration: 0.6, delay: 0.2 }}
-      className="relative bg-white shadow-2xl shadow-[#207ead] h-full py-5 rounded-md overflow-hidden"
+      className="relative bg-white shadow-2xl shadow-[#207ead] h-full py-5 rounded-md"
     >
       <div className="absolute top-0 left-0 bg-[#207ead] text-white font-bold px-3 py-1">{number}</div>
       <div className="px-6 py-4">
