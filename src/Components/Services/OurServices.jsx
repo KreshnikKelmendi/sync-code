@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import smoothscroll from 'smoothscroll-polyfill';
 
 const ServiceCard = ({ title, description, link, number }) => {
   const { ref, inView } = useInView({
@@ -23,7 +24,8 @@ const ServiceCard = ({ title, description, link, number }) => {
   }, []);
 
   const handleClick = () => {
-    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    smoothscroll.polyfill();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
