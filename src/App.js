@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import WorkPage from './Pages/WorkPage';
 import AboutUsPage from './Pages/AboutUsPage';
 import SinglePageOfWork from './Pages/SinglePageOfWork';
+import ServicePage from './Pages/ServicePage';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/web-development" element={<WebServices />} />
             <Route path="/works" element={<WorkPage />} />
+            <Route path="/services" element={<ServicePage />} />
             <Route path="/works/:workID" element={<SinglePageOfWork />} />
             <Route path="/about" element={<AboutUsPage />} />
           </Routes>

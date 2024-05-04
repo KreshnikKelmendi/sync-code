@@ -61,7 +61,7 @@ const Header = () => {
             onMouseEnter={toggleServicesMenu}
             onMouseLeave={toggleServicesMenu}
           >
-            Services
+            <Link to="/services" onClick={() => window.scrollTo({ top: 0, left: 0 })}>Services</Link>
             <AnimatePresence>
               {isServicesMenuOpen && (
                 <motion.div
