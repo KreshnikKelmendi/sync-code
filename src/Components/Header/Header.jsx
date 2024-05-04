@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import syncCodeLogo from "../Assets/logo.png";
 import { Link } from 'react-router-dom';
@@ -8,6 +8,32 @@ import arrow from "../Assets/arrow.png"
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesMenuOpen, setIsServicesMenuOpen] = useState(false);
+
+  const [isFixed, setFixed] = useState(false);
+
+  useEffect(() => {
+    let prevScrollY = window.scrollY;
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > prevScrollY && isFixed) {
+        // Scrolling down and header is fixed
+        setFixed(false);
+      } else if (currentScrollY <= prevScrollY && !isFixed) {
+        // Scrolling up and header is not fixed
+        setFixed(true);
+      }
+
+      prevScrollY = currentScrollY;
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [isFixed]);
 
   const handleGetInTouch = () => {
     window.location.href = 'mailto:info@sync-code.com';
@@ -26,7 +52,9 @@ const Header = () => {
   };
 
   return (
-    <motion.div className="bg-black sticky top-0 z-50 border-b border-gray-900 p-3">
+    <motion.div className={`px-4 relative py-3 md:py-3 bg-black ${
+      isFixed ? 'sticky top-0 left-0 right-0 bg-black z-50' : ''
+    }`}>
       <div className="flex items-center justify-between 2xl:text-lg">
         <div className="items-center">
           <Link to="/" onClick={() => window.scrollTo({ top: 0, left: 0 })}>

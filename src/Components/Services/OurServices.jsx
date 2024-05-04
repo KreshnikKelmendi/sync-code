@@ -47,7 +47,7 @@ const ServiceCard = ({ title, description, link, number }) => {
           onClick={handleClick}
           className="text-[#207ead] hover:underline"
         >
-          Read more &rarr;
+          Learn more &rarr;
         </Link>
       </div>
     </motion.div>

@@ -21,7 +21,8 @@ const works = [{
     clientExpectations: "Clients expect the website to have an intuitive and user-friendly navigation structure. Information about academic programs, admissions, faculty, and campus life should be easily accessible.",
     partnershipResult: "The client expressed immense satisfaction with Sync-Code's work on the career platform. The meticulously developed web-based interfaces not only met but exceeded expectations, providing a highly effective and secure solution. The client's happiness is a testament to Sync-Code's commitment to delivering quality products that streamline processes, enhance user experiences, and contribute to the overall success of their initiatives. This positive feedback reinforces the strong partnership between Sync-Code and the client, highlighting the successful collaboration in achieving the desired outcomes.",
     description: "Orientim ne Karriere is a carrier orientation platform for Kosovar students. It helps students to find their recommended field of study based on their personality and skills then find out universities and colleges that are ready to accept students in that field. The platform also includes an admin panel for volunteers to add studying advice and post scholarship events. The platform is online since August 2017 and for more information, you can follow the link below.",
-    liveLink: "https://orientimnekarriere.com/"
+    liveLink: "https://orientimnekarriere.com/",
+    backgroundColor: '#FF5733' 
 },{
     id:2,
     workName: "Flip3 GRC",
