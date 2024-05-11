@@ -20,7 +20,7 @@ const AboutUs = () => {
             animate={{ opacity: 1 }}
             transition={{
               duration: 0.5,
-              delay: i / 12,
+              delay: i / 20,
             }}
             key={i}
           >

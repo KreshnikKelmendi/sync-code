@@ -33,7 +33,7 @@ const WhoWeAre = () => {
       <div className='w-full flex flex-col lg:flex-row lg:px-16 py-6 font-custom px-4'>
         <div className='w-full lg:w-1/2'>
           <AnimatedText>
-            <p className='lg:mt-3 2xl:text-lg text-white'>
+            <p className='lg:mt-3 2xl:text-xl text-white'>
               <b>Sync-Code</b> is a software company based in Pristina, Kosovo. We
               develop innovative products as well as custom software solutions. We
               develop wide enterprise solutions by covering the entire development
@@ -49,34 +49,34 @@ const WhoWeAre = () => {
           </AnimatedText>
         </div>
 
-        <div className='w-full text-white lg:w-1/2 grid grid-cols-2 mt-16 lg:mt-0 gap-y-10 justify-center items-center font-custom 2xl:text-lg'>
+        <div className='w-full text-white lg:w-1/2 grid grid-cols-2 mt-16 lg:mt-0 gap-y-10 justify-center items-center font-custom 2xl:text-xl'>
           <AnimatedText>
             <div className='flex flex-col items-center'>
-              <img src={solution} alt='' className='object-cover w-10 h-auto' />
+              <img src={solution} alt='' className='object-cover w-10 2xl:w-20 h-auto' />
               <p className='mt-3 uppercase'>Solution</p>
             </div>
           </AnimatedText>
           <AnimatedText>
             <div className='flex flex-col items-center'>
-              <img src={developing} alt='' className='object-cover w-10 h-auto' />
+              <img src={developing} alt='' className='object-cover w-10 2xl:w-20 h-auto' />
               <p className='mt-3 uppercase'>Developing</p>
             </div>
           </AnimatedText>
           <AnimatedText>
             <div className='flex flex-col items-center'>
-              <img src={testing} alt='' className='object-cover w-10 h-auto' />
+              <img src={testing} alt='' className='object-cover w-10 2xl:w-20 h-auto' />
               <p className='mt-3 uppercase'>Testing</p>
             </div>
           </AnimatedText>
           <AnimatedText>
             <div className='flex flex-col items-center'>
-              <img src={maintenance} alt='' className='object-cover w-10 h-auto' />
+              <img src={maintenance} alt='' className='object-cover w-10 2xl:w-20 h-auto' />
               <p className='mt-3 uppercase'>Maintenance</p>
             </div>
           </AnimatedText>
         </div>
       </div>
-      <div className='px-4 lg:px-16'>
+      <div className='px-4 lg:px-16 2xl:mt-10'>
         <hr />
       </div>
     </div>

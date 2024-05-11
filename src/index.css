@@ -22,3 +22,8 @@ body{
   background-color: white;
   color: black;
 }
+
+.active{
+  color: #207ead;
+  font-weight: bold;
+}

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import syncCodeLogo from "../Assets/logo.png";
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import menu from "../Assets/menu.png"
 import arrow from "../Assets/arrow.png"
 
@@ -52,7 +52,7 @@ const Header = () => {
   };
 
   return (
-    <motion.div className={`px-4 relative py-3 md:py-3 bg-black ${
+    <motion.div className={`relative px-8 py-3 md:py-3 bg-black 2xl:py-5 ${
       isFixed ? 'sticky top-0 left-0 right-0 bg-black z-50' : ''
     }`}>
       <div className="flex items-center justify-between 2xl:text-lg">
@@ -67,13 +67,13 @@ const Header = () => {
           transition={{ duration: 0.5 }}
           className="lg:flex hidden items-center space-x-4 font-custom"
         >
-          <ul className="flex space-x-9 text-white">
+          <ul className="flex space-x-9 text-white uppercase">
             <motion.li
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.1 }}
             >
-              <Link to="/" onClick={() => window.scrollTo({ top: 0, left: 0 })}>Home</Link>
+              <NavLink to="/" onClick={() => window.scrollTo({ top: 0, left: 0 })}>Home</NavLink>
             </motion.li>
             <motion.li
               initial={{ opacity: 0, y: 20 }}
