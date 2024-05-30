@@ -1,6 +1,7 @@
+
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import syncCodeLogo from "../Assets/logo.png";
+import syncCodeLogo from "../Assets/synccode_2024.png";
 import { Link, NavLink } from 'react-router-dom';
 import menu from "../Assets/menu.png"
 import arrow from "../Assets/arrow.png"
@@ -52,13 +53,13 @@ const Header = () => {
   };
 
   return (
-    <motion.div className={`relative px-4 lg:px-8 py-3 md:py-3 bg-black 2xl:py-5 ${
+    <motion.div className={`relative px-4 lg:px-10 py-3 md:py-3 shadow-2xl shadow-gray-900 border-b-gray-600 bg-black 2xl:py-5 ${
       isFixed ? 'sticky top-0 left-0 right-0 bg-black z-50' : ''
     }`}>
       <div className="flex items-center justify-between 2xl:text-lg">
         <div className="items-center">
           <Link to="/" onClick={() => window.scrollTo({ top: 0, left: 0 })}>
-            <img src={syncCodeLogo} alt="Company Logo" className="object-cover ml-[-15px] lg:ml-0 lg:w-56 h-16" />
+            <img src={syncCodeLogo} alt="Company Logo" className="object-cover lg:ml-0 w-44 lg:w-44 h-16" />
           </Link>
         </div>
         <motion.div
@@ -67,7 +68,7 @@ const Header = () => {
           transition={{ duration: 0.5 }}
           className="lg:flex hidden items-center space-x-4 font-custom"
         >
-          <ul className="flex space-x-9 text-white uppercase">
+          <ul className="flex space-x-10 text-white font-semibold">
             <motion.li
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -124,7 +125,7 @@ const Header = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.4 }}
             >
-              <Link to="/works" onClick={() => window.scrollTo({ top: 0, left: 0 })}>Works</Link>
+              <Link to="/works" onClick={() => window.scrollTo({ top: 0, left: 0 })}>Case Studies</Link>
             </motion.li>
             <motion.li
               initial={{ opacity: 0, y: 20 }}
@@ -135,19 +136,17 @@ const Header = () => {
             </motion.li>
           </ul>
         </motion.div>
-        <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1, delay: 0.4 }}
-      className="text-right mr-5 hidden lg:block"
-    >
-      <button
-        className="outline text-white px-8 py-2 font-custom hover:bg-white hover:text-black hover:outline-none"
-        onClick={handleGetInTouch}
-      >
-        Get in Touch
-      </button>
-    </motion.div>
+        <div className="hidden lg:flex items-center mr-5">
+        <motion.button
+          className="text-black uppercase rounded-md bg-gradient-to-r from-[#207ead] to-[#00ffc3] px-6 py-2 font-custom font-extrabold"
+          initial={{ opacity: 0, x: -40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          onClick={handleGetInTouch}
+        >
+          Get Started
+        </motion.button>
+                </div>
         <div className="lg:hidden">
           <button onClick={toggleMenu} className="text-white focus:outline-none mr-3 focus:text-white">
             {isMenuOpen ? (
@@ -221,17 +220,18 @@ const Header = () => {
         <motion.li>
           <Link onClick={() => { window.scrollTo({ top: 0, left: 0 }); closeMobileMenu(); }}>Contact</Link>
         </motion.li>
+        
       </motion.ul>
 
       <div className="text-center">
         <motion.button
-          className="bg-white text-black mt-20 px-16 py-2 font-custom"
+          className="text-black uppercase rounded-md bg-gradient-to-r from-[#207ead] to-[#00ffc3] px-16 py-2 font-custom font-extrabold"
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
           onClick={handleGetInTouch}
         >
-          Get in Touch
+          Get Started
         </motion.button>
       </div>
     </motion.div>

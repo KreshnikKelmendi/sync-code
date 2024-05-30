@@ -34,12 +34,12 @@ const ServiceCard = ({ title, description, link, number }) => {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
       transition={{ duration: 0.6, delay: 0.2 }}
-      className="relative bg-white shadow-2xl shadow-[#207ead] h-full 2xl:h-96 2xl:justify-center 2xl:items-center 2xl:grid py-5 rounded-md"
+      className="relative text-white border border-white h-full 2xl:h-96 2xl:justify-center 2xl:items-center 2xl:grid py-5 rounded-md"
     >
-      <div className="absolute top-0 left-0 bg-[#207ead] text-white font-bold px-3 py-1 2xl:text-xl">{number}</div>
+      <div className="absolute top-0 left-0 bg-[#207ead] rounded-md text-white font-bold px-3 py-1 2xl:text-xl">{number}</div>
       <div className="px-6 py-4">
-        <div className="font-bold text-2xl font-custom mb-2">{title}</div>
-        <p className="text-base 2xl:text-xl 2xl:mt-6 font-custom">{description}</p>
+        <div className="font-bold text-2xl font-custom mb-2 text-[#207ead]">{title}</div>
+        <p className="text-base 2xl:text-xl 2xl:mt-6 font-custom hover:text-[#207ead] hover:duration-700 ease-linear">{description}</p>
       </div>
       <div className="px-6 pt-4 pb-2 text-left">
         <Link
@@ -57,7 +57,7 @@ const ServiceCard = ({ title, description, link, number }) => {
 const OurServices = () => {
   return (
     <div className='text-black py-4'>
-      <div className='px-4 lg:px-16 lg:mt-20 2xl:mt-28 mt-16 font-custom'>
+      <div className='px-4 lg:px-12 lg:mt-20 2xl:mt-28 mt-16 font-custom'>
         <p className='text-3xl lg:text-4xl 2xl:text-5xl font-semibold uppercase text-white'>WHAT WE DO</p>
         <div className='mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-4'>
           <div className='mb-4'>
@@ -87,7 +87,7 @@ const OurServices = () => {
           <div className='mb-4'>
             <ServiceCard
               title="UI & UX Design"
-              description="Our designers are passionate about pushing the boundaries of creativity. We stay updated with the latest design trends and technologies to ensure your website not only meets but exceeds industry standards."
+              description="Our designers are passionate about pushing the boundaries of creativity. We stay updated with the latest design trends and technologies to ensure your project not only meets but exceeds industry standards."
               link='/ui-ux-design'
               number="04"
             />

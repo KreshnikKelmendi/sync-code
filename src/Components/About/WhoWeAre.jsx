@@ -24,16 +24,16 @@ const AnimatedText = ({ children }) => {
 const WhoWeAre = () => {
   return (
     <div className='w-full text-white py-4'>
-      <div className='flex justify-between px-4 lg:px-16 mt-4 lg:mt-10 font-custom'>
+      <div className='flex justify-between px-4 lg:px-12 mt-4 lg:mt-10 font-custom'>
         <p className='text-4xl font-semibold uppercase 2xl:text-5xl'>Who we are</p>
         <Link to="/about" onClick={() => window.scrollTo({ top: 0, left: 0 })}>
           <p className='text-[#207ead] 2xl:text-lg hover:scale-110 hover:text-white'>Read more &rarr;</p>
         </Link>
       </div>
-      <div className='w-full flex flex-col lg:flex-row lg:px-16 py-6 font-custom px-4'>
+      <div className='w-full flex flex-col lg:flex-row lg:px-12 py-6 font-custom px-4'>
         <div className='w-full lg:w-1/2'>
           <AnimatedText>
-            <p className='lg:mt-3 2xl:text-xl text-white'>
+            <p className='lg:mt-3 text-lg text-justify tracking-tight 2xl:text-xl text-white'>
               <b>Sync-Code</b> is a software company based in Pristina, Kosovo. We
               develop innovative products as well as custom software solutions. We
               develop wide enterprise solutions by covering the entire development
@@ -76,7 +76,7 @@ const WhoWeAre = () => {
           </AnimatedText>
         </div>
       </div>
-      <div className='px-4 lg:px-16 2xl:mt-10'>
+      <div className='px-4 lg:px-12 2xl:mt-10'>
         <hr />
       </div>
     </div>

@@ -10,7 +10,7 @@ const AboutUs = () => {
   );
   return (
     <div className='flex flex-col lg:flex-row w-full items-center bg-white text-black py-4'>
-      <div className='lg:w-1/2 justify-center items-center px-4 lg:px-8 lg:mt-10 font-custom'>
+      <div className='lg:w-1/2 justify-center items-center px-4 lg:px-12 lg:mt-10 font-custom'>
         <p className='flex text-4xl font-semibold 2xl:text-5xl gap-x-3'><img src={hand} className='object-cover w-11 h-11 animate-pulse' alt='' />nice to meet you</p>
         <motion.div className="w-full mt-7 text-lg text-justify font-custom tracking-tighter">
         {text.map((el, i) => (

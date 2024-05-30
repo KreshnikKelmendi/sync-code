@@ -9,7 +9,7 @@ const WorkPage = () => {
   return (
     <div className='w-full text-white py-4'>
         <div
-        className='px-4 lg:px-16 mt-4 lg:mt-10 font-custom'
+        className='px-4 lg:px-12 mt-4 lg:mt-10 font-custom'
         >
         <p className='text-3xl lg:text-4xl font-semibold uppercase 2xl:text-5xl'>OUR WORKS</p>
         <p className='py-6 text-white lg:w-[50%]'>

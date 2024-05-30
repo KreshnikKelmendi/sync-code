@@ -18,6 +18,12 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
 }
+.bg-serviceWallpaper{
+  background-image: url(./Components/Assets/10881763.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .active-link{
   background-color: white;
   color: black;

@@ -76,7 +76,7 @@ const WebServices = () => {
   return (
     <div className='w-full text-white py-4'>
       <motion.div
-        className='px-4 lg:px-16 mt-4 lg:mt-10 font-custom'
+        className='px-4 lg:px-12 mt-4 lg:mt-10 font-custom'
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
@@ -94,7 +94,7 @@ const WebServices = () => {
 
       {/* Web Development Solutions Section */}
       <motion.div
-        className='px-4 lg:px-16 mt-16 font-custom'
+        className='px-4 lg:px-12 mt-16 font-custom'
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
@@ -130,7 +130,7 @@ const WebServices = () => {
 
       {/* Technologies Section */}
       <motion.div
-        className='px-4 lg:px-16 mt-16 font-custom'
+        className='px-4 lg:px-12 mt-16 font-custom'
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
