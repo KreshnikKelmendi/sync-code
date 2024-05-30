@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import AboutUs from '../Components/About/AboutUs'
+import WhoWeAre from '../Components/About/WhoWeAre';
 
 const AboutUsPage = () => {
 
@@ -8,7 +9,10 @@ const AboutUsPage = () => {
   }, []);
 
   return (
+    <>
+    <WhoWeAre />
     <AboutUs />
+    </>
   )
 }
 

@@ -24,14 +24,11 @@ const AnimatedText = ({ children }) => {
 const WhoWeAre = () => {
   return (
     <div className='w-full text-white py-4'>
-      <div className='flex justify-between px-4 lg:px-12 mt-4 lg:mt-10 font-custom'>
+      <div className='flex justify-between px-5 lg:px-12 mt-4 lg:mt-10 font-custom'>
         <p className='text-4xl font-semibold uppercase 2xl:text-5xl'>Who we are</p>
-        <Link to="/about" onClick={() => window.scrollTo({ top: 0, left: 0 })}>
-          <p className='text-[#207ead] 2xl:text-lg hover:scale-110 hover:text-white'>Read more &rarr;</p>
-        </Link>
       </div>
       <div className='w-full flex flex-col lg:flex-row lg:px-12 py-6 font-custom px-4'>
-        <div className='w-full lg:w-1/2'>
+        <div className='w-full'>
           <AnimatedText>
             <p className='lg:mt-3 text-lg text-justify tracking-tight 2xl:text-xl text-white'>
               <b>Sync-Code</b> is a software company based in Pristina, Kosovo. We
@@ -49,7 +46,7 @@ const WhoWeAre = () => {
           </AnimatedText>
         </div>
 
-        <div className='w-full text-white lg:w-1/2 grid grid-cols-2 mt-16 lg:mt-0 gap-y-10 justify-center items-center font-custom 2xl:text-xl'>
+        {/* <div className='w-full text-white lg:w-1/2 grid grid-cols-2 mt-16 lg:mt-0 gap-y-10 justify-center items-center font-custom 2xl:text-xl'>
           <AnimatedText>
             <div className='flex flex-col items-center'>
               <img src={solution} alt='' className='object-cover w-10 2xl:w-20 h-auto' />
@@ -74,10 +71,7 @@ const WhoWeAre = () => {
               <p className='mt-3 uppercase'>Maintenance</p>
             </div>
           </AnimatedText>
-        </div>
-      </div>
-      <div className='px-4 lg:px-12 2xl:mt-10'>
-        <hr />
+        </div> */}
       </div>
     </div>
   );

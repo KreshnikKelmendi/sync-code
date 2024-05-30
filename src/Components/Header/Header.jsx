@@ -95,12 +95,26 @@ const Header = () => {
             >
               <Link to="/works" onClick={() => window.scrollTo({ top: 0, left: 0 })}>Work</Link>
             </motion.li>
+            <motion.li
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.4 }}
+            >
+              <Link to="/works" onClick={() => window.scrollTo({ top: 0, left: 0 })}>Technologies</Link>
+            </motion.li>
+            <motion.li
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.4 }}
+            >
+              <Link to="/works" onClick={() => window.scrollTo({ top: 0, left: 0 })}>Company News</Link>
+            </motion.li>
           </ul>
         </motion.div>
         <div className="hidden lg:flex items-center mr-5">
         <Link to="/get-in-touch" onClick={() => window.scrollTo({ top: 0, left: 0 })}>
         <motion.button
-          className="text-black uppercase rounded-md bg-gradient-to-r from-[#207ead] to-[#00ffc3] px-6 py-2 font-custom font-extrabold hover:animate-pulse"
+          className="text-white uppercase rounded-md bg-gradient-to-r from-[#207ead] to-[#00ffc3] px-6 py-2 font-custom font-extrabold hover:animate-pulse"
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
@@ -124,9 +138,9 @@ const Header = () => {
       <AnimatePresence>
   {isMenuOpen && (
     <motion.div
-      initial={{ opacity: 0, height: '65vh', y: -20 }}
-      animate={{ opacity: 1, height: '65vh', y: 0 }}
-      exit={{ opacity: 0, height: '65vh', y: -20 }}
+      initial={{ opacity: 0, height: '60vh', y: -20 }}
+      animate={{ opacity: 1, height: '60vh', y: 0 }}
+      exit={{ opacity: 0, height: '60vh', y: -20 }}
       className="lg:hidden px-6 py-8 flex flex-col absolute top-20 left-0 right-0 z-50 bg-black"
     >
       <motion.ul
@@ -156,6 +170,14 @@ const Header = () => {
 
         <motion.li>
           <Link to="/works" onClick={() => { window.scrollTo({ top: 0, left: 0 }); closeMobileMenu(); }}>Work</Link>
+        </motion.li>
+
+        <motion.li>
+          <Link to="/works" onClick={() => { window.scrollTo({ top: 0, left: 0 }); closeMobileMenu(); }}>Technologies</Link>
+        </motion.li>
+
+        <motion.li>
+          <Link to="/works" onClick={() => { window.scrollTo({ top: 0, left: 0 }); closeMobileMenu(); }}>Company News</Link>
         </motion.li>
       </motion.ul>
 

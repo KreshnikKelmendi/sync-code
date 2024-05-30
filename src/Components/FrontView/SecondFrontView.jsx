@@ -17,19 +17,19 @@ const AnimatedText = ({ children }) => {
 const SecondFrontView = () => {
   return (
     <div className='text-white px-4 lg:px-12 mt-4 lg:mt-10 2xl:mt-20 font-custom'>
-      <p className='text-3xl 2xl:text-4xl'>
+      {/* <p className='text-3xl 2xl:text-4xl'>
         <AnimatedText>Benefit from our reliable development process</AnimatedText>{' '}
         <b className='text-[#207ead]'>
            <AnimatedText>for a successful project.</AnimatedText>
         </b>
-      </p>
-      <p className='mt-6 2xl:text-xl text-white'>
+      </p> */}
+      {/* <p className='mt-6 2xl:text-xl text-white'>
         <AnimatedText>
           We recognize that the most complex projects demand that our development team pay
           attention to every detail in the process of creating solutions. At Sync-Code, we know
           what it takes to execute a seamless and optimized development process.
         </AnimatedText>
-      </p>
+      </p> */}
       <div className='grid grid-cols-2 lg:grid-cols-4 gap-6 mt-16 2xl:mt-20 font-custom'>
         {/* Idea Step */}
         <AnimatedText>
