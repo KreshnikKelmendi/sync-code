@@ -124,9 +124,9 @@ const Header = () => {
       <AnimatePresence>
   {isMenuOpen && (
     <motion.div
-      initial={{ opacity: 0, height: '45vh', y: -20 }}
-      animate={{ opacity: 1, height: '45vh', y: 0 }}
-      exit={{ opacity: 0, height: '50vh', y: -20 }}
+      initial={{ opacity: 0, height: '65vh', y: -20 }}
+      animate={{ opacity: 1, height: '65vh', y: 0 }}
+      exit={{ opacity: 0, height: '65vh', y: -20 }}
       className="lg:hidden px-6 py-8 flex flex-col absolute top-20 left-0 right-0 z-50 bg-black"
     >
       <motion.ul
@@ -160,14 +160,16 @@ const Header = () => {
       </motion.ul>
 
       <div className="text-center">
+      <Link onClick={() => { window.scrollTo({ top: 0, left: 0 }); closeMobileMenu(); }} to="/get-in-touch">
         <motion.button
           className="text-black uppercase rounded-md mt-28 bg-gradient-to-r from-[#207ead] to-[#00ffc3] w-full py-2 font-custom font-extrabold"
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          <Link onClick={() => { window.scrollTo({ top: 0, left: 0 }); closeMobileMenu(); }} to="/get-in-touch">Get Started</Link>
+         Get Started
         </motion.button>
+        </Link>
       </div>
     </motion.div>
   )}
