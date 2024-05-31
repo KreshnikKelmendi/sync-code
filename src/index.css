@@ -33,3 +33,16 @@ body{
   color: #207ead;
   font-weight: bold;
 }
+
+@media (min-width: 1024px) {
+  .firstServiceImage {
+    -webkit-mask-image: linear-gradient(to left, transparent 10%, black 100%);
+    mask-image: linear-gradient(to left, transparent 10%, black 100%);
+  }
+
+  .secondServiceImage{
+    -webkit-mask-image: linear-gradient(to right, transparent 10%, black 100%);
+    mask-image: linear-gradient(to right, transparent 10%, black 100%);
+  }
+}
+

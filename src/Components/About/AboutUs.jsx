@@ -1,41 +1,53 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import hand from "../Assets/high-five.png"
-import mockup from "../Assets/mockup2024.jpg"
+import React, { useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
+import hand from "../Assets/high-five.png";
+import mockup from "../Assets/mockup2024.jpg";
+import logoAnimation from "../Assets/logoAnimationSyncCode.mp4";
 
 const AboutUs = () => {
-  const text =
-  'We are Sync-Code, a software company based in Pristina, Kosovo. We develop innovative products as well as custom software solutions. We develop wide enterprise solutions by covering the entire development process and also cooperate with companies who want to outsource their projects. Our team has proven to experience outsourcing projects from the EU and the US. Empowering businesses and individuals lies at the core of our mission. Through robust and scalable software solutions, we aim to redefine the way you operate, connect, and succeed in the digital age.'.split(
-    ' '
-  );
+  const text = 'Our goal is to craft technology that is both beautiful and innovative.'.split(' ');
+
   return (
-    <div className='flex flex-col lg:flex-row w-full items-center bg-white text-black py-4'>
-      <div className='lg:w-1/2 justify-center items-center px-4 lg:px-12 lg:mt-10 font-custom'>
-        <p className='flex text-4xl font-semibold 2xl:text-5xl gap-x-3'><img src={hand} className='object-cover w-11 h-11 animate-pulse' alt='' />nice to meet you</p>
-        <motion.div className="w-full mt-7 text-lg text-justify font-custom tracking-tighter">
-        {text.map((el, i) => (
-          <motion.span
-            className='mt-4 lg:mt-5 w-full text-black '
-            initial={{ opacity: 0.1 }}
-            animate={{ opacity: 1 }}
-            transition={{
-              duration: 0.5,
-              delay: i / 20,
-            }}
-            key={i}
-          >
-            {el}{" "}
-          </motion.span>
-        ))}
-      </motion.div>
-       
+    <div className='flex flex-col px-4 lg:px-12 lg:flex-row w-full items-center bg-black text-blawhiteck'>
+      <div className='lg:w-[70%] justify-center items-center font-custom'>
+        <p className='flex text-4xl font-semibold 2xl:text-5xl gap-x-3'>
+          <img src={hand} className='object-cover w-11 h-11 animate-pulse' alt='' />
+          nice to meet you
+        </p>
+        <InViewText text={text} />
       </div>
-<div className='lg:w-1/2'>
-  <img src={mockup} alt='' className='object-cover' />
-</div>
-  
+      <div className='lg:w-[30%] lg:mt-8'>
+        <video src={logoAnimation} playsInline loop autoPlay muted />
+      </div>
     </div>
   );
-}
+};
+
+const InViewText = ({ text }) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  return (
+    <motion.div
+      ref={ref}
+      className='w-full text-center lg:text-left text-4xl leading-[70px] lg:leading-[80px] lg:mt-7 lg:text-6xl uppercase font-custom'
+    >
+      {text.map((el, i) => (
+        <motion.span
+          className='lg:mt-5 w-full text-white font-extrabold'
+          initial={{ opacity: 0.1 }}
+          animate={{ opacity: isInView ? 1 : 0.1 }}
+          transition={{
+            duration: 2,
+            delay: i / 10,
+          }}
+          key={i}
+        >
+          {el}{" "}
+        </motion.span>
+      ))}
+    </motion.div>
+  );
+};
 
 export default AboutUs;

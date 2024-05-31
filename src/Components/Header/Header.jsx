@@ -36,10 +36,6 @@ const Header = () => {
     };
   }, [isFixed]);
 
-  const handleGetInTouch = () => {
-    window.location.href = 'mailto:info@sync-code.com';
-  };
-
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -81,7 +77,7 @@ const Header = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.2 }}
             >
-               <Link to="/about" onClick={() => window.scrollTo({ top: 0, left: 0 })}>About</Link>
+               <NavLink to="/about" onClick={() => window.scrollTo({ top: 0, left: 0 })}>About</NavLink>
             </motion.li>
             <motion.li
             initial={{ opacity: 0, y: 20 }}
@@ -90,62 +86,28 @@ const Header = () => {
             onMouseEnter={toggleServicesMenu}
             onMouseLeave={toggleServicesMenu}
           >
-            <Link to="/services" onClick={() => window.scrollTo({ top: 0, left: 0 })}>Services</Link>
-            <AnimatePresence>
-              {isServicesMenuOpen && (
-                <motion.div
-                  initial={{ opacity: 0, y: -10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -10 }}
-                  className="absolute mt-2 bg-gray-800 p-4 rounded-lg"
-                >
-                  <ul className="space-y-2">
-                    <li
-                      className="cursor-pointer text-white hover:text-red-500"
-                    >
-                      <Link to="/web-development" onClick={() => window.scrollTo({ top: 0, left: 0 })}>Web Development</Link>
-                    </li>
-                    <li
-                      className="cursor-pointer text-white hover:text-red-500"
-                    >
-                      Machine Learning & Analytics
-                    </li>
-                    <li
-                      className="cursor-pointer text-white hover:text-red-500"
-                    >
-                      Mobile Development
-                    </li>
-                  </ul>
-                </motion.div>
-              )}
-            </AnimatePresence>
+            <NavLink to="/services" onClick={() => window.scrollTo({ top: 0, left: 0 })}>Services</NavLink>
           </motion.li>
             <motion.li
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.4 }}
             >
-              <Link to="/works" onClick={() => window.scrollTo({ top: 0, left: 0 })}>Case Studies</Link>
-            </motion.li>
-            <motion.li
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.4 }}
-            >
-              Contact
+              <Link to="/works" onClick={() => window.scrollTo({ top: 0, left: 0 })}>Work</Link>
             </motion.li>
           </ul>
         </motion.div>
         <div className="hidden lg:flex items-center mr-5">
+        <Link to="/get-in-touch" onClick={() => window.scrollTo({ top: 0, left: 0 })}>
         <motion.button
-          className="text-black uppercase rounded-md bg-gradient-to-r from-[#207ead] to-[#00ffc3] px-6 py-2 font-custom font-extrabold"
+          className="text-black uppercase rounded-md bg-gradient-to-r from-[#207ead] to-[#00ffc3] px-6 py-2 font-custom font-extrabold hover:animate-pulse"
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          onClick={handleGetInTouch}
         >
           Get Started
         </motion.button>
+        </Link>
                 </div>
         <div className="lg:hidden">
           <button onClick={toggleMenu} className="text-white focus:outline-none mr-3 focus:text-white">
@@ -187,51 +149,24 @@ const Header = () => {
           onMouseEnter={toggleServicesMenu}
           onMouseLeave={toggleServicesMenu}
         >
-          <span className="lg:hidden cursor-pointer text-white" onClick={toggleServicesMenu}>
-            Services <span className="inline-block ml-1">&#9662;</span>
-          </span>
-          <AnimatePresence>
-            {isServicesMenuOpen && (
-              <motion.div
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -10 }}
-                className="absolute mt-2 bg-gray-800 p-4 rounded-lg"
-              >
-                <ul className="space-y-2">
-                  <li className="cursor-pointer text-white hover:text-red-500">
-                    <Link to="/web-development" onClick={() => { window.scrollTo({ top: 0, left: 0 }); closeMobileMenu(); }}>Web Development</Link>
-                  </li>
-                  <li className="cursor-pointer text-white hover:text-red-500">
-                    Machine Learning & Analytics
-                  </li>
-                  <li className="cursor-pointer text-white hover:text-red-500">
-                    Mobile Development
-                  </li>
-                </ul>
-              </motion.div>
-            )}
-          </AnimatePresence>
+          <NavLink to="/services" className="lg:hidden cursor-pointer text-white" onClick={() => { window.scrollTo({ top: 0, left: 0 }); closeMobileMenu(); }}>
+            Services
+          </NavLink>
         </motion.li>
 
         <motion.li>
-          <Link to="/works" onClick={() => { window.scrollTo({ top: 0, left: 0 }); closeMobileMenu(); }}>Works</Link>
+          <Link to="/works" onClick={() => { window.scrollTo({ top: 0, left: 0 }); closeMobileMenu(); }}>Work</Link>
         </motion.li>
-        <motion.li>
-          <Link onClick={() => { window.scrollTo({ top: 0, left: 0 }); closeMobileMenu(); }}>Contact</Link>
-        </motion.li>
-        
       </motion.ul>
 
       <div className="text-center">
         <motion.button
-          className="text-black uppercase rounded-md bg-gradient-to-r from-[#207ead] to-[#00ffc3] px-16 py-2 font-custom font-extrabold"
+          className="text-black uppercase rounded-md mt-28 bg-gradient-to-r from-[#207ead] to-[#00ffc3] w-full py-2 font-custom font-extrabold"
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          onClick={handleGetInTouch}
         >
-          Get Started
+          <Link onClick={() => { window.scrollTo({ top: 0, left: 0 }); closeMobileMenu(); }} to="/get-in-touch">Get Started</Link>
         </motion.button>
       </div>
     </motion.div>
