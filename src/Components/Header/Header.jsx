@@ -133,7 +133,7 @@ const Header = () => {
         initial={{ opacity: 0, x: -40 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5, delay: 0.1 }}
-        className="flex flex-col space-y-4 uppercase text-white w-full font-custom"
+        className="flex flex-col space-y-4 text-2xl uppercase text-white w-full font-custom"
       >
         <motion.li className='w-full'>
           <Link to="/" onClick={() => { window.scrollTo({ top: 0, left: 0 }); closeMobileMenu(); }}>Home</Link>

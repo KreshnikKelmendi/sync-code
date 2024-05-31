@@ -17,7 +17,7 @@ const AboutUs = () => {
         <InViewText text={text} />
       </div>
       <div className='lg:w-[30%] lg:mt-8'>
-        <video src={logoAnimation} playsInline loop autoPlay muted />
+        <video src={logoAnimation} playsInline loop autoPlay muted preload="metadata" />
       </div>
     </div>
   );
