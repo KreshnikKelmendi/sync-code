@@ -1,8 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import hand from "../Assets/high-five.png";
-import mockup from "../Assets/mockup2024.jpg";
-import logoAnimation from "../Assets/logoAnimationSyncCode.mp4";
+import logoAnimation from "../Assets/SYNC (1).mp4";
 
 const AboutUs = () => {
   const text = 'Our goal is to craft technology that is both beautiful and innovative.'.split(' ');
@@ -10,14 +8,10 @@ const AboutUs = () => {
   return (
     <div className='flex flex-col px-4 lg:px-12 lg:flex-row w-full items-center bg-black text-blawhiteck'>
       <div className='lg:w-[70%] justify-center items-center font-custom'>
-        <p className='flex text-4xl font-semibold 2xl:text-5xl gap-x-3'>
-          <img src={hand} className='object-cover w-11 h-11 animate-pulse' alt='' />
-          nice to meet you
-        </p>
         <InViewText text={text} />
       </div>
-      <div className='lg:w-[30%] lg:mt-8'>
-        <video src={logoAnimation} playsInline loop autoPlay muted preload="metadata" />
+      <div className='lg:w-[30%] '>
+        <video className='w-full' src={logoAnimation} playsInline loop autoPlay muted preload="metadata" />
       </div>
     </div>
   );
@@ -30,7 +24,7 @@ const InViewText = ({ text }) => {
   return (
     <motion.div
       ref={ref}
-      className='w-full text-center lg:text-left text-4xl leading-[70px] lg:leading-[80px] lg:mt-7 lg:text-6xl uppercase font-custom'
+      className='w-full text-center lg:text-left text-4xl leading-[70px] lg:leading-[80px] lg:mt-7 lg:text-6xl 2xl:text-[115px] 2xl:leading-[120px] uppercase font-custom'
     >
       {text.map((el, i) => (
         <motion.span

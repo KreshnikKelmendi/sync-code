@@ -1,9 +1,5 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
-import solution from '../Assets/icon-planning.svg';
-import developing from '../Assets/icon-branding.svg';
-import testing from '../Assets/icon-implementation.svg';
-import maintenance from "../Assets/icon-documentation.svg";
 import { Link } from 'react-router-dom';
 
 const AnimatedText = ({ children }) => {

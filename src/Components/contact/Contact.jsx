@@ -2,10 +2,10 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div class="grid px-6 lg:px-0 md:grid-cols-2 items-center lg:grid-cols-3 max-w-6xl mx-auto py-6 bg-black font-custom">
+    <div class="grid px-6 lg:px-12 md:grid-cols-2 items-center lg:grid-cols-3 mx-auto py-6 bg-black font-custom">
             <div>
-                <h2 class="text-white text-xl font-semibold">Contact Information</h2>
-                <div class="space-y-10 mt-8">
+                <h2 class="text-white text-2xl font-semibold">Contact Information</h2>
+                <div class="space-y-10 mt-8 font-custom">
                     <div class="flex">
                         <div class="w-8 h-8 flex items-center shrink-0 rounded border p-1.5">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-full" viewBox="0 0 32 32">
@@ -14,9 +14,9 @@ const Contact = () => {
                             </svg>
                         </div>
                         <div class="ml-4 text-white">
-                            <h4 class=" text-base font-semibold">Chat to us</h4>
+                            <h4 class=" text-base font-semibold">E-mail to us</h4>
                             <p class="text-xs">Chat with our team to help.</p>
-                            <p class="text-sm font-semibold mt-4">exmple@gmail.com</p>
+                            <p class="text-sm font-semibold mt-4">info@sync-code.com</p>
                         </div>
                     </div>
                     <div class="flex">
@@ -27,9 +27,9 @@ const Contact = () => {
                             </svg>
                         </div>
                         <div class="ml-4 text-white">
-                            <h4 class="text-base font-semibold">Visit us</h4>
-                            <p class="text-xs">Visit our office HQ.</p>
-                            <p class="text-sm font-semibold mt-4">123 Street 256 House</p>
+                            <h4 class="text-base font-semibold">Our location</h4>
+                            <p class="text-xs">Visit our office</p>
+                            <p class="text-sm font-semibold mt-4">Pristina, Kosovo</p>
                         </div>
                     </div>
                     <div class="flex">
@@ -41,31 +41,31 @@ const Contact = () => {
                         <div class="ml-4 text-white">
                             <h4 class="text-base font-semibold">Call us</h4>
                             <p class="text-xs">Monday to Friday.</p>
-                            <p class="text-sm font-semibold mt-4">+158 996 888</p>
+                            <p class="text-sm font-semibold mt-4">+383 45 490 985</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="bg-black rounded-3xl lg:col-span-2 p-10 max-sm:px-0 flex flex-col justify-center max-md:mt-12">
-                <h2 class="text-2xl text-white font-bold">Product or Service Inquiry</h2>
-                <p class="text-sm text-white mt-4">Have some big idea or brand to develop and need help? Then reach out we'd love to hear about your project and provide help.</p>
+                <h2 class="text-4xl font-semibold uppercase 2xl:text-5xl text-white font-custom">GET STARTED</h2>
+                <p class="text-lg text-justify tracking-tight 2xl:text-xl text-white mt-4">Have some big idea or brand to develop and need help? Then reach out we'd love to hear about your project and provide help.</p>
                 <form>
-                    <div class="space-y-4 mt-8">
+                    <div class="space-y-4 mt-8 font-custom">
                         <input type="text" placeholder="Full Name"
-                            class="px-2 py-3 bg-transparent text-white w-full text-sm border-b border-gray-400 focus:border-white outline-none" />
+                            class="px-2 py-3 2xl:py-5 bg-transparent text-white w-full text-lg border-b border-gray-400 focus:border-white outline-none" />
                         <input type="text" placeholder="Street"
-                            class="px-2 py-3 bg-transparent text-white w-full text-sm border-b border-gray-400 focus:border-white outline-none" />
-                        <input type="number" placeholder="Phone No."
-                            class="px-2 py-3 bg-transparent text-white w-full text-sm border-b border-gray-400 focus:border-white outline-none" />
-
+                            class="px-2 py-3 2xl:py-5 bg-transparent text-white w-full text-lg border-b border-gray-400 focus:border-white outline-none" />
+                        <input type="text" placeholder="Phone No."
+                            class="px-2 py-3 2xl:py-5 bg-transparent text-white w-full text-lg border-b border-gray-400 focus:border-white outline-none" />
                         <input type="email" placeholder="Email"
-                            class="px-2 py-3 bg-transparent text-white w-full text-sm border-b border-gray-400 focus:border-white outline-none" />
+                            class="px-2 py-3 2xl:py-5 bg-transparent text-white w-full text-lg border-b border-gray-400 focus:border-white outline-none" />
 
                         <textarea placeholder="Write Message"
-                            class="px-2 pt-3 bg-transparent text-white w-full text-sm border-b border-gray-400 focus:border-white outline-none"></textarea>
+                            class="px-2 pt-3 2xl:py-5 bg-transparent text-white w-full text-lg border-b border-gray-400 focus:border-white outline-none">
+                        </textarea>
                     </div>
                     <button type="button"
-                        class="bg-gradient-to-r from-[#207ead] to-[#00ffc3] mt-8 flex items-center justify-center text-sm w-fit rounded px-4 py-2.5 font-semibold text-white">
+                        class="bg-gradient-to-r from-[#207ead] to-[#00ffc3] mt-8 flex items-center hover:shadow-xl hover:shadow-gray-700 hover:animate-pulse justify-center text-sm w-fit rounded px-4 py-2.5 font-semibold text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill='#fff' class="mr-2"
                             viewBox="0 0 548.244 548.244">
                             <path fill-rule="evenodd"

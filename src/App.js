@@ -9,6 +9,7 @@ import AboutUsPage from './Pages/AboutUsPage';
 import SinglePageOfWork from './Pages/SinglePageOfWork';
 import ServicePage from './Pages/ServicePage';
 import ContactPage from './Pages/ContactPage';
+import CompanyNews from './Pages/CompanyNews';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
             <Route path="/services" element={<ServicePage />} />
             <Route path="/works/:workID" element={<SinglePageOfWork />} />
             <Route path="/about" element={<AboutUsPage />} />
+            <Route path="/articles" element={<CompanyNews />} />
           </Routes>
         <Footer />
       </BrowserRouter>

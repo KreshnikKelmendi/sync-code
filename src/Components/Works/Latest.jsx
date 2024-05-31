@@ -4,10 +4,10 @@ import worldWide from "../Assets/external-link.png"
 import youtube from "../Assets/youtube.png"
 import { Link } from 'react-router-dom'
 
-const Card = () => {
+const Latest = () => {
   return (
     <div className='grid lg:grid-cols-2 gap-12 gap-y-16 mt-8'>
-          {works?.map((work, index) => (
+          {works.slice(0, 4).map((work, index) => (
             <div key={index} > 
                 <div className='relative overflow-hidden group'>
               <Link to={`/works/${work.id}`} onClick={() => window.scrollTo({ top: 0, left: 0 })}>
@@ -51,4 +51,4 @@ const Card = () => {
   )
 }
 
-export default Card
+export default Latest

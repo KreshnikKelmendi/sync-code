@@ -93,7 +93,7 @@ const Header = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.4 }}
             >
-              <Link to="/works" onClick={() => window.scrollTo({ top: 0, left: 0 })}>Work</Link>
+              <NavLink to="/works" onClick={() => window.scrollTo({ top: 0, left: 0 })}>Work</NavLink>
             </motion.li>
             <motion.li
               initial={{ opacity: 0, y: 20 }}
@@ -107,7 +107,7 @@ const Header = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.4 }}
             >
-              <Link to="/works" onClick={() => window.scrollTo({ top: 0, left: 0 })}>Company News</Link>
+              <NavLink to="/articles" onClick={() => window.scrollTo({ top: 0, left: 0 })}>Company News</NavLink>
             </motion.li>
           </ul>
         </motion.div>
@@ -150,10 +150,10 @@ const Header = () => {
         className="flex flex-col space-y-4 text-2xl uppercase text-white w-full font-custom"
       >
         <motion.li className='w-full'>
-          <Link to="/" onClick={() => { window.scrollTo({ top: 0, left: 0 }); closeMobileMenu(); }}>Home</Link>
+          <NavLink to="/" onClick={() => { window.scrollTo({ top: 0, left: 0 }); closeMobileMenu(); }}>Home</NavLink>
         </motion.li>
         <motion.li>
-          <Link to="/about" onClick={() => { window.scrollTo({ top: 0, left: 0 }); closeMobileMenu(); }}>About</Link>
+          <NavLink to="/about" onClick={() => { window.scrollTo({ top: 0, left: 0 }); closeMobileMenu(); }}>About</NavLink>
         </motion.li>
 
         <motion.li
@@ -169,15 +169,15 @@ const Header = () => {
         </motion.li>
 
         <motion.li>
-          <Link to="/works" onClick={() => { window.scrollTo({ top: 0, left: 0 }); closeMobileMenu(); }}>Work</Link>
+          <NavLink to="/works" onClick={() => { window.scrollTo({ top: 0, left: 0 }); closeMobileMenu(); }}>Work</NavLink>
         </motion.li>
 
         <motion.li>
-          <Link to="/works" onClick={() => { window.scrollTo({ top: 0, left: 0 }); closeMobileMenu(); }}>Technologies</Link>
+          <NavLink to="/works" onClick={() => { window.scrollTo({ top: 0, left: 0 }); closeMobileMenu(); }}>Technologies</NavLink>
         </motion.li>
 
         <motion.li>
-          <Link to="/works" onClick={() => { window.scrollTo({ top: 0, left: 0 }); closeMobileMenu(); }}>Company News</Link>
+          <NavLink to="/articles" onClick={() => { window.scrollTo({ top: 0, left: 0 }); closeMobileMenu(); }}>Company News</NavLink>
         </motion.li>
       </motion.ul>
 

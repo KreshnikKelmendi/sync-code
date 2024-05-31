@@ -8,6 +8,9 @@ import verve from "../Assets/verde.png"
 import verve2 from "../Assets/verveDecor.png"
 import gdpr from "../Assets/gdpr.jpg"
 import gdpr2 from "../Assets/smartmockups_lqcuv410.jpg"
+import via from "../Assets/Via-ks.jpg"
+import via2 from "../Assets/via3.jpg"
+import eurokos from "../Assets/eurokos.jpg"
 
 const works = [{
     id:1,
@@ -24,7 +27,20 @@ const works = [{
     liveLink: "https://orientimnekarriere.com/",
     backgroundColor: '#FF5733' 
 },{
-    id:2,
+    id:"via-construction",
+    workName: "VIA Construction",
+    technologies:"React JS / Tailwind CSS / Strapi CMS",
+    image: via,
+    jobImage1: via2,
+    jobImage2: via,
+    shortTitle: "Innovative Construction Solutions",
+    category: "Web Design & Web Development",
+    clientExpectations: "Expect a dynamic and user-friendly website that showcases VIA Shpk's innovative construction solutions. Ensure the platform highlights their portfolio, services, and client testimonials effectively, emphasizing their commitment to quality and excellence in the construction industry.",
+    partnershipResult: "Partnering with VIA Shpk is more than a project; it's a collaboration towards excellence. Our website development for VIA Shpk not only enhances their online presence but also supports their mission to deliver top-notch construction services. The intuitive design and robust functionality provide a seamless experience for potential clients, showcasing VIA Shpk's expertise and dedication.",
+    description: "VIA Shpk is a leading construction company renowned for its innovative solutions and high-quality projects. The website we developed for VIA Shpk offers a comprehensive overview of their services, including residential, commercial, and infrastructure projects. It features a modern design, easy navigation, and integrated tools for client interaction.",
+    liveLink: "http://www.via-ks.com/",
+},{
+    id:3,
     workName: "Flip3 GRC",
     technologies:"Angular JS / Bootstrap / C# .NET / Sql Server",
     image: work2,
@@ -38,7 +54,7 @@ const works = [{
     liveLink: "http://www.flip3grc.com/",
     tutorialLink: "https://www.youtube.com/watch?v=eMgwe-c02Zk"
 },{
-    id:3,
+    id:4,
     workName: "GDPR Platform",
     technologies:"Angular JS / Bootstrap / C# .NET / Sql Server",
     image: gdpr,
@@ -52,7 +68,20 @@ const works = [{
     // liveLink: "http://www.flip3grc.com/",
     tutorialLink: "https://www.youtube.com/watch?v=653svNH-0Vs&t=7s"
 },{
-    id:4,
+    id: "eurokos",
+    workName: "EUROKOS",
+    technologies: "React JS / Bootstrap",
+    image: eurokos,
+    // jobImage1: projectImage1,
+    // jobImage2: projectImage2,
+    shortTitle: "Innovative Construction and Solar Solutions",
+    category: "Web Design & Web Development",
+    clientExpectations: "Eurokos aimed to establish a robust online presence that highlights their cutting-edge technology projects in construction and solar energy across Kosovo and Albania. The goal was to create an intuitive and visually appealing platform that showcases their expertise and innovation.",
+    partnershipResult: "Through collaborative efforts, we successfully delivered a platform that meets the highest standards of user experience and functionality, effectively communicating Eurokos' industry leadership.",
+    description: "Eurokos is a leading construction and solar company in Kosovo and Albania. Our platform highlights their innovative projects and technological advancements. Visitors can explore their portfolio, discover their solutions, and understand their impact on sustainability. The site offers seamless navigation and a responsive design for optimal viewing on any device.",
+    liveLink: "http://www.eurokos.net/",
+},{
+    id:6,
     workName: "VERVE Decor",
     technologies:"React JS / Tailwind CSS / Strapi CMS / PostgreSQL",
     image: work4,

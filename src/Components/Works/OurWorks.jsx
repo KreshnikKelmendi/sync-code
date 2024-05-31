@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from './Card';
 import { Link } from 'react-router-dom';
+import Latest from './Latest';
 
 const OurWorks = () => {
   return (
@@ -14,7 +15,7 @@ const OurWorks = () => {
           </Link>
         </div>
            <p className='mt-6 text-white 2xl:text-xl'>Here are some of the public projects we have done lately. Feel free to check them out.</p>
-        <Card />
+        <Latest />
       </div>
     </div>
   );

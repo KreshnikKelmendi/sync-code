@@ -19,14 +19,14 @@ const SinglePageOfWork = () => {
     }
   return (
     <div className='text-white py-4'>
-      <div className='px-4 lg:px-16 lg:mt-16 mt-4 font-custom'>
+      <div className='px-4 lg:px-12 lg:mt-16 mt-4 font-custom'>
         <div className='flex'>
           <p className='text-3xl lg:text-4xl 2xl:text-5xl font-semibold uppercase'>{workName}</p>
         </div>
           <img className='mt-6 object-cover' src={jobImage1} alt='' />
       </div>
-      <div className="flex flex-col lg:flex-row mt-16 px-4 lg:px-16 font-custom">
-          <div className="w-full grid grid-cols-1 gap-y-5 lg:px-3 h-auto lg:w-1/2">
+      <div className="flex flex-col lg:flex-row mt-16 px-4 lg:px-12 font-custom">
+          <div className="w-full grid grid-cols-1 gap-y-5 lg:pr-3 h-auto lg:w-1/2">
             <p className='text-xl uppercase 2xl:text-3xl'>{shortTitle}</p>
             <p className='text-[#207ead]'>Category: <span className='text-white'> {category}</span></p>
             <p className='text-[#207ead]'>Technologies: <span className='text-white'> {technologies}</span></p>
