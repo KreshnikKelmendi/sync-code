@@ -11,6 +11,9 @@ import gdpr2 from "../Assets/smartmockups_lqcuv410.jpg"
 import via from "../Assets/Via-ks.jpg"
 import via2 from "../Assets/via3.jpg"
 import eurokos from "../Assets/eurokos.jpg"
+import eurokos1 from "../Assets/eurokos-4.jpg"
+import eurokos2 from "../Assets/eurokos-mobilee.jpg"
+import eurokos3 from "../Assets/eurokos-5.jpg"
 
 const works = [{
     id:1,
@@ -72,8 +75,9 @@ const works = [{
     workName: "EUROKOS",
     technologies: "React JS / Bootstrap",
     image: eurokos,
-    // jobImage1: projectImage1,
-    // jobImage2: projectImage2,
+    jobImage1: eurokos1,
+    jobImage2: eurokos2,
+    jobImage3: eurokos3,
     shortTitle: "Innovative Construction and Solar Solutions",
     category: "Web Design & Web Development",
     clientExpectations: "Eurokos aimed to establish a robust online presence that highlights their cutting-edge technology projects in construction and solar energy across Kosovo and Albania. The goal was to create an intuitive and visually appealing platform that showcases their expertise and innovation.",
