@@ -147,7 +147,7 @@ const Header = () => {
         initial={{ opacity: 0, x: -40 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5, delay: 0.1 }}
-        className="flex flex-col space-y-4 text-2xl uppercase text-white w-full font-custom"
+        className="flex flex-col space-y-3 text-2xl uppercase text-white w-full font-custom  divide-y-2 divide-gray-900"
       >
         <motion.li className='w-full'>
           <NavLink to="/" onClick={() => { window.scrollTo({ top: 0, left: 0 }); closeMobileMenu(); }}>Home</NavLink>
@@ -184,7 +184,7 @@ const Header = () => {
       <div className="text-center">
       <Link onClick={() => { window.scrollTo({ top: 0, left: 0 }); closeMobileMenu(); }} to="/get-in-touch">
         <motion.button
-          className="text-black uppercase rounded-md mt-28 bg-gradient-to-r from-[#207ead] to-[#00ffc3] w-full py-2 font-custom font-extrabold"
+          className="text-black uppercase rounded-md mt-20 bg-gradient-to-r from-[#207ead] to-[#00ffc3] w-full py-2 font-custom font-extrabold"
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}

@@ -16,7 +16,7 @@ const AnimatedText = ({ children }) => {
 
 const SecondFrontView = () => {
   return (
-    <div className='text-white px-4 lg:px-12 mt-0 lg:mt-10 2xl:mt-20 font-custom'>
+    <div className='text-white px-4 lg:px-12 mt-[-110px] lg:mt-10 2xl:mt-20 font-custom'>
       {/* <p className='text-3xl 2xl:text-4xl'>
         <AnimatedText>Benefit from our reliable development process</AnimatedText>{' '}
         <b className='text-[#207ead]'>

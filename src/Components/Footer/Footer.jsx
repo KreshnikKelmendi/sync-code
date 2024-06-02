@@ -18,12 +18,14 @@ const Footer = () => {
           className='block lg:hidden object-cover justify-center lg:justify-end w-56 lg:w-56 h-16'
         />
       </div>
-    <div className='lg:text-center grid grid-cols-2 lg:flex lg:flex-row lg:gap-x-7 gap-x-3 gap-y-3 lg:gap-y-6 mb-4 lg:mb-0 uppercase lg:mt-12 font-bold'>
-        <a href='#' className='hover:text-white border text-xl px-10 2xl:px-16 lg:px-6 py-2 rounded-md border-gray-500 hover:bg-[#207ead]'><p className='text-sm 2xl:text-xl text-gray-700 text-left'>01</p>Home</a>
-        <a href='#' className='hover:text-white border text-xl px-10 2xl:px-16 lg:px-6 py-2 rounded-md border-gray-500 hover:bg-[#207ead]'><p className='text-sm 2xl:text-xl text-gray-700 text-left'>02</p>About</a>
-        <a href='#' className='hover:text-white border text-xl px-10 2xl:px-16 lg:px-6 py-2 rounded-md border-gray-500 hover:bg-[#207ead]'><p className='text-sm 2xl:text-xl text-gray-700 text-left'>03</p>Services</a>
-        <a href='#' className='hover:text-white border text-xl px-10 2xl:px-16 lg:px-6 py-2 rounded-md border-gray-500 hover:bg-[#207ead]'><p className='text-sm 2xl:text-xl text-gray-700 text-left'>04</p>Works</a>
-        <a href='#' className='hover:text-white border text-xl px-10 2xl:px-16 lg:px-6 py-2 rounded-md border-gray-500 hover:bg-[#207ead]'><p className='text-sm 2xl:text-xl text-gray-700 text-left'>05</p>Contact</a>
+    <div className='lg:text-center font-custom grid grid-cols-2 lg:flex lg:flex-row lg:gap-x-5 text-center justify-center items-center gap-x-3 gap-y-3 lg:gap-y-6 mb-4 lg:mb-0 uppercase lg:mt-12 font-bold'>
+        <a href='#' className='hover:text-white border text-sm lg:text-base px-4 2xl:px-16 lg:px-6 py-4 rounded-md border-gray-500 hover:bg-gradient-to-r from-[#207ead] to-[#00ffc3]'>Home</a>
+        <a href='#' className='hover:text-white border text-sm lg:text-base px-4 2xl:px-16 lg:px-6 py-4 rounded-md border-gray-500 hover:bg-gradient-to-r from-[#207ead] to-[#00ffc3]'>About</a>
+        <a href='#' className='hover:text-white border text-sm lg:text-base px-4 2xl:px-16 lg:px-6 py-4 rounded-md border-gray-500 hover:bg-gradient-to-r from-[#207ead] to-[#00ffc3]'>Services</a>
+        <a href='#' className='hover:text-white border text-sm lg:text-base px-4 2xl:px-16 lg:px-6 py-4 rounded-md border-gray-500 hover:bg-gradient-to-r from-[#207ead] to-[#00ffc3]'>Work</a>
+        <a href='#' className='hover:text-white border text-sm lg:text-base px-4 2xl:px-16 lg:px-6 py-4 rounded-md border-gray-500 hover:bg-gradient-to-r from-[#207ead] to-[#00ffc3]'>Technologies</a>
+        <a href='#' className='hover:text-white border text-sm lg:text-base px-4 2xl:px-16 lg:px-6 py-4 rounded-md border-gray-500 hover:bg-gradient-to-r from-[#207ead] to-[#00ffc3]'>Company News</a>
+
       </div>
       
       <div className='lg:text-right mt-6 lg:mt-0'>

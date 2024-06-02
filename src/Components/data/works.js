@@ -3,6 +3,8 @@ import work2 from "../Assets/dyti.png"
 import work4 from "../Assets/e.png"
 import orientimiNeKarriere from "../Assets/ORIENTIMI.png"
 import orientimiNeKarriere2 from "../Assets/mobileOrientimi.png"
+import orientimiNeKarriere3 from "../Assets/orientimi-4.jpg"
+import orientimiNeKarriere4 from "../Assets/orientimi-3.png"
 import flipgrc from "../Assets/flipGrc.png"
 import verve from "../Assets/verde.png"
 import verve2 from "../Assets/verveDecor.png"
@@ -22,6 +24,8 @@ const works = [{
     image: work1,
     jobImage1: orientimiNeKarriere,
     jobImage2: orientimiNeKarriere2,
+    jobImage3: orientimiNeKarriere3,
+    jobImage4: orientimiNeKarriere4,
     shortTitle: "Carrier orientation platform for Kosovar students",
     category: "Web Design & Web Development",
     clientExpectations: "Clients expect the website to have an intuitive and user-friendly navigation structure. Information about academic programs, admissions, faculty, and campus life should be easily accessible.",

@@ -16,6 +16,8 @@ const SinglePageOfWork = () => {
   const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true });
   const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: true });
   const { ref: ref3, inView: inView3 } = useInView({ triggerOnce: true });
+  const { ref: ref4, inView: inView4 } = useInView({ triggerOnce: true });
+  const { ref: ref5, inView: inView5 } = useInView({ triggerOnce: true });
 
   if (!work) {
     return (
@@ -25,7 +27,7 @@ const SinglePageOfWork = () => {
     );
   }
 
-  const { workName, jobImage1, jobImage2, jobImage3, shortTitle, category, technologies, clientExpectations, partnershipResult } = work;
+  const { workName, jobImage1, jobImage2, jobImage3, jobImage4, shortTitle, category, technologies, clientExpectations, partnershipResult, liveLink } = work;
 
   const imageVariant = {
     hidden: { opacity: 0, y: 100 },
@@ -34,7 +36,7 @@ const SinglePageOfWork = () => {
 
   return (
     <div className='text-white py-4'>
-      <div className='px-4 lg:px-12 lg:mt-16 mt-4 font-custom'>
+      <div className='px-4 lg:px-12 lg:mt-6 mt-4 font-custom'>
         <div className='flex'>
           <p className='text-3xl lg:text-4xl 2xl:text-5xl font-semibold uppercase'>{workName}</p>
         </div>
@@ -80,7 +82,34 @@ const SinglePageOfWork = () => {
             alt=''
           />
         </motion.div>
+        
       </div>
+      <div className='px-4 lg:px-12 mt-6 lg:mt-16 flex flex-col'>
+          <p className='lg:w-[80%] text-[#207ead] text-4xl leading-[55px] lg:leading-[80px] lg:mt-7 lg:text-6xl 2xl:text-[115px] 2xl:leading-[120px] uppercase font-custom'>
+            {shortTitle}
+          </p>
+          <a className='bg-gradient-to-r from-[#207ead] to-[#00ffc3] text-white hover:text-black font-bold font-custom rounded-md p-3 w-1/2 lg:w-1/5 text-center mt-6' href={liveLink} target='_blank' rel='noreferrer'>Check it out</a>
+        </div>
+        <div className='px-4 lg:px-12 gap-3 mt-6 grid lg:grid-cols-2'>
+        <motion.img
+            ref={ref4}
+            variants={imageVariant}
+            initial='hidden'
+            animate={inView4 ? 'visible' : 'hidden'}
+            className='mt-6 h-80 lg:h-[85vh] w-full object-cover'
+            src={jobImage4}
+            alt=''
+          />
+          <motion.img
+            ref={ref5}
+            variants={imageVariant}
+            initial='hidden'
+            animate={inView5 ? 'visible' : 'hidden'}
+            className='mt-6 h-80 lg:h-[85vh] w-full object-cover'
+            src={jobImage2}
+            alt=''
+          />
+        </div>
     </div>
   );
 };
