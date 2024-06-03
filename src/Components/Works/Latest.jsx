@@ -23,6 +23,7 @@ const Latest = () => {
     smoothscroll.polyfill();
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+  
   return (
     <div className='grid lg:grid-cols-2 gap-12 gap-y-16 mt-8'>
           {works.slice(0, 4).map((work, index) => (

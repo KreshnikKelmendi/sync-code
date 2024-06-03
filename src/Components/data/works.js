@@ -1,17 +1,20 @@
 import work1 from "../Assets/orientimi2.png"
 import work2 from "../Assets/dyti.png"
-import work4 from "../Assets/e.png"
+import work4 from "../Assets/verve-1.jpg"
 import orientimiNeKarriere from "../Assets/ORIENTIMI.png"
 import orientimiNeKarriere2 from "../Assets/mobileOrientimi.png"
 import orientimiNeKarriere3 from "../Assets/orientimi-4.jpg"
-import orientimiNeKarriere4 from "../Assets/orientimi-3.png"
+import orientimiNeKarriere4 from "../Assets/orientimi-6.jpg"
+import orientimiNeKarriere5 from "../Assets/orientimi-7.jpg"
 import flipgrc from "../Assets/flipGrc.png"
-import verve from "../Assets/verde.png"
-import verve2 from "../Assets/verveDecor.png"
+import verve from "../Assets/verve-1.jpg"
+import verve2 from "../Assets/verve-2e.jpg"
+import verve3 from "../Assets/verve-3.jpg"
 import gdpr from "../Assets/gdpr.jpg"
 import gdpr2 from "../Assets/smartmockups_lqcuv410.jpg"
 import via from "../Assets/Via-ks.jpg"
 import via2 from "../Assets/via3.jpg"
+import via3 from "../Assets/via-3.jpg"
 import eurokos from "../Assets/eurokos.jpg"
 import eurokos1 from "../Assets/eurokos-4.jpg"
 import eurokos2 from "../Assets/eurokos-mobilee.jpg"
@@ -26,7 +29,8 @@ const works = [{
     jobImage2: orientimiNeKarriere2,
     jobImage3: orientimiNeKarriere3,
     jobImage4: orientimiNeKarriere4,
-    shortTitle: "Carrier orientation platform for Kosovar students",
+    jobImage5: orientimiNeKarriere5
+,    shortTitle: "Carrier orientation platform for Kosovar students",
     category: "Web Design & Web Development",
     clientExpectations: "Clients expect the website to have an intuitive and user-friendly navigation structure. Information about academic programs, admissions, faculty, and campus life should be easily accessible.",
     partnershipResult: "The client expressed immense satisfaction with Sync-Code's work on the career platform. The meticulously developed web-based interfaces not only met but exceeded expectations, providing a highly effective and secure solution. The client's happiness is a testament to Sync-Code's commitment to delivering quality products that streamline processes, enhance user experiences, and contribute to the overall success of their initiatives. This positive feedback reinforces the strong partnership between Sync-Code and the client, highlighting the successful collaboration in achieving the desired outcomes.",
@@ -40,6 +44,7 @@ const works = [{
     image: via,
     jobImage1: via2,
     jobImage2: via,
+    jobImage3: via3,
     shortTitle: "Innovative Construction Solutions",
     category: "Web Design & Web Development",
     clientExpectations: "Expect a dynamic and user-friendly website that showcases VIA Shpk's innovative construction solutions. Ensure the platform highlights their portfolio, services, and client testimonials effectively, emphasizing their commitment to quality and excellence in the construction industry.",
@@ -94,7 +99,8 @@ const works = [{
     technologies:"React JS / Tailwind CSS / Strapi CMS / PostgreSQL",
     image: work4,
     jobImage1: verve,
-    jobImage2: verve2,
+    jobImage2: verve3,
+    jobImage3: verve2,
     shortTitle: "e-Commerce website",
     category: "Web Design & Web Development",
     clientExpectations: "Clients expect an intuitive and easy-to-navigate user interface that provides a seamless shopping experience for their customers. An efficient and streamlined shopping cart and checkout process are crucial. Clients expect a minimal number of steps, easy form filling, and various payment options to reduce cart abandonment.",

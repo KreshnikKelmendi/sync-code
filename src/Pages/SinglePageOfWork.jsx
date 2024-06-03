@@ -27,7 +27,7 @@ const SinglePageOfWork = () => {
     );
   }
 
-  const { workName, jobImage1, jobImage2, jobImage3, jobImage4, shortTitle, category, technologies, clientExpectations, partnershipResult, liveLink } = work;
+  const { workName, jobImage1, jobImage2, jobImage3, jobImage4, jobImage5, shortTitle, category, technologies, clientExpectations, partnershipResult, liveLink } = work;
 
   const imageVariant = {
     hidden: { opacity: 0, y: 100 },
@@ -46,7 +46,7 @@ const SinglePageOfWork = () => {
             variants={imageVariant}
             initial='hidden'
             animate={inView1 ? 'visible' : 'hidden'}
-            className='mt-6 h-80 lg:h-[80vh] w-full object-cover'
+            className='mt-6 h-80 lg:h-[80vh] w-full object-cover rounded-md'
             src={jobImage1}
             alt=''
           />
@@ -55,7 +55,7 @@ const SinglePageOfWork = () => {
             variants={imageVariant}
             initial='hidden'
             animate={inView2 ? 'visible' : 'hidden'}
-            className='mt-6 h-80 lg:h-[80vh] w-full object-cover'
+            className='mt-6 h-80 lg:h-[80vh] w-full object-cover rounded-md'
             src={jobImage2}
             alt=''
           />
@@ -77,39 +77,46 @@ const SinglePageOfWork = () => {
           className='w-full lg:w-1/2 py-4 lg:py-0'
         >
           <img
-            className='h-80 lg:h-[80vh] w-full object-cover secondServiceImage'
+            className='h-80 lg:h-[80vh] w-full object-cover rounded-md secondServiceImage'
             src={jobImage3}
             alt=''
           />
         </motion.div>
-        
       </div>
       <div className='px-4 lg:px-12 mt-6 lg:mt-16 flex flex-col'>
-          <p className='lg:w-[80%] text-[#207ead] text-4xl leading-[55px] lg:leading-[80px] lg:mt-7 lg:text-6xl 2xl:text-[115px] 2xl:leading-[120px] uppercase font-custom'>
-            {shortTitle}
-          </p>
-          <a className='bg-gradient-to-r from-[#207ead] to-[#00ffc3] text-white hover:text-black font-bold font-custom rounded-md p-3 w-1/2 lg:w-1/5 text-center mt-6' href={liveLink} target='_blank' rel='noreferrer'>Check it out</a>
-        </div>
-        <div className='px-4 lg:px-12 gap-3 mt-6 grid lg:grid-cols-2'>
-        <motion.img
+        <p className='lg:w-[80%] text-[#207ead] text-4xl leading-[55px] lg:leading-[80px] lg:mt-7 lg:text-6xl 2xl:text-[115px] 2xl:leading-[120px] uppercase font-custom'>
+          {shortTitle}
+        </p>
+        {liveLink && (
+          <a className='bg-gradient-to-r from-[#207ead] to-[#00ffc3] text-white hover:text-black font-bold font-custom rounded-md p-3 w-1/2 lg:w-1/5 text-center mt-6' href={liveLink} target='_blank' rel='noreferrer'>
+            Check it out
+          </a>
+        )}
+      </div>
+      <div className='px-4 lg:px-12 gap-3 mt-6 grid lg:grid-cols-2'>
+        {jobImage4 && (
+          <motion.img
             ref={ref4}
             variants={imageVariant}
             initial='hidden'
             animate={inView4 ? 'visible' : 'hidden'}
-            className='mt-6 h-80 lg:h-[85vh] w-full object-cover'
+            className='mt-6 h-80 lg:h-[85vh] w-full object-cover rounded-md'
             src={jobImage4}
             alt=''
           />
+        )}
+        {jobImage5 && (
           <motion.img
             ref={ref5}
             variants={imageVariant}
             initial='hidden'
             animate={inView5 ? 'visible' : 'hidden'}
-            className='mt-6 h-80 lg:h-[85vh] w-full object-cover'
-            src={jobImage2}
+            className='mt-6 h-80 lg:h-[85vh] w-full object-cover rounded-md'
+            src={jobImage5}
             alt=''
           />
-        </div>
+        )}
+      </div>
     </div>
   );
 };
