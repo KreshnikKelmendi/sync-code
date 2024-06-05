@@ -19,12 +19,12 @@ const Footer = () => {
         />
       </div>
     <div className='lg:text-center font-custom grid grid-cols-2 lg:flex lg:flex-row lg:gap-x-5 text-center justify-center items-center gap-x-3 gap-y-3 lg:gap-y-6 mb-4 lg:mb-0 uppercase lg:mt-12 font-bold'>
-        <a href='#' className='hover:text-white border text-sm lg:text-base px-4 2xl:px-16 lg:px-6 py-4 rounded-md border-gray-500 hover:bg-gradient-to-r from-[#207ead] to-[#00ffc3]'>Home</a>
-        <a href='#' className='hover:text-white border text-sm lg:text-base px-4 2xl:px-16 lg:px-6 py-4 rounded-md border-gray-500 hover:bg-gradient-to-r from-[#207ead] to-[#00ffc3]'>About</a>
-        <a href='#' className='hover:text-white border text-sm lg:text-base px-4 2xl:px-16 lg:px-6 py-4 rounded-md border-gray-500 hover:bg-gradient-to-r from-[#207ead] to-[#00ffc3]'>Services</a>
-        <a href='#' className='hover:text-white border text-sm lg:text-base px-4 2xl:px-16 lg:px-6 py-4 rounded-md border-gray-500 hover:bg-gradient-to-r from-[#207ead] to-[#00ffc3]'>Work</a>
-        <a href='#' className='hover:text-white border text-sm lg:text-base px-4 2xl:px-16 lg:px-6 py-4 rounded-md border-gray-500 hover:bg-gradient-to-r from-[#207ead] to-[#00ffc3]'>Technologies</a>
-        <a href='#' className='hover:text-white border text-sm lg:text-base px-4 2xl:px-16 lg:px-6 py-4 rounded-md border-gray-500 hover:bg-gradient-to-r from-[#207ead] to-[#00ffc3]'>Company News</a>
+        <a href='#' className='hover:text-white border text-sm lg:text-base px-4 2xl:px-16 lg:px-6 py-4 2xl:py-6 rounded-md border-gray-500 hover:bg-gradient-to-r from-[#207ead] to-[#00ffc3]'>Home</a>
+        <a href='#' className='hover:text-white border text-sm lg:text-base px-4 2xl:px-16 lg:px-6 py-4 2xl:py-6 rounded-md border-gray-500 hover:bg-gradient-to-r from-[#207ead] to-[#00ffc3]'>About</a>
+        <a href='#' className='hover:text-white border text-sm lg:text-base px-4 2xl:px-16 lg:px-6 py-4 2xl:py-6 rounded-md border-gray-500 hover:bg-gradient-to-r from-[#207ead] to-[#00ffc3]'>Services</a>
+        <a href='#' className='hover:text-white border text-sm lg:text-base px-4 2xl:px-16 lg:px-6 py-4 2xl:py-6 rounded-md border-gray-500 hover:bg-gradient-to-r from-[#207ead] to-[#00ffc3]'>Work</a>
+        <a href='#' className='hover:text-white border text-sm lg:text-base px-4 2xl:px-16 lg:px-6 py-4 2xl:py-6 rounded-md border-gray-500 hover:bg-gradient-to-r from-[#207ead] to-[#00ffc3]'>Technologies</a>
+        <a href='#' className='hover:text-white border text-sm lg:text-base px-4 2xl:px-16 lg:px-6 py-4 2xl:py-6 rounded-md border-gray-500 hover:bg-gradient-to-r from-[#207ead] to-[#00ffc3]'>Company News</a>
 
       </div>
       
@@ -46,7 +46,7 @@ const Footer = () => {
       </div>
 
     </div>
-    <div className='bg-gradient-to-r from-[#207ead] to-[#00ffc3] h-12 2xl:h-20 flex justify-center items-center'>
+    <div className='bg-gradient-to-r from-[#207ead] to-[#00ffc3] h-12 2xl:h-16 flex justify-center items-center'>
       <p className="font-custom text-white text-center">&copy; {currentYear} Sync Code. All rights reserved.</p>
     </div>
     </>

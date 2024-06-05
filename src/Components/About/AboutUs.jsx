@@ -22,6 +22,7 @@ const InViewText = ({ text }) => {
   const isInView = useInView(ref, { once: true });
 
   return (
+    <>
     <motion.div
       ref={ref}
       className='w-full text-center lg:text-left text-4xl leading-[55px] lg:leading-[80px] lg:mt-7 lg:text-6xl 2xl:text-[115px] 2xl:leading-[120px] uppercase font-custom'
@@ -40,7 +41,8 @@ const InViewText = ({ text }) => {
           {el}{" "}
         </motion.span>
       ))}
-    </motion.div>
+    </motion.div>  
+    </>
   );
 };
 

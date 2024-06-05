@@ -19,6 +19,10 @@ import eurokos from "../Assets/eurokos.jpg"
 import eurokos1 from "../Assets/eurokos-4.jpg"
 import eurokos2 from "../Assets/eurokos-mobilee.jpg"
 import eurokos3 from "../Assets/eurokos-5.jpg"
+import whose from "../Assets/whose-2.png"
+import whose1 from "../Assets/whose-7.png"
+import whose2 from "../Assets/whose-8.png"
+import whose3 from "../Assets/whose-5.png"
 
 const works = [{
     id:1,
@@ -108,6 +112,19 @@ const works = [{
     description: "Experience the power of easy navigation, intuitive filters, and a smooth checkout process that makes eCommerce shopping a joy. Our application is optimized for performance, ensuring a quick and secure transaction every time you indulge in the convenience of online shopping. Your data security is our top priority, and our robust payment systems guarantee a safe and reliable eCommerce experience.",
     liveLink: "https://vdecor.vercel.app/",
     // tutorialLink: "https://www.youtube.com/watch?v=653svNH-0Vs&t=7s"
+},{
+    id:7,
+    workName: "WhoseApp",
+    technologies:"Ionic / Swift ",
+    image: whose,
+    jobImage1: whose1,
+    jobImage2: whose2,
+    jobImage3: whose3,
+    shortTitle: "You lost it, WHOSE GOT IT!",
+    category: "Mobile Development",
+    clientExpectations: "Clients expect a reliable and user-friendly mobile application that simplifies the process of recovering lost items. The app should feature intuitive navigation, real-time notifications, and secure handling of user data. A smooth onboarding process, seamless integration with smart stickers, and efficient communication tools are key to reducing the stress associated with lost belongings.",
+    partnershipResult: "We express our deepest gratitude for entrusting us with your vision. We look forward to witnessing WhoseApp's impact as it brings peace of mind and security to users everywhere.",
+    description: `Discover the convenience and security of WhoseApp – because losing your valuables doesn’t have to be the end of the story. With WhoseApp, you can confidently say, "You lost it, WHOSE GOT IT!" Our innovative mobile application, built with Ionic and Swift, pairs seamlessly with WHOSE smart stickers to secure your belongings. Simply attach a sticker to your item, and if it ever goes missing, the finder can scan it to notify you instantly.`,
 }
 ]
 
