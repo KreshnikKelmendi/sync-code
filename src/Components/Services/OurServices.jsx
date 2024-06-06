@@ -10,18 +10,18 @@ const ServiceCard = ({ title, description, link, number }) => {
     threshold: 0.2,
   });
 
-  const [scrollPosition, setScrollPosition] = useState({ x: 0, y: 0 });
+  // const [scrollPosition, setScrollPosition] = useState({ x: 0, y: 0 });
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollPosition({ x: window.pageXOffset, y: window.pageYOffset });
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     setScrollPosition({ x: window.pageXOffset, y: window.pageYOffset });
+  //   };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
 
   const handleClick = () => {
     smoothscroll.polyfill();

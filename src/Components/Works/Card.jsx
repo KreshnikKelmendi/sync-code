@@ -53,7 +53,7 @@ const Card = () => {
                   to={`/works/${work.id}`}
                   onClick={handleClick}
                 >
-                  See more
+                  <p>See more</p>
                   <img src={worldWide} alt="" className='w-4 h-4 mt-1 ml-1' />
                 </Link>
               </div>
