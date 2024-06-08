@@ -141,7 +141,7 @@ const Header = () => {
       initial={{ opacity: 0, height: '60vh', y: -20 }}
       animate={{ opacity: 1, height: '60vh', y: 0 }}
       exit={{ opacity: 0, height: '60vh', y: -20 }}
-      className="lg:hidden px-6 py-8 flex flex-col absolute top-20 left-0 right-0 z-50 bg-black"
+      className="lg:hidden px-6 py-8 flex flex-col absolute top-20 left-0 right-0 z-50 bg-[#111315]"
     >
       <motion.ul
         initial={{ opacity: 0, x: -40 }}
