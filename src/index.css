@@ -1,5 +1,5 @@
 body{
-  background-color: black;
+  background-color: #111315;
 }
 
 
@@ -17,6 +17,8 @@ body{
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-mask-image: linear-gradient(to top, transparent 1%, #111315 80%);
+  mask-image: linear-gradient(to top, transparent 1%, #111315 80%);
 }
 .bg-serviceWallpaper{
   background-image: url(./Components/Assets/10881763.jpg);
@@ -36,13 +38,13 @@ body{
 
 @media (min-width: 1024px) {
   .firstServiceImage {
-    -webkit-mask-image: linear-gradient(to left, transparent 10%, black 100%);
-    mask-image: linear-gradient(to left, transparent 10%, black 100%);
+    -webkit-mask-image: linear-gradient(to left, transparent 10%, #111315 100%);
+    mask-image: linear-gradient(to left, transparent 10%, #111315 100%);
   }
 
   .secondServiceImage{
-    -webkit-mask-image: linear-gradient(to right, transparent 10%, black 100%);
-    mask-image: linear-gradient(to right, transparent 10%, black 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 10%, #111315 100%);
+    mask-image: linear-gradient(to right, transparent 10%, #111315 100%);
   }
 }
 

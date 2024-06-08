@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div class="grid px-6 lg:px-12 md:grid-cols-2 items-center lg:grid-cols-3 mx-auto py-6 bg-black font-custom">
+    <div class="grid px-6 lg:px-12 md:grid-cols-2 items-center lg:grid-cols-3 mx-auto py-6 font-custom">
             <div>
                 <h2 class="text-white text-2xl font-semibold">Contact Information</h2>
                 <div class="space-y-10 mt-8 font-custom">
@@ -46,7 +46,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            <div class="bg-black rounded-3xl lg:col-span-2 p-10 max-sm:px-0 flex flex-col justify-center max-md:mt-12">
+            <div class="rounded-3xl lg:col-span-2 p-10 max-sm:px-0 flex flex-col justify-center max-md:mt-12">
                 <h2 class="text-4xl font-semibold uppercase 2xl:text-5xl text-white font-custom">GET STARTED</h2>
                 <p class="text-lg text-justify tracking-tight 2xl:text-xl text-white mt-4">Have some big idea or brand to develop and need help? Then reach out we'd love to hear about your project and provide help.</p>
                 <form>

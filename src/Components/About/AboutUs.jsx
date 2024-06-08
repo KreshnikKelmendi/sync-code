@@ -1,12 +1,12 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import logoAnimation from "../Assets/SYNC (1).mp4";
+import logoAnimation from "../Assets/SYNC (2).mp4";
 
 const AboutUs = () => {
   const text = 'Our goal is to craft technology that is both beautiful and innovative.'.split(' ');
 
   return (
-    <div className='flex flex-col px-4 lg:px-12 lg:flex-row w-full items-center bg-black text-blawhiteck'>
+    <div className='flex flex-col px-4 lg:px-12 lg:flex-row w-full items-center text-blawhiteck'>
       <div className='lg:w-[70%] justify-center items-center font-custom'>
         <InViewText text={text} />
       </div>
@@ -34,7 +34,7 @@ const InViewText = ({ text }) => {
           animate={{ opacity: isInView ? 1 : 0.1 }}
           transition={{
             duration: 2,
-            delay: i / 10,
+            delay: i / 7,
           }}
           key={i}
         >

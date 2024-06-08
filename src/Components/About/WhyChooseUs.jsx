@@ -35,10 +35,10 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <div className="bg-black lg:py-16 font-custom">
+    <div className="lg:py-16 font-custom">
       <div className="px-6 lg:px-12">
         <div className="mx-auto flex flex-col justify-center items-center">
-          <h1 className="lg:text-5xl text-4xl font-bold tracking-tight text-gray-900 text-center">WHY
+          <h1 className="lg:text-5xl text-4xl font-bold tracking-tight text-gray-800 text-center">WHY
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#207ead] to-[#00ffc3]"> CHOOSE US</span>
           </h1>
           {/* <p className="mt-6 text-lg text-white text-center lg:w-[70%] 2xl:w-1/2">

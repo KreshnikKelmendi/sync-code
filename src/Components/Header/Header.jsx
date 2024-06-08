@@ -49,8 +49,8 @@ const Header = () => {
   };
 
   return (
-    <motion.div className={`relative px-4 lg:px-10 py-3 md:py-3 shadow-2xl shadow-gray-900 border-b-gray-600 bg-black 2xl:py-5 ${
-      isFixed ? 'sticky top-0 left-0 right-0 bg-black z-50' : ''
+    <motion.div className={`relative px-4 lg:px-10 py-3 md:py-3 shadow-md shadow-neutral-950 bg-[#111315] 2xl:py-5 ${
+    isFixed ? 'sticky top-0 left-0 right-0 bg-[#111315] z-50' : ''
     }`}>
       <div className="flex items-center justify-between 2xl:text-lg">
         <div className="items-center">

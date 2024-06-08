@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import Header from '../Header/Header';
 
 const ANIMATION_DURATION = 0.5;
 const ANIMATION_DELAY = 0.4;
@@ -50,6 +51,7 @@ const FirstFrontView = () => {
 
   return (
     <div className='bg-techWallpaper w-full h-screen flex items-center justify-center font-custom'>
+      
       <div className='text-white text-center'>
         <motion.h1
           className='text-4xl lg:text-5xl 2xl:text-6xl font-semibold mb-4 p-3'
