@@ -26,7 +26,7 @@ const FirstFrontView = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       animateText();
-    }, 4000);
+    }, 3000);
 
     return () => {
       clearInterval(interval);

@@ -10,6 +10,8 @@ import SinglePageOfWork from './Pages/SinglePageOfWork';
 import ServicePage from './Pages/ServicePage';
 import ContactPage from './Pages/ContactPage';
 import CompanyNews from './Pages/CompanyNews';
+import SinglePageOfNews from './Pages/SinglePageOfNews';
+import ScrollToTop from './Pages/ScrollToTop';
 
 
 function App() {
@@ -27,8 +29,10 @@ function App() {
             <Route path="/works/:workID" element={<SinglePageOfWork />} />
             <Route path="/about" element={<AboutUsPage />} />
             <Route path="/articles" element={<CompanyNews />} />
+            <Route path="/articles/:articleID" element={<SinglePageOfNews />} />
           </Routes>
         <Footer />
+        <ScrollToTop />
       </BrowserRouter>
     
     </>

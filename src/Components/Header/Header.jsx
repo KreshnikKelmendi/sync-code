@@ -95,13 +95,7 @@ const Header = () => {
             >
               <NavLink to="/works" onClick={() => window.scrollTo({ top: 0, left: 0 })}>Work</NavLink>
             </motion.li>
-            <motion.li
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.4 }}
-            >
-              <Link to="/works" onClick={() => window.scrollTo({ top: 0, left: 0 })}>Technologies</Link>
-            </motion.li>
+
             <motion.li
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -170,10 +164,6 @@ const Header = () => {
 
         <motion.li>
           <NavLink to="/works" onClick={() => { window.scrollTo({ top: 0, left: 0 }); closeMobileMenu(); }}>Work</NavLink>
-        </motion.li>
-
-        <motion.li>
-          <NavLink to="/works" onClick={() => { window.scrollTo({ top: 0, left: 0 }); closeMobileMenu(); }}>Technologies</NavLink>
         </motion.li>
 
         <motion.li>
