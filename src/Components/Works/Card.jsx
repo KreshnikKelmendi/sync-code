@@ -20,8 +20,8 @@ const Card = () => {
   };
 
   const handleClick = () => {
-    smoothscroll.polyfill();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    
+    window.scrollTo({ top: 0, behavior: 'smoth' });
   };
 
   return (
