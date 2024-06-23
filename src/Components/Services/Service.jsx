@@ -124,7 +124,7 @@ const Service = () => {
                         ))}
                       </ul>
                     </div>
-                    <div className="h-full mt-20">
+                    <div className="h-full lg:mt-20">
                       <img
                         src={service.imgSrc}
                         alt="#"

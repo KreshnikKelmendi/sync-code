@@ -1,8 +1,38 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+    const form = useRef();
+
+    const [popup, setPopup] = useState({ visible: false, firstName: '', lastName: '' });
+
+    const sendEmail = async (e) => {
+        e.preventDefault();
+
+        try {
+            const result = await emailjs.sendForm(
+                'service_a62l1vi',
+                'template_apj7t2f',
+                form.current,
+                'P-yN63nTb3stQdhkG'
+            );
+            console.log('Email successfully sent!', result.text);
+            const firstName = e.target.FirstName.value;
+            const lastName = e.target.LastName.value;
+            setPopup({ visible: true, firstName, lastName });
+
+            setTimeout(() => {
+                setPopup({ visible: false });
+            }, 5000);
+        } catch (error) {
+            console.log('Failed to send email:', error.text);
+        }
+
+        e.target.reset();
+    };
+
   return (
-    <div class="grid px-6 lg:px-12 md:grid-cols-2 items-center lg:grid-cols-3 mx-auto py-6 font-custom">
+    <div class="grid px-6 lg:px-12 md:grid-cols-2 lg:grid-cols-3 mx-auto py-6 font-custom mt-6 lg:mt-12">
             <div>
                 <h2 class="text-white text-2xl font-semibold">Contact Information</h2>
                 <div class="space-y-10 mt-8 font-custom">
@@ -14,9 +44,9 @@ const Contact = () => {
                             </svg>
                         </div>
                         <div class="ml-4 text-white">
-                            <h4 class=" text-base font-semibold">E-mail to us</h4>
-                            <p class="text-xs">Chat with our team to help.</p>
-                            <p class="text-sm font-semibold mt-4">info@sync-code.com</p>
+                            <h4 class="text-base font-semibold">E-mail to us</h4>
+                            <p class="text-sm">Chat with our team to help.</p>
+                            <p class="text-base font-semibold mt-4">info@sync-code.com</p>
                         </div>
                     </div>
                     <div class="flex">
@@ -28,8 +58,8 @@ const Contact = () => {
                         </div>
                         <div class="ml-4 text-white">
                             <h4 class="text-base font-semibold">Our location</h4>
-                            <p class="text-xs">Visit our office</p>
-                            <p class="text-sm font-semibold mt-4">Pristina, Kosovo</p>
+                            <p class="text-sm">Visit our office</p>
+                            <p class="text-base font-semibold mt-4">Pristina, Kosovo</p>
                         </div>
                     </div>
                     <div class="flex">
@@ -40,31 +70,63 @@ const Contact = () => {
                         </div>
                         <div class="ml-4 text-white">
                             <h4 class="text-base font-semibold">Call us</h4>
-                            <p class="text-xs">Monday to Friday.</p>
-                            <p class="text-sm font-semibold mt-4">+383 45 490 985</p>
+                            <p class="text-sm">Monday to Friday.</p>
+                            <p class="text-base font-semibold mt-4">+383 45 490 985</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="rounded-3xl lg:col-span-2 p-10 max-sm:px-0 flex flex-col justify-center max-md:mt-12">
+            <div class="rounded-3xl lg:col-span-2 px-6 max-sm:px-0 flex flex-col justify-center mt-16 lg:mt-0">
                 <h2 class="text-4xl font-semibold uppercase 2xl:text-5xl text-white font-custom">GET STARTED</h2>
                 <p class="text-lg text-justify tracking-tight 2xl:text-xl text-white mt-4">Have some big idea or brand to develop and need help? Then reach out we'd love to hear about your project and provide help.</p>
-                <form>
-                    <div class="space-y-4 mt-8 font-custom">
-                        <input type="text" placeholder="Full Name"
-                            class="px-2 py-3 2xl:py-5 bg-transparent text-white w-full text-lg border-b border-gray-400 focus:border-white outline-none" />
-                        <input type="text" placeholder="Street"
-                            class="px-2 py-3 2xl:py-5 bg-transparent text-white w-full text-lg border-b border-gray-400 focus:border-white outline-none" />
-                        <input type="text" placeholder="Phone No."
-                            class="px-2 py-3 2xl:py-5 bg-transparent text-white w-full text-lg border-b border-gray-400 focus:border-white outline-none" />
-                        <input type="email" placeholder="Email"
-                            class="px-2 py-3 2xl:py-5 bg-transparent text-white w-full text-lg border-b border-gray-400 focus:border-white outline-none" />
+                <form ref={form} onSubmit={sendEmail}>
+                    <div class="space-y-6 mt-8 font-custom">
+                        <div className="relative z-0 w-full mb-6 group">
+                            <input type="text" name="FirstName" id="firstName" className="block py-2.5 px-0 w-full text-lg text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-cyan-500 peer" placeholder=" " required />
+                            <label htmlFor="firstName" className="absolute text-sm text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-cyan-500 peer-focus:dark:text-cyan-400 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First Name</label>
+                        </div>
+                        <div className="relative z-0 w-full mb-6 group">
+                            <input type="text" name="LastName" id="lastName" className="block py-2.5 px-0 w-full text-lg text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-cyan-500 peer" placeholder=" " required />
+                            <label htmlFor="lastName" className="absolute text-sm text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-cyan-500 peer-focus:dark:text-cyan-400 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last Name</label>
+                        </div>
+                        <div className="relative z-0 w-full mb-6 group">
+                            <input type="email" name="EmailAddress" id="email" className="block py-2.5 px-0 w-full text-lg text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-cyan-500 peer" placeholder=" " required />
+                            <label htmlFor="email" className="absolute text-sm text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-cyan-500 peer-focus:dark:text-cyan-400 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Business Email</label>
+                        </div>
+                        
+                        <div className="relative z-0 w-full mb-6 group">
+                            <input type="text" name="CompanyName" id="company" className="block py-2.5 px-0 w-full text-lg text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-cyan-500 peer" placeholder=" " required />
+                            <label htmlFor="company" className="absolute text-sm text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-cyan-500 peer-focus:dark:text-cyan-400 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Company Name</label>
+                        </div>
 
-                        <textarea placeholder="Write Message"
-                            class="px-2 pt-3 2xl:py-5 bg-transparent text-white w-full text-lg border-b border-gray-400 focus:border-white outline-none">
-                        </textarea>
+                        <div className="">
+                           <select
+                               name="OptionValue"
+                               id="contact_purpose"
+                               className="py-3 2xl:py-5 bg-transparent text-white w-full text-lg border-b-2 border-gray-400 focus:border-white outline-none"
+                               required
+                           >
+                               <option value="" className='text-gray-500'>I want to</option>
+                               <option value="Learn more about Sync Code" className='text-black mt-4'>Learn more Sync Code</option>
+                               <option value="Become a Sync Code client" className='text-black'>Become a Sync Code client</option>
+                               <option value="Solve a technical Issue" className='text-black'>Solve a technical Issue</option>
+                               <option value="Start a project" className='text-black'>Start a project</option>
+                               <option value="Other" className='text-black'>Other</option>
+                           </select>
+                       </div>
+                        <div className="relative z-0 w-full mb-6 group">
+                            <input type="text" name="AboutUs" id="about" className="block py-2.5 px-0 w-full text-lg text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-cyan-500 peer" placeholder=" " required />
+                            <label htmlFor="about" className="absolute text-sm text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-cyan-500 peer-focus:dark:text-cyan-400 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">How did you hear about us ?</label>
+                        </div>
+
+                        <div className="relative z-0 w-full mb-6 group">
+                            <input type='text' name="message" id="message" className="block py-2.5 px-0 w-full text-lg text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-cyan-500 peer" placeholder=" " required></input>
+                            <label htmlFor="message" className="absolute text-sm text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-cyan-500 peer-focus:dark:text-cyan-400 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Your Message</label>
+                        </div>
+
+                        <p className='text-gray-600'>Sync Code is dedicated to ensuring your privacy and protecting your personal data. We will use your information exclusively to manage your account and provide the services and products you have requested from us.</p>
                     </div>
-                    <button type="button"
+                    <button type="submit"
                         class="bg-gradient-to-r from-[#207ead] to-[#00ffc3] mt-8 flex items-center hover:shadow-xl hover:shadow-gray-700 hover:animate-pulse justify-center text-sm w-fit rounded px-4 py-2.5 font-semibold text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill='#fff' class="mr-2"
                             viewBox="0 0 548.244 548.244">
@@ -76,6 +138,15 @@ const Contact = () => {
                     </button>
                 </form>
             </div>
+            {popup.visible && (
+                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+                    <div className="bg-white p-8 h-44 justify-center items-center grid rounded shadow-lg text-center relative">
+                        <h3 className="lg:text-xl flex mx-auto font-semibold text-green-700"><svg viewBox="0 0 48 48" className='w-[30px] object-contain' fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect width="48" height="48" fill="white" fill-opacity="0.01"></rect> <path d="M24 4L29.2533 7.83204L35.7557 7.81966L37.7533 14.0077L43.0211 17.8197L41 24L43.0211 30.1803L37.7533 33.9923L35.7557 40.1803L29.2533 40.168L24 44L18.7467 40.168L12.2443 40.1803L10.2467 33.9923L4.97887 30.1803L7 24L4.97887 17.8197L10.2467 14.0077L12.2443 7.81966L18.7467 7.83204L24 4Z" fill="#78d756" stroke="#2d9abe" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M17 24L22 29L32 19" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg><span className='ml-2'>Your details has been successfully submitted!</span></h3>
+                        <p className='mt-2 font-semibold'>Thank you, {popup.firstName} {popup.lastName}, for reaching out to us. We will get back to you shortly.</p>
+                        <button onClick={() => setPopup({ visible: false })} className=" absolute top-0 right-0 bg-gradient-to-r from-[#207ead] to-[#00ffc3] hover:text-black font-bold text-white py-2 px-4 rounded hover:bg-blue-700 transition">X</button>
+                    </div>
+                </div>
+            )}
         </div>
   )
 }

@@ -42,23 +42,40 @@ const Footer = () => {
     <p>info@sync-code.com</p>
     <p>Pristina, Kosovo</p>
     <div className='flex justify-start lg:justify-end items-center mt-1'>
-      <a
-        href='https://www.linkedin.com/company/sync-code'
-        target='_blank'
-        rel='noopener noreferrer'
-        className='text-[#207ead] hover:text-[#1b5f8b]'
-        aria-label='LinkedIn'
-      >
-        <svg
-          xmlns='http://www.w3.org/2000/svg'
-          fill='currentColor'
-          className='w-6 h-6'
-          viewBox='0 0 24 24'
-        >
-          <path d='M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.785-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.5c0-3.368-4-3.115-4 0v5.5h-3v-10h3v1.538c1.396-2.586 7-2.777 7 2.476v5.986z'/>
-        </svg>
-      </a>
-    </div>
+  <a
+    href='https://www.linkedin.com/company/sync-code'
+    target='_blank'
+    rel='noopener noreferrer'
+    className='text-[#207ead] hover:text-[#1b5f8b] rounded-full p-1'
+    aria-label='LinkedIn'
+  >
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      fill='currentColor'
+      className='w-6 h-6'
+      viewBox='0 0 24 24'
+    >
+      <path d='M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.785-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.5c0-3.368-4-3.115-4 0v5.5h-3v-10h3v1.538c1.396-2.586 7-2.777 7 2.476v5.986z'/>
+    </svg>
+  </a>
+  <a
+    href='https://www.facebook.com/synccodedev'
+    target='_blank'
+    rel='noopener noreferrer'
+    className='text-[#1877f2] hover:text-[#145dbf] ml-4 p-1'
+    aria-label='Facebook'
+  >
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      fill='currentColor'
+      className='w-6 h-6 rounded-md'
+      viewBox='0 0 24 24'
+    >
+      <path d='M22.676 0h-21.352c-.731 0-1.324.593-1.324 1.324v21.352c0 .731.593 1.324 1.324 1.324h11.499v-9.291h-3.12v-3.625h3.12v-2.671c0-3.097 1.891-4.785 4.651-4.785 1.325 0 2.464.098 2.794.142v3.241l-1.918.001c-1.504 0-1.794.715-1.794 1.763v2.309h3.587l-.467 3.625h-3.12v9.291h6.116c.731 0 1.324-.593 1.324-1.324v-21.352c0-.731-.593-1.324-1.324-1.324z'/>
+    </svg>
+  </a>
+</div>
+
   </div>
 </div>
 
