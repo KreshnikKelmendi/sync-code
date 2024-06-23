@@ -7,7 +7,7 @@ const Blog = () => {
 
   const handleClick = () => {
     smoothscroll.polyfill();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: 'smoth' });
   };
   return (
     <section className="py-10 lg:py-12 font-custom">
@@ -23,7 +23,7 @@ const Blog = () => {
                   <h4 className="text-base text-white font-medium mt-2">{post.title}</h4>
                 </div>
               </div>
-              <div className="h-64 bg-gradient-to-r from-[#207ead] to-[#00ffc3] p-4 lg:p-6 transition-all duration-300">
+              <div className="h-64 flex flex-col justify-center bg-gradient-to-r from-[#207ead] to-[#00ffc3] p-4 lg:p-6 transition-all duration-300">
                 <span className="text-white font-medium block">{post.date}</span>
                 <p className="text-white text-base my-3">{post.description}</p>
                 <Link to={`/articles/${post.id}`} onClick={handleClick} className="cursor-pointer text-sm text-indigo-600 font-semibold"><p>Read more..</p></Link>

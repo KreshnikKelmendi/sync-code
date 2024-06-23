@@ -37,11 +37,11 @@ const Footer = () => {
         className='hidden lg:block pl-5 object-cover lg:justify-end lg:w-56 h-16'
       />
     </div>
-    <p>Listening to you, answering with <b>SOFTWARE</b></p>
+    <p className='py-2'>Listening to you, answering with <b>SOFTWARE</b></p>
     <p className='text-2xl text-[#207ead]'>+383 (45) 490 985</p>
-    <p>info@sync-code.com</p>
+    <p className='py-2'>info@sync-code.com</p>
     <p>Pristina, Kosovo</p>
-    <div className='flex justify-start lg:justify-end items-center mt-1'>
+    <div className='py-2 flex justify-start lg:justify-end items-center mt-1'>
   <a
     href='https://www.linkedin.com/company/sync-code'
     target='_blank'

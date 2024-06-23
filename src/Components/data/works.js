@@ -7,11 +7,13 @@ import orientimiNeKarriere3 from "../Assets/orientimi-4.jpg"
 import orientimiNeKarriere4 from "../Assets/orientimi-6.jpg"
 import orientimiNeKarriere5 from "../Assets/orientimi-7.jpg"
 import flipgrc from "../Assets/flipGrc.png"
+import flipgrc1 from "../Assets/flipGrc1.png"
 import verve from "../Assets/verve-1.jpg"
 import verve2 from "../Assets/verve-2e.jpg"
 import verve3 from "../Assets/verve-3.jpg"
 import gdpr from "../Assets/gdpr.jpg"
 import gdpr2 from "../Assets/smartmockups_lqcuv410.jpg"
+import gdpr3 from "../Assets/gdpr1.png"
 import via from "../Assets/Via-ks.jpg"
 import via2 from "../Assets/via3.jpg"
 import via3 from "../Assets/via-3.jpg"
@@ -62,6 +64,7 @@ const works = [{
     image: work2,
     jobImage1: work2,
     jobImage2: flipgrc,
+    jobImage3: flipgrc1,
     shortTitle: "Manage governance, risk and compliance platform",
     category: "Web Design & Web Development",
     clientExpectations: "Expect a robust system that effectively manages governance, risk, and compliance aspects within your organization. Ensure that Flip3 provides comprehensive tools for overseeing and optimizing governance processes.",
@@ -76,6 +79,7 @@ const works = [{
     image: gdpr,
     jobImage1: gdpr,
     jobImage2: gdpr2,
+    jobImage3: gdpr3,
     shortTitle: "General Data Protection Regulation (GDPR)",
     category: "Web Design & Web Development",
     clientExpectations: "A data controller determines the purposes and means of processing personal data. In other words, the data controller decides the how and why of a data processing operation.",
