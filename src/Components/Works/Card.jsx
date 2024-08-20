@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { works } from '../data/works';
 import worldWide from "../Assets/external-link.png";
-import youtube from "../Assets/youtube.png";
 import { Link } from 'react-router-dom';
 import smoothscroll from 'smoothscroll-polyfill';
 
@@ -20,8 +19,21 @@ const Card = () => {
   };
 
   const handleClick = () => {
-    
-    window.scrollTo({ top: 0, behavior: 'smoth' });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const renderMedia = (mediaUrl) => {
+    return mediaUrl?.endsWith('.mp4') ? (
+      <video className="w-full h-64 lg:h-96 2xl:h-[62vh] object-cover rounded-md" autoPlay playsInline loop muted>
+        <source src={mediaUrl} type="video/mp4" />
+      </video>
+    ) : (
+      <img
+        className="w-full h-64 lg:h-96 2xl:h-[62vh] object-cover rounded-md"
+        src={mediaUrl}
+        alt=""
+      />
+    );
   };
 
   return (
@@ -31,11 +43,7 @@ const Card = () => {
           <div key={index}>
             <div className='relative overflow-hidden group'>
               <Link to={`/works/${work.id}`} onClick={handleClick}>
-                <img
-                  src={work.image}
-                  alt={work.workName}
-                  className='w-full h-64 lg:h-96 2xl:h-[62vh] object-cover rounded-md group-hover:opacity-75 transition-opacity duration-300'
-                />
+                {renderMedia(work.image)}
                 <div className='absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
                   <p className='text-white text-lg font-semibold text-center'>
                     See more
