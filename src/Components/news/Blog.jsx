@@ -26,7 +26,7 @@ const Blog = () => {
               <div className="h-64 flex flex-col justify-center bg-gradient-to-r from-[#207ead] to-[#00ffc3] p-4 lg:p-6 transition-all duration-300">
                 <span className="text-white font-medium block">{post.date}</span>
                 <p className="text-white text-base my-3">{post.description}</p>
-                <Link to={`/articles/${post.id}`} onClick={handleClick} className="cursor-pointer text-sm text-indigo-600 font-semibold"><p>Read more..</p></Link>
+                <Link to={`/articles/${post.id}`} onClick={handleClick} className="cursor-pointer text-sm font-semibold border-b border-white text-white w-fit"><p>Read more..</p></Link>
               </div>
             </div>
           ))}

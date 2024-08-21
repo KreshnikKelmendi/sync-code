@@ -19,7 +19,7 @@ const Card = () => {
   };
 
   const handleClick = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: 'smoth' });
   };
 
   const renderMedia = (mediaUrl) => {
