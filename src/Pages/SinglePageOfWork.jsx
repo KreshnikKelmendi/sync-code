@@ -68,7 +68,7 @@ const SinglePageOfWork = () => {
 
   return (
     <div className='text-white py-4'>
-      <div className='px-4 lg:px-12 lg:mt-6 mt-4 font-custom'>
+      <div className='px-5 lg:px-12 lg:mt-6 mt-4 font-custom'>
         <div className='flex'>
           <p className='text-3xl lg:text-4xl 2xl:text-5xl font-semibold uppercase'>{workName}</p>
         </div>
@@ -103,7 +103,7 @@ const SinglePageOfWork = () => {
 
       </div>
 
-       <div className='px-4 lg:px-12 mt-6 font-custom'>
+       <div className='px-5 lg:px-12 mt-6 font-custom'>
       {fullDescription2 && (
           <p className='font-custom mb-8 rounded-md text-lg bg-gradient-to-r from-[#207ead] to-[#00ffc3] p-4'>{fullDescription2}</p>
         )}
@@ -136,7 +136,7 @@ const SinglePageOfWork = () => {
       </div>
 
 
-      <div className='flex flex-col lg:flex-row mt-16 px-4 lg:px-12 font-custom'>
+      <div className='flex flex-col lg:flex-row mt-16 px-5 lg:px-12 font-custom'>
         <div className='w-full flex flex-col justify-center gap-y-5 lg:pr-3 h-auto lg:w-1/2'>
           <p className='text-xl uppercase 2xl:text-3xl'>{shortTitle}</p>
           {category && (
@@ -201,7 +201,7 @@ const SinglePageOfWork = () => {
 
       <div>
         {specialSections && specialSections.length > 0 && (
-          <div className='px-4 lg:px-12 font-custom grid lg:grid-cols-3 gap-4 mt-6'>
+          <div className='px-5 lg:px-12 font-custom grid lg:grid-cols-3 gap-4 mt-6'>
             {specialSections.map((section, index) => (
               <div key={index} className='bg-white text-black rounded-md p-6 shadow-lg'>
                 <h2 className='text-2xl lg:text-3xl font-bold mb-4'>{section.titleS}</h2>
@@ -213,7 +213,7 @@ const SinglePageOfWork = () => {
         )}
       </div>
 
-    <div className='px-4 lg:px-12 mt-6 font-custom'>
+    <div className='px-5 lg:px-12 mt-6 font-custom'>
         {conclusion && (
           <p className='text-white text-3xl uppercase lg:text-6xl'>{conclusion}</p>
         )}
@@ -230,7 +230,7 @@ const SinglePageOfWork = () => {
     </div>
      
 
-      <div className='px-4 lg:px-12 mt-6 lg:mt-16 flex flex-col'>
+      <div className='px-5 lg:px-12 mt-6 lg:mt-16 flex flex-col'>
         <p className='lg:w-[80%] text-[#207ead] text-4xl leading-[55px] lg:leading-[80px] lg:mt-7 lg:text-6xl 2xl:text-[100px] 2xl:leading-[120px] uppercase font-custom'>
           {shortTitle}
         </p>
@@ -247,13 +247,13 @@ const SinglePageOfWork = () => {
         )}
       </div>
 
-      <div className='px-4 lg:px-12 mt-6'>
+      <div className='px-5 lg:px-12 mt-6'>
         {writeEmail && (
             <p className='text-white italic text-xl lg:w-1/2'>{writeEmail}</p>
           )}
       </div>
 
-      <div className='px-4 lg:px-12 gap-3 mt-6 grid lg:grid-cols-2'>
+      <div className='px-5 lg:px-12 gap-3 mt-6 grid lg:grid-cols-2'>
         {jobImage4 && (
           <motion.img
             ref={ref4}

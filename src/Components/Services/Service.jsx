@@ -79,7 +79,7 @@ const Service = () => {
 
   return (
     <section className=''>
-      <div className="px-8 mx-auto md:px-12 flex flex-col lg:h-svh justify-center font-custom">
+      <div className="px-5 mx-auto lg:px-12 flex flex-col lg:h-svh justify-center font-custom">
         <div className="flex flex-col">
           {/* <div className="text-white">
             <div>

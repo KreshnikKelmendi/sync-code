@@ -112,7 +112,7 @@ const FirstFrontView = () => {
         >
           Listening to you, answering with{' '}
           <motion.b
-            className='text-[#207ead] p-2 shadow shadow-gray-700'
+            className='text-[#207ead] p-2 shadow shadow-gray-700 uppercase'
             initial={{ opacity: 0 }}
             animate={controls}
           >

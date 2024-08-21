@@ -34,6 +34,7 @@ body{
 .active{
   color: #207ead;
   font-weight: bold;
+  border-bottom: 2px solid #207ead;
 }
 
 @media (min-width: 1024px) {
