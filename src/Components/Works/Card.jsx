@@ -24,12 +24,12 @@ const Card = () => {
 
   const renderMedia = (mediaUrl) => {
     return mediaUrl?.endsWith('.mp4') ? (
-      <video className="w-full h-64 lg:h-96 2xl:h-[62vh] object-cover rounded-md" autoPlay playsInline loop muted>
+      <video className="w-full h-64 lg:h-80 2xl:h-[55vh] object-cover rounded-md" autoPlay playsInline loop muted>
         <source src={mediaUrl} type="video/mp4" />
       </video>
     ) : (
       <img
-        className="w-full h-64 lg:h-96 2xl:h-[62vh] object-cover rounded-md"
+        className="w-full h-64 lg:h-80 2xl:h-[55vh] object-cover rounded-md"
         src={mediaUrl}
         alt=""
       />
@@ -38,7 +38,7 @@ const Card = () => {
 
   return (
     <div>
-      <div className='grid lg:grid-cols-2 gap-12 gap-y-16 mt-8'>
+      <div className='grid lg:grid-cols-3 gap-12 gap-y-16 mt-8'>
         {displayedWorks?.map((work, index) => (
           <div key={index}>
             <div className='relative overflow-hidden group'>

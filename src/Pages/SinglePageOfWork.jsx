@@ -18,6 +18,7 @@ const SinglePageOfWork = () => {
   const { ref: ref3, inView: inView3 } = useInView({ triggerOnce: true });
   const { ref: ref4, inView: inView4 } = useInView({ triggerOnce: true });
   const { ref: ref5, inView: inView5 } = useInView({ triggerOnce: true });
+  const { ref: ref6, inView: inView6 } = useInView({ triggerOnce: true });
 
   const [openSection, setOpenSection] = useState(null);
 
@@ -40,6 +41,7 @@ const SinglePageOfWork = () => {
     jobImage3,
     jobImage4,
     jobImage5,
+    jobImage6,
     shortTitle,
     category,
     technologies,
@@ -191,7 +193,7 @@ const SinglePageOfWork = () => {
               className="w-full lg:w-1/2 py-4 lg:py-0"
             >
               <img
-                className="h-80 lg:h-[100vh] w-full object-cover rounded-md"
+                className="h-80 lg:h-[100vh] w-full object-cover rounded-md secondServiceImage"
                 src={jobImage3}
                 alt=""
               />
@@ -253,14 +255,14 @@ const SinglePageOfWork = () => {
           )}
       </div>
 
-      <div className='px-5 lg:px-12 gap-3 mt-6 grid lg:grid-cols-2'>
+      <div className='px-5 lg:px-12 gap-3 mt-6 grid lg:grid-cols-3'>
         {jobImage4 && (
           <motion.img
             ref={ref4}
             variants={imageVariant}
             initial='hidden'
             animate={inView4 ? 'visible' : 'hidden'}
-            className='mt-6 h-80 lg:h-[85vh] w-full object-cover rounded-md'
+            className='mt-6 h-80 lg:h-[60vh] w-full object-cover rounded-md'
             src={jobImage4}
             alt=''
           />
@@ -271,8 +273,19 @@ const SinglePageOfWork = () => {
             variants={imageVariant}
             initial='hidden'
             animate={inView5 ? 'visible' : 'hidden'}
-            className='mt-6 h-80 lg:h-[85vh] w-full object-cover rounded-md'
+            className='mt-6 h-80 lg:h-[60vh] w-full object-cover rounded-md'
             src={jobImage5}
+            alt=''
+          />
+        )}
+        {jobImage6 && (
+          <motion.img
+            ref={ref6}
+            variants={imageVariant}
+            initial='hidden'
+            animate={inView6 ? 'visible' : 'hidden'}
+            className='mt-6 h-80 lg:h-[60vh] w-full object-cover rounded-md'
+            src={jobImage6}
             alt=''
           />
         )}
