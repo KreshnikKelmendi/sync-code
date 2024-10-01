@@ -140,7 +140,7 @@ const works = [
         clientExpectations: "Clients expect the website to showcase modern plumbing solutions with clear service categories and seamless navigation. The website should offer quick access to service descriptions, testimonials, and contact information for easy client engagement.",
         partnershipResult: "Nextgen Plumbing, based in the USA, was highly satisfied with the result, praising the site’s clean, professional design and enhanced functionality. The web solution provides a streamlined user experience, allowing clients to easily explore services and get in touch with the plumbing team. Sync-Code’s attention to detail and commitment to creating a robust online presence has strengthened the partnership, paving the way for future collaborations.",
         description: "Nextgen Plumbing, a leading plumbing company in the United States, provides top-tier services for both residential and commercial clients. The newly developed website highlights their diverse service offerings, from plumbing installations to emergency repairs. Integrated with an intuitive CMS, the site allows easy updates, including new projects and client testimonials, ensuring that the content stays fresh and relevant. The platform’s modern design and fast load times make it an essential tool for the business, enhancing customer engagement and satisfaction.",
-        liveLink: "https://nextgen-pl.vercel.app/",
+        liveLink: "https://www.ndnextgen.com/",
         backgroundColor: '#FF5733'
     }
     ,
