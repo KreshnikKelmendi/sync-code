@@ -112,11 +112,11 @@ const FirstFrontView = () => {
         >
           Listening to you, answering with{' '}
           <motion.b
-            className='text-[#207ead] p-2 shadow shadow-gray-700 uppercase'
+            className='text-[#207ead] p-2 uppercase'
             initial={{ opacity: 0 }}
             animate={controls}
           >
-            {phrases[currentPhraseIndex]}
+          {phrases[currentPhraseIndex]}
           </motion.b>
         </motion.h1>
         <AnimatedText

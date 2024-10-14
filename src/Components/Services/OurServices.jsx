@@ -34,7 +34,7 @@ const ServiceCard = ({ title, description, link, number }) => {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
       transition={{ duration: 0.6, delay: 0.2 }}
-      className="relative text-white bg-gradient-to-r from-[#207ead] to-[#00ffc3]  h-full 2xl:h-96 2xl:justify-center 2xl:items-center 2xl:grid py-5 rounded-md"
+      className="relative text-white bg-gradient-to-r from-[#207ead] to-[#00ffc3] h-full 2xl:h-96 2xl:justify-center 2xl:items-center 2xl:grid py-5 rounded-md"
     >
       <div className="absolute top-0 left-0 bg-white rounded-md text-[#207ead] font-bold px-3 py-1 2xl:text-xl">{number}</div>
       <div className="px-6 py-4">
