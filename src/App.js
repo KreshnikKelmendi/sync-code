@@ -12,6 +12,7 @@ import ContactPage from './Pages/ContactPage';
 import CompanyNews from './Pages/CompanyNews';
 import SinglePageOfNews from './Pages/SinglePageOfNews';
 import ScrollToTop from './Pages/ScrollToTop';
+import BannerContact from './Components/contact/BannerContact';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
             <Route path="/articles" element={<CompanyNews />} />
             <Route path="/articles/:articleID" element={<SinglePageOfNews />} />
           </Routes>
+          <BannerContact />
         <Footer />
         <ScrollToTop />
       </BrowserRouter>

@@ -17,7 +17,8 @@ const fadeInUp = {
 
 const cardHover = {
   hover: {
-    scale: 1.05,
+    scale: 1.01,
+    boxShadow: '0 15px 300px rgba(0, 0, 0, 0.2)',
     transition: {
       duration: 0.4,
     },
@@ -55,26 +56,26 @@ const SecondFrontView = () => {
     {
       step: '01',
       title: 'Consult your idea',
-      description: 'Set the direction with our development consultants.',
-      detail: 'We work closely with you to understand your vision and create a roadmap for success.',
+      description: 'Work with our consultants to define your direction and roadmap.',
+      detail: 'We work closely with you to define your vision, address technical requirements, and outline a clear path to success.',
     },
     {
       step: '02',
-      title: 'Choose a Technology',
-      description: 'Explore and select the technologies that best align with your goals.',
-      detail: 'Our team will guide you through the latest technologies to find the best fit for your project.',
+      title: 'Choose Technology',
+      description: 'Identify the technology stack that best suits your project.',
+      detail: 'Based on your project’s needs, we help you choose the best technologies to ensure scalability and efficiency.',
     },
     {
       step: '03',
       title: 'Design',
-      description: 'Create a user-friendly design that enhances the overall experience.',
-      detail: 'Our designers ensure that every detail is focused on user experience and satisfaction.',
+      description: 'Craft a seamless, user-friendly design for an optimal experience.',
+      detail: 'Our design team focuses on creating user interfaces that are both visually appealing and functional.',
     },
     {
       step: '04',
       title: 'Develop',
-      description: 'Bring your project to life with the expertise of our development team.',
-      detail: 'We follow best practices to deliver a robust and scalable solution for your needs.',
+      description: 'Turn your ideas into reality with our development team.',
+      detail: 'We transform designs into fully functional systems using the latest development best practices.',
     },
   ];
 
@@ -97,7 +98,7 @@ const SecondFrontView = () => {
             ref={ref}
             variants={staggeredText}
             initial="hidden"
-            animate={inView ? "visible" : "hidden"} // Trigger animation based on view
+            animate={inView ? "visible" : "hidden"}
           >
             {splitText.map((word, index) => (
               <motion.span key={index} variants={letterAnimation} className="inline-block">
@@ -116,8 +117,8 @@ const SecondFrontView = () => {
         custom={1}
         className="max-w-3xl text-lg 2xl:text-xl mb-16"
       >
-        At Sync-Code, our development team pays attention to every detail to ensure a seamless and optimized
-        process. We deliver results that meet the demands of even the most complex projects.
+        At Sync-Code, our development process is designed to be seamless and detail-oriented,
+        ensuring that each project meets the highest quality standards.
       </motion.p>
 
       {/* Step-by-step Cards */}
@@ -135,33 +136,22 @@ const SecondFrontView = () => {
             whileHover="hover"
             onMouseEnter={() => handleCardHover(index)}
             onMouseLeave={handleCardLeave}
-            className={`relative bg-white rounded-lg text-center shadow-lg hover:shadow-xl transform transition-all
-              ${hoveredIndex !== null && hoveredIndex !== index ? 'blur-sm' : ''}`}
-            style={{ height: '270px' }}
+            className={`relative bg-gray-300 rounded-lg p-8 text-center shadow-lg hover:shadow-2xl transition-transform transform-gpu 
+            ${hoveredIndex !== null && hoveredIndex !== index ? 'opacity-5' : 'opacity-100'}`}
+            style={{ height: '320px' }}
           >
-            {/* Front Side */}
-            {hoveredIndex === index ? (
-              <div
-                className="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-[#207ead] to-[#00ffc3] text-white rounded-lg transition-all duration-300"
-                style={{ backfaceVisibility: 'hidden', height: '100%' }}
-              >
-                <div>
-                  <h3 className="font-bold text-xl mb-2">{card.title}</h3>
-                  <p className="text-gray-200 p-2">{card.detail}</p>
-                </div>
+            <div className="flex flex-col items-center justify-center h-full">
+              {/* Circular Step Indicator */}
+              <div className="w-16 h-16 rounded-full bg-gradient-to-r from-[#207ead] to-[#00ffc3] flex items-center justify-center mb-4">
+                <div className="text-2xl text-white font-bold">{card.step}</div>
               </div>
-            ) : (
-              <div
-                className="absolute inset-0 flex items-center justify-center transition-all duration-300"
-                style={{ backfaceVisibility: 'hidden', height: '100%' }}
-              >
-                <div>
-                  <div className="text-5xl font-bold text-[#207ead] mb-4">{card.step}</div>
-                  <h3 className="font-bold text-xl mb-2 text-[#207ead]">{card.title}</h3>
-                  <p className="text-gray-700 p-2">{card.description}</p>
-                </div>
-              </div>
-            )}
+              {/* Card Content */}
+              <h3 className="font-semibold text-xl mb-3 text-gray-900">{card.title}</h3>
+              {/* Show description or full detail based on hover state */}
+              <p className="text-gray-600">
+                {hoveredIndex === index ? card.detail : card.description}
+              </p>
+            </div>
           </motion.div>
         ))}
       </motion.div>
