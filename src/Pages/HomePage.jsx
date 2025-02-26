@@ -12,7 +12,7 @@ const HomePage = () => {
       <FirstFrontView />
       {/* <WhoWeAre /> */}
       <AboutUs />
-      <SecondFrontView />
+      {/* <SecondFrontView /> */}
       <OurServices />
       <OurWorks />
     </>
