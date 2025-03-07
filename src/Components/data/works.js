@@ -48,8 +48,6 @@ import plumbing5 from "../Assets/plumbing-5.jpg"
 import plumbing6 from "../Assets/plumbing-6.jpg"
 import plumbing7 from "../Assets/plumbing-7.jpg"
 
-import graphite1 from "../Assets/graphite-3.png"
-import graphite2 from "../Assets/graphite-1.png"
 import graphite3 from "../Assets/graphite-3.png"
 import graphite4 from "../Assets/notebook-mockup-on-desk.png"
 import graphite5 from "../Assets/graphite-5.png"

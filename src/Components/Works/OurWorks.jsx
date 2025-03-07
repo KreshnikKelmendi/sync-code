@@ -15,7 +15,7 @@ const OurWorks = () => {
     <div className='text-white py-4'>
       <div className='px-4 lg:px-12 lg:mt-16 mt-16 2xl:mt-28 font-custom'>
         <div className='flex justify-between'>
-          <p className='text-4xl 2xl:text-5xl font-semibold uppercase'>Our Work</p>
+          <p className='text-4xl 2xl:text-5xl font-semibold uppercase'>Latest Projects</p>
           <Link to='/works' 
                 onClick={handleClick}
                 className='text-[#207ead] 2xl:text-lg mt-1 hover:scale-110 hover:text-white'>See all &rarr;
