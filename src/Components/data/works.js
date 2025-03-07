@@ -48,8 +48,36 @@ import plumbing5 from "../Assets/plumbing-5.jpg"
 import plumbing6 from "../Assets/plumbing-6.jpg"
 import plumbing7 from "../Assets/plumbing-7.jpg"
 
+import graphite1 from "../Assets/graphite-3.png"
+import graphite2 from "../Assets/graphite-1.png"
+import graphite3 from "../Assets/graphite-3.png"
+import graphite4 from "../Assets/notebook-mockup-on-desk.png"
+import graphite5 from "../Assets/graphite-5.png"
+import graphite6 from "../Assets/graphite-6.png"
+import graphite7 from "../Assets/graphite-9.png"
+
 
 const works = [
+    {
+        id: "graphite-print",
+        workName: "GRAPHITE PRINT",
+        technologies: "BOOTSTRAP / jQuery",
+        image: graphite5,
+        jobImage1: graphite4,
+        jobImage2: graphite3,
+        jobImage3: graphite5,
+        jobImage4: graphite5,
+        jobImage5: graphite6,
+        jobImage6: graphite7,
+        shortTitle: "Creative Printing and Design Solutions for Businesses",
+        category: "Web Design & Web Development",
+        clientExpectations: "Clients expect a visually appealing website that showcases Graphite Print’s premium printing and design services. The site should provide a seamless experience with clear service categories, a portfolio of past projects, and easy access to pricing and contact information.",
+        partnershipResult: "Graphite Print, a leading printing and design company, was highly impressed with the final website. The platform features a clean, professional look with an intuitive layout that enhances user experience. Sync-Code’s expertise in web development ensured a fast, responsive website that effectively highlights Graphite Print’s services, fostering stronger client relationships and future business growth.",
+        description: "Graphite Print is a premier printing and design company specializing in high-quality prints, branding materials, and custom design solutions. The newly developed website provides an engaging showcase of their diverse services, from business cards and brochures to large-format printing. Integrated with a user-friendly CMS, the site allows effortless updates, ensuring fresh content and an up-to-date portfolio. With a sleek, modern design and optimized performance, the website enhances client interaction and streamlines the ordering process.",
+        liveLink: "https://www.graphiteprint.com",
+        backgroundColor: "#FF5733"
+    },
+    
     {
         id: "imator",
         workName: "IMATOR",

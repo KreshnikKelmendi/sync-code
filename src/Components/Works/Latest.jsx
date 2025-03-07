@@ -24,12 +24,12 @@ const Latest = () => {
 
   const renderMedia = (mediaUrl) => {
     return mediaUrl?.endsWith('.mp4') ? (
-      <video className="w-full h-64 lg:h-96 2xl:h-[62vh] object-cover rounded-md" autoPlay playsInline loop muted>
+      <video className="w-full h-40 lg:h-64 2xl:h-[40vh] object-cover rounded-md" autoPlay playsInline loop muted>
         <source src={mediaUrl} type="video/mp4" />
       </video>
     ) : (
       <img
-        className="w-full h-64 lg:h-96 2xl:h-[62vh] object-cover rounded-md"
+        className="w-full h-40 lg:h-64 2xl:h-[40vh] object-cover rounded-md"
         src={mediaUrl}
         alt=""
       />
@@ -37,7 +37,7 @@ const Latest = () => {
   };
 
   return (
-    <div className="grid lg:grid-cols-2 gap-12 gap-y-16 mt-8">
+    <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 gap-y-16 mt-8">
       {works.slice(0, 4).map((work, index) => (
         <div key={index}>
           <div className="relative overflow-hidden group">
@@ -49,9 +49,9 @@ const Latest = () => {
             </Link>
           </div>
           <div className="mt-5 text-white">
-            <p className="text-2xl font-semibold w-fit">{work.workName}</p>
-            <p className="text-[#207ead] mt-1"><span className="text-[11px]">Category:</span> {work.category}</p>
-            <p className="text-base uppercase mt-2 text-white">{work.shortTitle}</p>
+            <p className="lg:text-2xl font-semibold w-fit">{work.workName}</p>
+            <p className="text-[#207ead] text-[12px] lg:text-sm mt-1"><span className="text-[9px] lg:text-[11px]">Category:</span> {work.category}</p>
+            <p className="text-[12px] lg:text-base uppercase mt-2 text-white">{work.shortTitle}</p>
             <div className="flex gap-x-1">
               <Link
                 className="mt-3 flex text-[#207ead] underline rounded-md font-custom hover:text-white font-bold"
