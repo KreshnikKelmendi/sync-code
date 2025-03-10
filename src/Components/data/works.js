@@ -53,6 +53,7 @@ import graphite4 from "../Assets/notebook-mockup-on-desk.png"
 import graphite5 from "../Assets/graphite-5.png"
 import graphite6 from "../Assets/graphite-6.png"
 import graphite7 from "../Assets/graphite-9.png"
+import graphite55 from "../Assets/graphite-1.png"
 
 
 const works = [
@@ -64,7 +65,7 @@ const works = [
         jobImage1: graphite4,
         jobImage2: graphite3,
         jobImage3: graphite5,
-        jobImage4: graphite5,
+        jobImage4: graphite55,
         jobImage5: graphite6,
         jobImage6: graphite7,
         shortTitle: "Creative Printing and Design Solutions for Businesses",
