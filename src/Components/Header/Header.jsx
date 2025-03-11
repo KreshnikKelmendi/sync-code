@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import syncCodeLogo from "../Assets/synccode_2024.png";
 import { Link, NavLink } from 'react-router-dom';
-import menu from "../Assets/menu.png"
+// import menu from "../Assets/menu.png"
 import arrow from "../Assets/arrow.png"
 
 const Header = () => {
@@ -107,7 +107,7 @@ const Header = () => {
         <div className="hidden lg:flex items-center mr-5">
         <Link to="/get-in-touch" onClick={() => window.scrollTo({ top: 0, left: 0 })}>
         <motion.button
-          className="text-white uppercase rounded-[18px] bg-gradient-to-r from-[#207ead] to-[#00ffc3] px-6 py-2 font-custom font-extrabold hover:animate-pulse"
+          className="rounded-[18px] border-4 border-[#111315] bg-white px-6 py-3 uppercase text-black transition-all duration-300 hover:translate-x-[-4px] font-bold hover:text-[#207ead] hover:translate-y-[-4px] hover:rounded-md shadow-[4px_4px_0px_#207ead] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
@@ -175,7 +175,7 @@ const Header = () => {
       <div className="text-center">
       <Link onClick={() => { window.scrollTo({ top: 0, left: 0 }); closeMobileMenu(); }} to="/get-in-touch">
         <motion.button
-          className="text-white text-2xl uppercase rounded-[18px] mt-12 bg-gradient-to-r from-[#207ead] to-[#00ffc3] w-full py-3 font-custom font-extrabold"
+          className="rounded-[18px] border-4 border-[#111315] bg-white px-6 py-4 uppercase text-black transition-all duration-300 hover:translate-x-[-4px] font-bold hover:text-[#207ead] hover:translate-y-[-4px] w-full mt-8 hover:rounded-md shadow-[4px_4px_0px_#207ead] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}

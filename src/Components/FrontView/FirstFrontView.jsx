@@ -116,7 +116,7 @@ const FirstFrontView = () => {
             initial={{ opacity: 0 }}
             animate={controls}
           >
-          {phrases[currentPhraseIndex]}
+            {phrases[currentPhraseIndex]}
           </motion.b>
         </motion.h1>
         <AnimatedText
@@ -127,7 +127,7 @@ const FirstFrontView = () => {
         />
         <Link to="/about" onClick={() => window.scrollTo({ top: 0, left: 0 })}>
           <button
-            className='outline font-bold text-white mt-8 px-14 uppercase py-3 relative overflow-hidden transition-all duration-500 ease-in-out hover:bg-[#207ead] rounded-[18px] hover:outline-none'
+            className="rounded-[18px] w-60 border-4 mt-6 border-[#111315] bg-white px-6 py-3 font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md shadow-[4px_4px_0px_#207ead] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
           >
             More about us
           </button>
