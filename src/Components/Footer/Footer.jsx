@@ -81,8 +81,8 @@ const Footer = () => {
 
 
     </div>
-    <div className='bg-gradient-to-r from-[#207ead] to-[#00ffc3] h-12 2xl:h-16 flex justify-center items-center'>
-      <p className="font-custom text-white text-center">&copy; 2024 Sync Code. All rights reserved.</p>
+    <div className='bg-gradient-to-r from-[#207ead] to-[#00ffc3] h-12 2xl:h-14 flex justify-center items-center'>
+      <p className="font-custom text-white text-center">&copy; Sync Code. All rights reserved.</p>
     </div>
     </>
   );
