@@ -49,3 +49,23 @@ body{
   }
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px black; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #207ead; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0c3a52; 
+}
+
