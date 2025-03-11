@@ -127,7 +127,7 @@ const Contact = () => {
                         <p className='text-gray-600'>Sync Code is dedicated to ensuring your privacy and protecting your personal data. We will use your information exclusively to manage your account and provide the services and products you have requested from us.</p>
                     </div>
                     <button type="submit"
-                        class="bg-gradient-to-r from-[#207ead] to-[#00ffc3] mt-8 flex items-center hover:shadow-xl hover:shadow-gray-700 hover:animate-pulse justify-center text-sm w-fit rounded px-4 py-2.5 font-semibold text-white">
+                        class="bg-gradient-to-t from-[#207ead] to-[#00ffc3] mt-8 flex items-center hover:shadow-xl hover:shadow-gray-700 hover:animate-pulse justify-center text-sm w-fit rounded-[18px] px-4 py-2.5 font-semibold text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill='#fff' class="mr-2"
                             viewBox="0 0 548.244 548.244">
                             <path fill-rule="evenodd"

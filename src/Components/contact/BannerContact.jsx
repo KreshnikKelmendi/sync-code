@@ -16,7 +16,7 @@ const BannerContact = () => {
 
   return (
     <div className='px-4 lg:px-12 font-custom'>
-      <div className="bg-gradient-to-r from-[#207ead] to-[#00ffc3] my-16 text-white py-12 px-6 lg:px-12 flex flex-col lg:flex-row items-center justify-between rounded-md">
+      <div className="bg-gradient-to-t from-[#207ead] to-[#00ffc3] my-16 text-white py-12 px-6 lg:px-12 flex flex-col lg:flex-row items-center justify-between rounded-[18px]">
         {/* Left Text Section */}
         <div className="mb-6 lg:mb-0">
           <h1 className="text-3xl lg:text-4xl font-bold mb-4">Let's get in touch!</h1>
@@ -29,7 +29,7 @@ const BannerContact = () => {
         <div className='w-full lg:w-fit'>
           <Link to="/get-in-touch">
             <button
-              className=" text-[#207ead] w-full border-none font-semibold text-lg py-3 px-6 rounded-lg shadow-lg hover:bg-gray-100 transition-colors duration-300"
+              className="text-white uppercase w-full border-none font-semibold text-lg py-3 px-6 rounded-[18px] shadow-lg hover:text-gray-800 transition-colors duration-300"
             >
               Get in Touch
             </button>

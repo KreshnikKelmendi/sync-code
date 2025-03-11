@@ -84,7 +84,7 @@ const SinglePageOfWork = () => {
               variants={imageVariant}
               initial='hidden'
               animate={inView1 ? 'visible' : 'hidden'}
-              className='mt-6 h-80 lg:h-[80vh] w-full object-cover rounded-md'
+              className='mt-6 h-80 lg:h-[80vh] w-full object-cover rounded-[18px]'
               src={jobImage1}
               alt=''
             />
@@ -96,7 +96,7 @@ const SinglePageOfWork = () => {
               variants={imageVariant}
               initial='hidden'
               animate={inView2 ? 'visible' : 'hidden'}
-              className='mt-6 h-80 lg:h-[80vh] w-full object-cover rounded-md'
+              className='mt-6 h-80 lg:h-[80vh] w-full object-cover rounded-[18px]'
               src={jobImage2}
               alt=''
             />
@@ -193,7 +193,7 @@ const SinglePageOfWork = () => {
               className="w-full lg:w-1/2 py-4 lg:py-0"
             >
               <img
-                className="h-80 lg:h-[100vh] w-full object-cover rounded-md secondServiceImage"
+                className="h-80 lg:h-[100vh] w-full object-cover rounded-[18px] secondServiceImage"
                 src={jobImage3}
                 alt=""
               />
@@ -262,7 +262,7 @@ const SinglePageOfWork = () => {
             variants={imageVariant}
             initial='hidden'
             animate={inView4 ? 'visible' : 'hidden'}
-            className='mt-6 h-80 lg:h-[60vh] w-full object-cover rounded-md'
+            className='mt-6 h-80 lg:h-[60vh] w-full object-cover rounded-[18px]'
             src={jobImage4}
             alt=''
           />
@@ -273,7 +273,7 @@ const SinglePageOfWork = () => {
             variants={imageVariant}
             initial='hidden'
             animate={inView5 ? 'visible' : 'hidden'}
-            className='mt-6 h-80 lg:h-[60vh] w-full object-cover rounded-md'
+            className='mt-6 h-80 lg:h-[60vh] w-full object-cover rounded-[18px]'
             src={jobImage5}
             alt=''
           />
@@ -284,7 +284,7 @@ const SinglePageOfWork = () => {
             variants={imageVariant}
             initial='hidden'
             animate={inView6 ? 'visible' : 'hidden'}
-            className='mt-6 h-80 lg:h-[60vh] w-full object-cover rounded-md'
+            className='mt-6 h-80 lg:h-[60vh] w-full object-cover rounded-[18px]'
             src={jobImage6}
             alt=''
           />

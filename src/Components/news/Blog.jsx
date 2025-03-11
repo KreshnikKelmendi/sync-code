@@ -18,12 +18,12 @@ const Blog = () => {
           {blogPosts?.map(post => (
             <div key={post.id} className=" relative">
               <div className="relative flex items-center">
-                <img src={post.image} alt={post.title} className="w-[100vh] h-60 object-cover" />
+                <img src={post.image} alt={post.title} className="w-[100vh] h-60 object-cover rounded-t-[18px]" />
                 <div className="absolute inset-0 flex flex-col items-center justify-center p-4 lg:p-6">
                   <h4 className="text-base text-white font-medium mt-2">{post.title}</h4>
                 </div>
               </div>
-              <div className="h-64 flex flex-col justify-center bg-gradient-to-r from-[#207ead] to-[#00ffc3] p-4 lg:p-6 transition-all duration-300">
+              <div className="h-64 flex flex-col justify-center bg-gradient-to-r from-[#207ead] to-[#00ffc3] p-4 lg:p-6 transition-all duration-300 rounded-b-[18px]">
                 <span className="text-white font-medium block">{post.date}</span>
                 <p className="text-white text-base my-3">{post.description}</p>
                 <Link to={`/articles/${post.id}`} onClick={handleClick} className="cursor-pointer text-sm font-semibold border-b border-white text-white w-fit"><p>Read more..</p></Link>

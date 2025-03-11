@@ -24,12 +24,12 @@ const Card = () => {
 
   const renderMedia = (mediaUrl) => {
     return mediaUrl?.endsWith('.mp4') ? (
-      <video className="w-full h-64 lg:h-80 2xl:h-[55vh] object-cover rounded-md" autoPlay playsInline loop muted>
+      <video className="w-full h-64 lg:h-80 2xl:h-[55vh] object-cover rounded-[18px]" autoPlay playsInline loop muted>
         <source src={mediaUrl} type="video/mp4" />
       </video>
     ) : (
       <img
-        className="w-full h-64 lg:h-80 2xl:h-[55vh] object-cover rounded-md"
+        className="w-full h-64 lg:h-80 2xl:h-[55vh] object-cover rounded-[18px]"
         src={mediaUrl}
         alt=""
       />

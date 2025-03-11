@@ -24,12 +24,12 @@ const Latest = () => {
 
   const renderMedia = (mediaUrl) => {
     return mediaUrl?.endsWith('.mp4') ? (
-      <video className="w-full h-40 lg:h-64 2xl:h-[40vh] object-cover rounded-md" autoPlay playsInline loop muted>
+      <video className="w-full h-40 lg:h-64 2xl:h-[40vh] object-cover rounded-[18px]" autoPlay playsInline loop muted>
         <source src={mediaUrl} type="video/mp4" />
       </video>
     ) : (
       <img
-        className="w-full h-40 lg:h-64 2xl:h-[40vh] object-cover rounded-md"
+        className="w-full h-40 lg:h-64 2xl:h-[40vh] object-cover rounded-[18px]"
         src={mediaUrl}
         alt=""
       />
@@ -54,7 +54,7 @@ const Latest = () => {
             <p className="text-[12px] lg:text-base uppercase mt-2 text-white">{work.shortTitle}</p>
             <div className="flex gap-x-1">
               <Link
-                className="mt-3 flex text-[#207ead] underline rounded-md font-custom hover:text-white font-bold"
+                className="mt-3 flex text-[#207ead] text-sm lg:text-base underline rounded-md font-custom hover:text-white font-bold"
                 to={`/works/${work.id}`}
                 onClick={handleClick}
               >

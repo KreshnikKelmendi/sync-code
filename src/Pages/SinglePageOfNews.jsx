@@ -20,8 +20,8 @@ const SinglePageOfNews = () => {
         <p className="text-lg text-white leading-relaxed text-justify tracking-tighter">{description}</p>
       </div>
 <div className='grid lg:grid-cols-2 gap-4'>
-      {image1 && <img src={image1} alt="" className="w-full lg:h-[80vh] object-cover lg:mt-12" />}
-      {image2 && <img src={image2} alt="" className="w-full lg:h-[80vh] object-cover lg:mt-16" />}
+      {image1 && <img src={image1} alt="" className="w-full lg:h-[80vh] object-cover lg:mt-12 rounded-[18px]" />}
+      {image2 && <img src={image2} alt="" className="w-full lg:h-[80vh] object-cover lg:mt-16 rounded-[18px]" />}
       </div>
       <p className="text-lg text-white leading-relaxed mt-6  text-justify tracking-tighter">{secondDescription}</p>
 

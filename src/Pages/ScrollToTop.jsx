@@ -30,7 +30,7 @@ const ScrollToTop = () => {
       {isVisible && 
         <button 
           onClick={scrollToTop} 
-          className="bg-gradient-to-r from-[#207ead] to-[#00ffc3] text-white px-2 py-1 font-extrabold transition duration-300"
+          className="bg-gradient-to-b from-[#207ead] to-[#00ffc3] text-white px-2 py-1 font-extrabold transition duration-300"
         >
           &#8679;
         </button>

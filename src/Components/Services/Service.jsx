@@ -98,7 +98,7 @@ const Service = () => {
                       <img
                         src={service.imgSrc}
                         alt="#"
-                        className="bg-gray-200 shadow-box rounded-md firstServiceImage shadow-gray-500/30 overflow-hidden aspect-square w-full lg:h-[100vh] 2xl:h-[70vh] object-cover object-center"
+                        className="bg-gray-200 rounded-[18px] shadow-box firstServiceImage shadow-gray-500/30 overflow-hidden aspect-square w-full lg:h-[100vh] 2xl:h-[70vh] object-cover object-center"
                       />
                     </div>
                     <div>
@@ -128,7 +128,7 @@ const Service = () => {
                       <img
                         src={service.imgSrc}
                         alt="#"
-                        className="bg-gray-200 shadow-box secondServiceImage shadow-gray-500/30 overflow-hidden aspect-square w-full lg:h-[100vh] 2xl:h-[70vh] object-cover object-center"
+                        className="bg-gray-200 shadow-box secondServiceImage rounded-[18px] shadow-gray-500/30 overflow-hidden aspect-square w-full lg:h-[100vh] 2xl:h-[70vh] object-cover object-center"
                       />
                     </div>
                   </>

@@ -6,7 +6,7 @@ import placeholder from "../Assets/location.png";
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
+  // const currentYear = new Date().getFullYear();
 
   return (
     <>
@@ -20,11 +20,11 @@ const Footer = () => {
         />
       </div>
     <div className='lg:text-center font-custom grid grid-cols-2 lg:flex lg:flex-row lg:gap-x-5 text-center justify-center items-center gap-x-3 gap-y-3 lg:gap-y-6 mb-4 lg:mb-0 uppercase lg:mt-12 font-bold'>
-        <Link to="/"onClick={() => window.scrollTo({ top: 0, left: 0 })} className='hover:text-white border text-sm lg:text-base px-4 2xl:px-16 lg:px-6 py-4 2xl:py-6 rounded-md border-gray-500 hover:bg-gradient-to-r from-[#207ead] to-[#00ffc3]'>Home</Link>
-        <Link to="/about" onClick={() => window.scrollTo({ top: 0, left: 0 })} className='hover:text-white border text-sm lg:text-base px-4 2xl:px-16 lg:px-6 py-4 2xl:py-6 rounded-md border-gray-500 hover:bg-gradient-to-r from-[#207ead] to-[#00ffc3]'>About</Link>
-        <Link to="/services" onClick={() => window.scrollTo({ top: 0, left: 0 })} className='hover:text-white border text-sm lg:text-base px-4 2xl:px-16 lg:px-6 py-4 2xl:py-6 rounded-md border-gray-500 hover:bg-gradient-to-r from-[#207ead] to-[#00ffc3]'>Services</Link>
-        <Link to="/works" onClick={() => window.scrollTo({ top: 0, left: 0 })} className='hover:text-white border text-sm lg:text-base px-4 2xl:px-16 lg:px-6 py-4 2xl:py-6 rounded-md border-gray-500 hover:bg-gradient-to-r from-[#207ead] to-[#00ffc3]'>Work</Link>
-        <Link to="/articles" onClick={() => window.scrollTo({ top: 0, left: 0 })} className='hover:text-white border text-sm lg:text-base px-4 2xl:px-16 lg:px-6 py-4 2xl:py-6 rounded-md border-gray-500 hover:bg-gradient-to-r from-[#207ead] to-[#00ffc3]'>Company News</Link>
+        <Link to="/"onClick={() => window.scrollTo({ top: 0, left: 0 })} className='hover:text-white border text-sm lg:text-base px-4 2xl:px-16 lg:px-6 py-4 2xl:py-6 rounded-[18px] border-gray-500 hover:bg-gradient-to-r from-[#207ead] to-[#00ffc3]'>Home</Link>
+        <Link to="/about" onClick={() => window.scrollTo({ top: 0, left: 0 })} className='hover:text-white border text-sm lg:text-base px-4 2xl:px-16 lg:px-6 py-4 2xl:py-6 rounded-[18px] border-gray-500 hover:bg-gradient-to-r from-[#207ead] to-[#00ffc3]'>About</Link>
+        <Link to="/services" onClick={() => window.scrollTo({ top: 0, left: 0 })} className='hover:text-white border text-sm lg:text-base px-4 2xl:px-16 lg:px-6 py-4 2xl:py-6 rounded-[18px] border-gray-500 hover:bg-gradient-to-r from-[#207ead] to-[#00ffc3]'>Services</Link>
+        <Link to="/works" onClick={() => window.scrollTo({ top: 0, left: 0 })} className='hover:text-white border text-sm lg:text-base px-4 2xl:px-16 lg:px-6 py-4 2xl:py-6 rounded-[18px] border-gray-500 hover:bg-gradient-to-r from-[#207ead] to-[#00ffc3]'>Work</Link>
+        <Link to="/articles" onClick={() => window.scrollTo({ top: 0, left: 0 })} className='hover:text-white border text-sm lg:text-base px-4 2xl:px-16 lg:px-6 py-4 2xl:py-6 rounded-[18px] border-gray-500 hover:bg-gradient-to-r from-[#207ead] to-[#00ffc3]'>Company News</Link>
 
       </div>
       
@@ -82,7 +82,7 @@ const Footer = () => {
 
     </div>
     <div className='bg-gradient-to-r from-[#207ead] to-[#00ffc3] h-12 2xl:h-16 flex justify-center items-center'>
-      <p className="font-custom text-white text-center">&copy; {currentYear} Sync Code. All rights reserved.</p>
+      <p className="font-custom text-white text-center">&copy; 2024 Sync Code. All rights reserved.</p>
     </div>
     </>
   );

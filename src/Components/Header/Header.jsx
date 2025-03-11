@@ -107,7 +107,7 @@ const Header = () => {
         <div className="hidden lg:flex items-center mr-5">
         <Link to="/get-in-touch" onClick={() => window.scrollTo({ top: 0, left: 0 })}>
         <motion.button
-          className="text-white uppercase rounded-md bg-gradient-to-r from-[#207ead] to-[#00ffc3] px-6 py-2 font-custom font-extrabold hover:animate-pulse"
+          className="text-white uppercase rounded-[18px] bg-gradient-to-r from-[#207ead] to-[#00ffc3] px-6 py-2 font-custom font-extrabold hover:animate-pulse"
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
@@ -175,7 +175,7 @@ const Header = () => {
       <div className="text-center">
       <Link onClick={() => { window.scrollTo({ top: 0, left: 0 }); closeMobileMenu(); }} to="/get-in-touch">
         <motion.button
-          className="text-white text-2xl uppercase rounded-md mt-12 bg-gradient-to-r from-[#207ead] to-[#00ffc3] w-full py-3 font-custom font-extrabold"
+          className="text-white text-2xl uppercase rounded-[18px] mt-12 bg-gradient-to-r from-[#207ead] to-[#00ffc3] w-full py-3 font-custom font-extrabold"
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
