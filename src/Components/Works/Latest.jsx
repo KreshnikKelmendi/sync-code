@@ -24,12 +24,12 @@ const Latest = () => {
 
   const renderMedia = (mediaUrl) => {
     return mediaUrl?.endsWith('.mp4') ? (
-      <video className="w-full h-40 lg:h-64 2xl:h-[40vh] object-cover rounded-[18px]" autoPlay playsInline loop muted>
+      <video className="w-full h-44 lg:h-64 2xl:h-[40vh] object-cover rounded-[18px]" autoPlay playsInline loop muted>
         <source src={mediaUrl} type="video/mp4" />
       </video>
     ) : (
       <img
-        className="w-full h-40 lg:h-64 2xl:h-[40vh] object-cover rounded-[18px]"
+        className="w-full h-44 lg:h-64 2xl:h-[40vh] object-cover rounded-[18px]"
         src={mediaUrl}
         alt=""
       />
