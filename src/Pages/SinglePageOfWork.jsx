@@ -233,7 +233,7 @@ const SinglePageOfWork = () => {
      
 
       <div className='px-5 lg:px-12 mt-6 lg:mt-16 flex flex-col'>
-        <p className='lg:w-[80%] text-[#207ead] text-4xl leading-[55px] lg:leading-[80px] lg:mt-7 lg:text-6xl 2xl:text-[100px] 2xl:leading-[120px] uppercase font-custom'>
+        <p className='lg:w-[80%] text-[#207ead] text-4xl leading-tighter lg:mt-7 lg:text-6xl 2xl:text-[100px] 2xl:leading-[120px] uppercase font-custom'>
           {shortTitle}
         </p>
         {liveLink && (
