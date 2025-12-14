@@ -55,7 +55,6 @@ import graphite6 from "../Assets/graphite-6.png"
 import graphite7 from "../Assets/graphite-9.png"
 import graphite55 from "../Assets/graphite-1.png"
 
-
 import enbego1 from "../Assets/enbego-1.png"
 import enbego2 from "../Assets/enbego-2.png"
 import enbego3 from "../Assets/enbego-3.png"
@@ -63,7 +62,34 @@ import enbego4 from "../Assets/enbego-4.png"
 import enbego5 from "../Assets/enbego-5.png"
 import enbego6 from "../Assets/enbego-6.png"
 
+import liramark1 from "../Assets/liramark-1.png"
+import liramark2 from "../Assets/liramark-2.png"
+import liramark3 from "../Assets/liramark-3.png"
+
 const works = [
+    {
+        id: "liramark",
+        workName: "LIRAMARK",
+        technologies: "Next.js / Tailwind CSS",
+        image: liramark1,
+        jobImage1: liramark1,
+        jobImage2: liramark2,
+        jobImage3: liramark3,
+        // jobImage4: liramark4,
+        // jobImage5: liramark5,
+        // jobImage6: liramark6,
+        shortTitle: "Quality Food & Consumer Goods Production",
+        category: "Web Design & Web Development",
+        clientExpectations:
+          "LIRAMARK required a modern and professional website that reflects the reliability and quality of its food and consumer products. The platform needed to clearly present the product range, strengthen brand identity, and deliver a simple, intuitive user experience for customers and business partners.",
+        partnershipResult:
+          "LIRAMARK was highly satisfied with the final result. The new website features a clean and modern design, fast loading times, and full responsiveness across all devices. The implementation with Next.js and Tailwind CSS ensures high performance, scalability, and a professional presentation of LIRAMARK’s products in both local and regional markets.",
+        description:
+          "LIRAMARK is a Kosovo-based company specializing in the production of tea, cooking oil, wafers, and hygienic paper products. The newly developed website presents the company’s product portfolio in a structured and visually engaging way, highlighting quality standards, production expertise, and long-term trust. Built with Next.js and Tailwind CSS, the platform delivers excellent performance, smooth navigation, and a modern design that reflects the company’s values and professionalism.",
+        liveLink: "https://www.liramark-ks.com", // update if different
+        backgroundColor: "#2E7D32"
+      }
+,      
     {
         id: "enbego-tv",
         workName: "ENBEGO TV",
