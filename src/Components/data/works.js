@@ -56,7 +56,33 @@ import graphite7 from "../Assets/graphite-9.png"
 import graphite55 from "../Assets/graphite-1.png"
 
 
+import enbego1 from "../Assets/enbego-1.png"
+import enbego2 from "../Assets/enbego-2.png"
+import enbego3 from "../Assets/enbego-3.png"
+import enbego4 from "../Assets/enbego-4.png"
+import enbego5 from "../Assets/enbego-5.png"
+import enbego6 from "../Assets/enbego-6.png"
+
 const works = [
+    {
+        id: "enbego-tv",
+        workName: "ENBEGO TV",
+        technologies: "Next JS / Tailwind CSS",
+        image: enbego1,
+        jobImage1: enbego1,
+        jobImage2: enbego2,
+        jobImage3: enbego3,
+        jobImage4: enbego4,
+        jobImage5: enbego5,
+        jobImage6: enbego6,
+        shortTitle: "Innovative Video & Post-Production Solutions",
+        category: "Web Design & Web Development",
+        clientExpectations: "ENBEGO expected a visually striking and performance-driven website that represents their creative identity and international presence. The platform needed to showcase video projects effectively, present services clearly, and provide an intuitive user experience for potential clients, partners, and collaborators.",
+        partnershipResult: "ENBEGO was highly satisfied with the final outcome. The website features a clean, modern, and cinematic design combined with fast loading times and full responsiveness across devices. Sync-Code’s implementation using Next.js and Tailwind CSS ensured scalability, performance, and a strong visual impact—helping ENBEGO strengthen its brand presence and attract new clients in both Kosovo and Germany.",
+        description: "ENBEGO is a Kosovar–German video and post-production company specializing in high-end visual storytelling for brands, agencies, and creative projects. The newly developed website presents ENBEGO’s work through a bold, cinematic experience, showcasing commercials, branded content, and post-production services with clarity and impact. Built with Next.js and Tailwind CSS, the platform delivers exceptional performance, smooth navigation, and a modern aesthetic that reflects ENBEGO’s creative vision. The website allows effortless content updates and provides a structured portfolio that highlights both local and international projects.",
+        liveLink: "https://www.enbego.tv/",
+        backgroundColor: "#FF5733"
+    },
     {
         id: "graphite-print",
         workName: "GRAPHITE PRINT",
